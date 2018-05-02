@@ -8,11 +8,11 @@ ms.date: 01/04/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 62c4b234f23b470ffea33cacdfc469fbd7e526bd
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="install-content-authoring-tools"></a>Instalar ferramentas de criação de conteúdo
 
@@ -22,9 +22,9 @@ Este artigo descreve as etapas para instalar de forma interativa ferramentas de 
 > * Instalar o [Visual Studio Code](https://code.visualstudio.com/)
 
 >[!IMPORTANT]
-> Se você estiver fazendo apenas pequenas alterações em um artigo, *não* será necessário concluir as etapas neste artigo e você poderá continuar diretamente no [fluxo de trabalho de alterações secundárias/pouco frequentes](light-workflow.md).
+> Se você estiver fazendo apenas pequenas alterações em um artigo, *não* será necessário concluir as etapas nesse artigo e você poderá continuar diretamente para o [fluxo de trabalho de alterações rápidas](index.md#quick-edits-to-existing-documents).
 >
-> Incentivamos os principais colaboradores a concluírem estas etapas, que permitem usar o [Fluxo de trabalho de alterações importantes ou de execução longa](full-workflow.md). Mesmo que você tenha permissões de gravação no repositório principal, *é altamente recomendável (e pré-requisito para seguir esse guia) que você crie o fork e clone o repositório*, para que você tenha permissões de leitura/gravação para armazenar suas alterações propostas no fork.
+> Incentivamos os principais colaboradores a concluírem estas etapas, que permitem usar o [Fluxo de trabalho de alterações importantes ou de execução longa](how-to-write-workflows-major.md). Mesmo que você tenha permissões de gravação no repositório principal, *é altamente recomendável (e pré-requisito para seguir esse guia) que você crie o fork e clone o repositório*, para que você tenha permissões de leitura/gravação para armazenar suas alterações propostas no fork.
 
 ## <a name="install-git-client-tools-on-windows"></a>Instalar as ferramentas de cliente do git no Windows
 
