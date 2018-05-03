@@ -8,11 +8,11 @@ ms.date: 06/30/2017
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 5ad2ca323b680078c2bfd2fc4cac6fb1883c411f
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 5f7f90b69953e23833906202c739d2168b139d7e
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Conceitos básicos do Git e do GitHub para o Docs
 
@@ -80,7 +80,7 @@ Para sua conveniência, o diretório raiz de cada repositório normalmente cont�
 
 Uma *solicitação de pull* é uma maneira fácil para um colaborador propor um conjunto de alterações que serão aplicadas ao branch padrão. As alterações (também conhecidas como *confirmações*) são armazenadas no branch de um colaborador, permitindo que o GitHub modele primeiro o impacto da *mesclagem* deles no branch padrão. Uma solicitação de pull também serve como um mecanismo para fornecer ao colaborador comentários de um processo de build/validação, do revisor da solicitação de pull, a fim de resolver possíveis problemas ou perguntas antes de mesclar as alterações no branch padrão.
 
-Há duas maneiras de contribuir por solicitação de pull, dependendo do tamanho das alterações que você deseja propor. Abordaremos isso detalhadamente mais adiante na seção [Fluxo de trabalho do GitHub](light-workflow.md) deste guia.
+Há duas maneiras de contribuir por solicitação de pull, dependendo do tamanho das alterações que você deseja propor. Abordaremos isso detalhadamente mais adiante na seção [Fluxo de trabalho do GitHub](how-to-write-workflows-major.md) deste guia.
 
 <!---- Reference links for Docs landing pages, associated GitHub repositories, and related Forums matrix. ------------------>
 <!---- PLEASE INSERT URLS IN ASCENDING SORT ORDER, AND REMOVE LOCALE SEGMENT FROM URLS (that is, en-us) FOR LOCALIZED FORUMS! -->
