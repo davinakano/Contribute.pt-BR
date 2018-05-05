@@ -1,18 +1,18 @@
 ---
 title: Instalar ferramentas de criação de conteúdo
 description: Este artigo ajuda a baixar e instalar as ferramentas cliente necessárias para o Git e para editar arquivos de markdown.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
-ms.date: 01/04/2018
+author: jasonwhowell
+ms.author: jasonh
+manager: kfile
+ms.date: 04/30/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
-ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
+ms.openlocfilehash: 1011c3fc829202a3df134ddc80eb05b8959b7bf6
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-content-authoring-tools"></a>Instalar ferramentas de criação de conteúdo
 
@@ -20,6 +20,7 @@ Este artigo descreve as etapas para instalar de forma interativa ferramentas de 
 > [!div class="checklist"]
 > * Instalar o [Git para Windows](https://git-scm.com/download/win)
 > * Instalar o [Visual Studio Code](https://code.visualstudio.com/)
+> * Instalar o [Pacote de criação do Docs](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)
 
 >[!IMPORTANT]
 > Se você estiver fazendo apenas pequenas alterações em um artigo, *não* será necessário concluir as etapas nesse artigo e você poderá continuar diretamente para o [fluxo de trabalho de alterações rápidas](index.md#quick-edits-to-existing-documents).
@@ -44,7 +45,7 @@ Markdown é uma linguagem de marcação leve que é fácil de ler e de aprender.
 
 O texto de Markdown é salvo em arquivos com extensão .md.
 
-Detalhes adicionais de como escrever com Markdown, incluindo as noções básicas de Markdown e os recursos compatíveis nas extensões de Markdown personalizadas do OPS serão abordados mais tarde em [Como usar Markdown](how-to-write-use-markdown.md).
+Detalhes adicionais de como escrever com Markdown, incluindo as noções básicas de Markdown e as funcionalidades compatíveis nas extensões de Markdown personalizadas do OPS serão abordados mais tarde em [Como usar Markdown](how-to-write-use-markdown.md).
 
 ## <a name="visual-studio-code"></a>Visual Studio Code
 
@@ -58,6 +59,16 @@ Faça o download e instale o [Código do VS](https://code.visualstudio.com/). A 
 
 > [!TIP]
 > Para iniciar o Código do VS e abrir a pasta atual, execute o comando `code .` na linha de comando ou shell do bash. Se a pasta atual é parte de um repositório do git local, a integração do GitHub aparece no Visual Studio Code automaticamente.
+
+## <a name="docs-authoring-pack"></a>Pacote de Criação do Docs
+Instale o Pacote de Criação do Docs para o Visual Studio Code. Este conjunto de extensões inclui a assistência básica de criação para ajudar ao gravar Markdown e uma funcionalidade de visualização que possibilita ver como o Markdown fica no estilo do site docs.microsoft.com.
+
+   Visite esta [página do Marketplace](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) e selecione **Instalar** ou pesquise por `docsmsft.docs-authoring-pack` na lista de extensões da janela do VS Code. 
+
+   Acesse o Pacote de Criação do Docs pressionando Alt+M dentro do VS Code. A barra de ferramentas fica oculta por padrão, mas pode ser exibida. Edite as configurações do VS Code (Ctrl+vírgula) e adicione a configuração do usuário `"markdown.showToolbar": true` para mostrar a barra de ferramentas.
+
+   Confira mais informações na página [Pacote de Criação do Docs](how-to-write-docs-auth-pack.md).
+
 
 ## <a name="next-steps"></a>Próximas etapas
 
