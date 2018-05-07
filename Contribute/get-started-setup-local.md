@@ -8,11 +8,11 @@ ms.date: 01/18/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: d9c7211641fb05aaca8a76e10c7216ff61a5d23c
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: f702d0d29ee7dc9c69cb26b79bf6283d91b6b6bc
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Configurar o repositório do git localmente para documentação
 
@@ -27,7 +27,7 @@ Execute essas atividades de configuração única para começar a contribuir:
 > * Configure o valor remoto upstream
 
 > [!IMPORTANT]
-> Se você estiver fazendo apenas pequenas alterações em um artigo, *não* é necessário concluir as etapas neste artigo. Você pode continuar diretamente no [fluxo de trabalho de alterações secundárias/pouco frequentes](light-workflow.md).
+> Se você estiver fazendo apenas pequenas alterações em um artigo, *não* é necessário concluir as etapas neste artigo. Você pode continuar diretamente no [fluxo de trabalho de alterações rápidas](index.md#quick-edits-to-existing-documents).
 >
 
 ## <a name="overview"></a>Visão geral
@@ -46,7 +46,7 @@ A documentação hospedada em [docs.microsoft.com](https://docs.microsoft.com) r
 
 1. Caso não tenha certeza quanto a qual repositório deseja usar, visite o artigo no docs.microsoft.com usando seu navegador Web. Selecione o link **Editar** (ícone de lápis) no canto superior direito do artigo.
 
-   ![Clique em Editar para determinar o local do arquivo e do repositório.](media/edit-article.png)
+   ![Clique em Editar para determinar o local do arquivo e do repositório.](media/index/edit-article.png)
 
 2. Esse link direciona para o local do github.com para o arquivo de markdown correspondente no repositório apropriado. Observe a URL para visualizar o nome do repositório.
 

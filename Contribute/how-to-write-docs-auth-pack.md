@@ -1,19 +1,18 @@
 ---
 title: Pacote de criação de Docs para VS Code
-description: Pacote de extensões do VS Code para facilitar a criação de Markdown para o docs.microsoft.com.
+description: Este artigo descreve o pacote de extensões do VS Code para facilitar a criação de Markdown para o docs.microsoft.com.
 author: meganbradley
 ms.author: mbradley
 manager: jemash
 ms.date: 04/06/2018
-ms.article: contributor-guide
-ms.prod: n.a
-ms.service: n.a
-ms.technology: n.a
-ms.openlocfilehash: 5c857deb07e28e1f6744c895a291bf78a6acf1df
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.prod: non-product-specific
+ms.topic: contributor-guide
+ms.custom: external-contributor-guide
+ms.openlocfilehash: d0d61db2faf88598ecd2c800fb5fbe8df8ec44f5
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Pacote de criação de Docs para VS Code
 
@@ -87,7 +86,7 @@ Os antigos funcionários do "Gauntlet" nomeado pelo código de extensão observa
 
 ## <a name="known-issues"></a>Problemas conhecidos
 
-- [Versão prévia do DocFX] MacOS e Linux: a Versão prévia do DocFX não inicia a versão prévia corretamente (a versão prévia assume, por padrão, a versão prévia do Markdown do VS Code para essas plataformas).
-- [Versão prévia do DocFx] Todas as plataformas: a sintaxe, como links xref (referência cruzada) para APIs, não é renderizada corretamente na versão prévia, deixando, em alguns casos, lacunas de conteúdo.
-- [Indicadores externos] Linux: a lista de arquivos é exibida, mas nenhum cabeçalho é mostrado para ser selecionado.
-- [Inclui] Linux: a lista de arquivos é exibida, mas nenhum link é adicionado após uma seleção ser feita.
+- Versão prévia do DocFX: no MacOS e no Linux, a Versão prévia do DocFX não inicia a versão prévia corretamente (a versão prévia assume, por padrão, a versão prévia do Markdown do VS Code para essas plataformas).
+- Versão prévia do DocFx: em todas as plataformas, a sintaxe, como links xref (referência cruzada) para APIs, não é renderizada corretamente na versão prévia, deixando, em alguns casos, lacunas de conteúdo.
+- Indicadores externos: no Linux, a lista de arquivos é exibida, mas nenhum cabeçalho é mostrado para ser selecionado.
+- Inclui: no Linux, a lista de arquivos é exibida, mas nenhum link é adicionado após uma seleção ser feita.
