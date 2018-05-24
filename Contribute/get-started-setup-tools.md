@@ -9,10 +9,10 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: 1011c3fc829202a3df134ddc80eb05b8959b7bf6
-ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
+ms.sourcegitcommit: e046e7aad8ed22bffe5380d63a9d40f0baeecc57
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="install-content-authoring-tools"></a>Instalar ferramentas de criação de conteúdo
 
@@ -45,7 +45,7 @@ Markdown é uma linguagem de marcação leve que é fácil de ler e de aprender.
 
 O texto de Markdown é salvo em arquivos com extensão .md.
 
-Detalhes adicionais de como escrever com Markdown, incluindo as noções básicas de Markdown e as funcionalidades compatíveis nas extensões de Markdown personalizadas do OPS serão abordados mais tarde em [Como usar Markdown](how-to-write-use-markdown.md).
+Detalhes adicionais de como escrever com Markdown, incluindo as noções básicas de Markdown e os recursos compatíveis nas extensões de Markdown personalizadas do OPS serão abordados mais tarde em [Como usar Markdown](how-to-write-use-markdown.md).
 
 ## <a name="visual-studio-code"></a>Visual Studio Code
 
