@@ -1,3 +1,3 @@
-## Código-fonte Microsoft Open de conduzir
-Este projeto tem adotaram o [Microsoft Abrir fonte de código de conduzir](https://opensource.microsoft.com/codeofconduct/).
-Para obter mais informações consulte o [Código de conduzir perguntas Frequentes](https://opensource.microsoft.com/codeofconduct/faq/) ou contate [opencode@microsoft.com](mailto:opencode@microsoft.com) com quaisquer outras perguntas ou comentários.
+## <a name="microsoft-open-source-code-of-conduct"></a>Código de Conduta de Software Livre da Microsoft
+Este projeto adotou o [Código de Conduta de Software Livre da Microsoft](https://opensource.microsoft.com/codeofconduct/).
+Para obter mais informações, confira as [Perguntas frequentes sobre o código de conduta](https://opensource.microsoft.com/codeofconduct/faq/) ou entre em contato com [opencode@microsoft.com](mailto:opencode@microsoft.com) para enviar outras perguntas ou comentários.

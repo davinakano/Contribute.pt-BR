@@ -8,17 +8,22 @@ ms.date: 07/13/2017
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 96d00abc052c3b23ca62201dccdbe590a927e72d
-ms.sourcegitcommit: de6e6b6ca641fdd5b30eb46deee9ac3a500089ef
+ms.openlocfilehash: 041398361aef90c44bdf3a0dad4aaa2d40a38289
+ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Como usar o Markdown para escrever Docs
 
 Os artigos do docs.microsoft.com são escritos em uma linguagem de marcação leve chamada [Markdown](https://daringfireball.net/projects/markdown/), que é fácil de ler e fácil de aprender. Por isso, tornou-se rapidamente um padrão do setor.
 
-Como o conteúdo do Docs é armazenado no GitHub, ele pode usar um superconjunto de Markdown chamado [GFM (GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/), que fornece mais funcionalidades para necessidades de formatação comuns. Além disso, o OPS (Open Publishing Services) implementa o DFM (DocFX Flavored Markdown). O DFM é altamente compatível com o GFM (GitHub Flavored Markdown), agregando funcionalidades para habilitar recursos específicos do Docs.
+Como o conteúdo do Docs é armazenado no GitHub, ele pode usar um superconjunto de Markdown chamado [GFM (GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/), que fornece mais funcionalidades para necessidades de formatação comuns. Além disso, o OPS (Open Publishing Services) implementa o Analisador de Markdown Markdig. O Markdig é altamente compatível com o GFM (GitHub Flavored Markdown), agregando funcionalidades para habilitar recursos específicos do Docs.
+
+* O Markdig é um processador de Markdown extensível, em conformidade com CommonMark potente e rápido para .NET.
+* https://github.com/lunet-io/markdig
+* Melhor suporte da comunidade
+* Melhor suporte de padrões
 
 ## <a name="markdown-basics"></a>Noções básicas de markdown
 
@@ -145,7 +150,7 @@ será renderizado como:
 
 Para saber mais sobre como criar tabelas, consulte:
 
-- O [recurso de disposição da tabela](#table-wrapping) do DFM, que pode ajudar com a formatação de tabelas grandes
+- O [recurso de encapsulamento da tabela](#table-wrapping) do Markdig, que pode ajudar com a formatação de tabelas grandes
 - [Organizar informações com tabelas](https://help.github.com/articles/organizing-information-with-tables/) do GitHub
 - O aplicativo Web [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables)
 - [Markdown Cheatsheet de Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)
@@ -161,7 +166,7 @@ A sintaxe do Markdown para um link embutido é composta pela parte `[link text]`
 Para saber mais sobre vinculação, confira:
 
 - O [guia de sintaxe do Markdown](https://daringfireball.net/projects/markdown/syntax#link) para obter detalhes sobre o suporte à vinculação de base do Markdown.
-- A seção [Links](how-to-write-links.md) deste guia para obter detalhes sobre a sintaxe de vinculação adicional que o DFM fornece.
+- A seção [Links](how-to-write-links.md) deste guia para obter detalhes sobre a sintaxe de vinculação adicional que o Markdig fornece.
 
 ### <a name="code-snippets"></a>Trechos de código
 
@@ -272,9 +277,9 @@ CREATE TABLE T1 (
 ## <a name="ops-custom-markdown-extensions"></a>Extensões de Markdown personalizada do OPS
 
 > [!NOTE]
-> O OPS (Open Publishing Services) implementa o DFM (DocFX Flavored Markdown), que é altamente compatível com o GFM (GitHub Flavored Markdown). O DFM adiciona algumas funcionalidades por meio de extensões de Markdown. Portanto, alguns artigos selecionados no Guia de Criação do OPS completo foram incluídos neste guia para referência. (Por exemplo, consulte "DFM e extensões de Markdown" e "Trechos de código" no sumário.)
+> O OPS (Open Publishing Services) implementa um Analisador de Markdown Markdig, que é altamente compatível com o GFM (GitHub Flavored Markdown). O Markdig adiciona algumas funcionalidades por meio de extensões de Markdown. Portanto, alguns artigos selecionados no Guia de Criação do OPS completo foram incluídos neste guia para referência. (Por exemplo, veja "extensões de Markdown e Markdig" e "Trechos de código" no sumário.)
 
-Os artigos do Docs usam o GFM para a maior parte da formatação do artigo, como parágrafos, links, listas e cabeçalhos. Para uma formatação mais avançada, os artigos podem usar recursos de DFM, como:
+Os artigos do Docs usam o GFM para a maior parte da formatação do artigo, como parágrafos, links, listas e cabeçalhos. Para uma formatação mais avançada, os artigos podem usar recursos do Markdig, como:
 
 - Blocos de nota
 - Inclusões
@@ -282,7 +287,7 @@ Os artigos do Docs usam o GFM para a maior parte da formatação do artigo, como
 - Vídeos incorporados
 - Trechos/amostras de código
 
-Para obter a lista completa, consulte "DFM e extensões de Markdown" e "Trechos de código" no sumário.
+Para obter a lista completa, veja "extensões de Markdown e Markdig" e "Trechos de código" no sumário.
 
 ### <a name="note-blocks"></a>Blocos de nota
 
@@ -297,7 +302,7 @@ Em geral, os blocos de notas devem ser usados com moderação porque eles podem 
 
 ### <a name="includes"></a>Inclusões
 
-Quando você tiver um texto ou arquivos de imagem reutilizáveis que precisem ser incluídos nos arquivos do artigo, use uma referência ao arquivo de "inclusão" por meio do recurso de inclusão de arquivo do DFM. Esse recurso instrui o OPS a incluir o arquivo no arquivo do artigo no tempo de build, para que ele faça parte do artigo publicado. Três tipos de inclusões estão disponíveis para ajudá-lo a reutilizar o conteúdo:
+Quando você tiver um texto ou arquivos de imagem reutilizáveis que precisem ser incluídos nos arquivos do artigo, use uma referência ao arquivo de "inclusão" por meio do recurso de inclusão de arquivo do Markdig. Esse recurso instrui o OPS a incluir o arquivo no arquivo do artigo no tempo de build, para que ele faça parte do artigo publicado. Três tipos de inclusões estão disponíveis para ajudá-lo a reutilizar o conteúdo:
 
 - Embutido: reutilize um trecho de texto comum embutido dentro de outra frase.
 - Bloco: reutilize um arquivo Markdown inteiro como um bloco aninhado dentro de uma seção de um artigo.
@@ -309,7 +314,7 @@ Aqui estão os requisitos e as considerações para inclusões:
 
 - Use inclusões sempre que precisar que o mesmo texto apareça em vários artigos.
 - Use inclusões em bloco para quantidades consideráveis de conteúdo, como um ou dois parágrafos, um procedimento compartilhado ou uma seção compartilhada. Não use-os para nada menor do que uma sentença.
-- As inclusões não serão renderizadas no modo de exibição renderizado do GitHub do seu artigo, pois elas dependem de extensões DFM. Elas serão renderizadas somente após a publicação.
+- As inclusões não serão renderizadas no modo de exibição renderizado do GitHub do seu artigo, pois elas dependem de extensões do Markdig. Elas serão renderizadas somente após a publicação.
 - Verifique se todo o texto em uma inclusão está escrito em sentenças ou frases completas que não dependem do texto anterior ou seguinte no artigo que faz referência à inclusão. Se você ignorar essa orientação, criará uma cadeia de caracteres não traduzível no artigo que quebrará a experiência localizada.
 - Não incorpore inclusões dentro de outras inclusões. Não há suporte para isso.
 - Coloque os arquivos de mídia em uma pasta de mídia específica para o subdiretório de inclusão, por exemplo, a pasta `<repo>`/includes/media. O diretório de mídia não deve conter imagens em sua raiz. Se a inclusão não tiver imagens, não será necessário ter um diretório de mídia correspondente.
@@ -318,13 +323,13 @@ Aqui estão os requisitos e as considerações para inclusões:
 
 ### <a name="selectors"></a>Seletores
 
-Use seletores em artigos técnicos ao criar vários tipos do mesmo artigo, a fim de solucionar diferenças de implementação entre tecnologias e plataformas. Normalmente, isso é mais aplicável ao nosso conteúdo de plataforma móvel para desenvolvedores. No momento, há dois tipos diferentes de seletores no DFM, um seletor único e um seletor múltiplo.
+Use seletores em artigos técnicos ao criar vários tipos do mesmo artigo, a fim de solucionar diferenças de implementação entre tecnologias e plataformas. Normalmente, isso é mais aplicável ao nosso conteúdo de plataforma móvel para desenvolvedores. No momento, há dois tipos diferentes de seletores no Markdig, um seletor único e um seletor múltiplo.
 
 Como o mesmo Markdown seletor vai para cada artigo na seleção, recomendamos posicionar o seletor do artigo em uma inclusão. Em seguida, você poderá referenciar essa inclusão em todos os artigos que usarem o mesmo seletor.
 
 ### <a name="code-snippets"></a>Trechos de código
 
-O DFM também é compatível com a inclusão avançada de código em um artigo por meio de sua extensão de trecho de código. Ela fornece renderização avançada que aproveita os recursos do GFM, como seleção de linguagem de programação e coloração de sintaxe, além de recursos incríveis como:
+O Markdig também é compatível com a inclusão avançada de código em um artigo por meio de sua extensão de trecho de código. Ela fornece renderização avançada que aproveita os recursos do GFM, como seleção de linguagem de programação e coloração de sintaxe, além de recursos incríveis como:
 
 - Inclusão de amostras/trechos de código centralizados de um repositório externo.
 - Interface do usuário com guias para mostrar várias versões de amostras de código em linguagens diferentes.
