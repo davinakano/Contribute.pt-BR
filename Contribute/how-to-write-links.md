@@ -1,19 +1,13 @@
 ---
 title: Como usar links na documentação
 description: Este artigo oferece orientação sobre como criar links para conteúdo dentro do docs.microsoft.com.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 06/29/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 1699e57ac6a4dc4c5a1ef099ea183b3cbc6307cd
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: a66e2fb4febf1947afe01919b96b1c10873cf57d
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469522"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239716"
 ---
 # <a name="using-links-in-documentation"></a>Usando links na documentação
 Este artigo descreve como usar hiperlinks de páginas hospedadas em docs.microsoft.com. É fácil adicionar links em markdown com poucas variações de convenções. Os links direcionam os usuários para o conteúdo na mesma página, apontam para outras páginas vizinhas ou para sites e URLs externos.
@@ -63,7 +57,10 @@ Para criar um link embutido de um artigo técnico do Docs para outro artigo téc
   `[link text](../directory/article-name.md)`
 
 - Uma vinculação de artigos entre docsets (mesmo se estiverem no mesmo repositório): `[link text](./directory/article-name)`
-  
+
+> [!IMPORTANT]
+> Nenhum dos exemplos acima usa `~/` como parte do link. Se você estiver vinculado a um caminho na raiz do repositório, comece com `/`. A inclusão de `~/` gera links inválidos ao navegar pelos repositórios de origem no GitHub. Iniciar o caminho com `/` resolve este problema corretamente.
+
 ## <a name="links-to-anchors"></a>Links para âncoras
 
 Você não precisa criar âncoras. Elas são geradas automaticamente no momento da publicação para todos os títulos H2. A única coisa que você precisa fazer é criar links para as seções H2.
