@@ -5,18 +5,18 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: a0c52fea8f3a57cdfe89c2cd7a24ef7b511ada7c
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239759"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251438"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Visão geral do guia do colaborador do Microsoft Docs
 
 Bem-vindo ao Guia do Colaborador do [docs.microsoft.com](https://docs.microsoft.com) (Docs)!
 
-Diversos de nossos conjuntos de documentação são de software livre, hospedados no GitHub. Mais e mais equipes estão adotando este modelo, a todo momento. Até mesmo conjuntos de documentos que não são totalmente de software livre têm repositórios voltados para o público em que você é convidado a realizar solicitações de pull. Ele simplifica e aprimora a comunicação entre os engenheiros de produto, as equipes de conteúdo e nossos clientes. Trabalhar com software livre tem diversas vantagens:
+Diversos de nossos conjuntos de documentação são de software livre, hospedados no GitHub. Mais e mais equipes na Microsoft estão adotando este modelo, a todo momento. Até mesmo conjuntos de documentos que não são totalmente de software livre têm repositórios voltados para o público em que você é convidado a realizar solicitações de pull. Ele simplifica e aprimora a comunicação entre os engenheiros de produto, as equipes de conteúdo e nossos clientes. Trabalhar com software livre tem diversas vantagens:
 
 - O planejamento de repositórios em software livre permite obter comentários sobre quais documentos são mais necessários.
 - A análise de repositórios em software livre permite publicar o conteúdo mais útil em nossa primeira versão.

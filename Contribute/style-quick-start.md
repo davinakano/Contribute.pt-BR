@@ -2,22 +2,22 @@
 title: Guia de estilo do Docs – Início rápido
 description: Este artigo é um guia breve para considerações de estilo e contém apenas os tópicos essenciais para começar com o docs.microsoft.com.
 ms.date: 07/25/2017
-ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239593"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40243013"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Início rápido de estilo e tom do Docs
 
-O início rápido exigirá menos tempo, mas dará uma boa ideia de como aplicar os conceitos mais importantes de estilo do Docs ao escrever artigos para o docs.microsoft.com. Essas diretrizes serão aplicadas se você estiver criando nova documentação ou atualizando uma documentação existente.
+Este início rápido é um breve guia para escrever conteúdo técnico para publicação no docs.microsoft.com. Essas diretrizes serão aplicadas se você estiver criando nova documentação ou atualizando uma documentação existente.
 
-No mínimo:
+Práticas recomendadas:
 
 - Verifique a ortografia e a gramática em seus artigos, mesmo que seja necessário copiar e colar no Word para fazer isso.
 - Use um tom casual e simpático, como se estivesse conversando com outra pessoa frente a frente.
-- Use frases simples. Elas são mais fáceis de entender e são traduzidas com mais facilidade por humanos e tradutores automáticos.
+- Use frases simples. Com frases fáceis de ler, o leitor pode usar rapidamente as orientações compartilhadas.
 
 ## <a name="use-the-microsoft-voice-principles"></a>Use os princípios de tom da Microsoft
 
