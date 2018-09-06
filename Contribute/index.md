@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 94fad6f4b2faeefff687eb57cd2de8a0fb5bbbf3
+ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251438"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43308883"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Visão geral do guia do colaborador do Microsoft Docs
 
@@ -31,7 +31,7 @@ A experiência do usuário em [docs.microsoft.com](https://docs.microsoft.com) i
 
 ## <a name="quick-edits-to-existing-documents"></a>Edições rápidas a documentos existentes
 
-As edições rápidas simplificam o processo de relatar e corrigir pequenos erros e omissões em documentos. Apesar de todos os esforços, pequenos erros gramaticais e ortográficos aparecem em nossos documentos publicados. Embora você possa criar registros de problemas para relatar erros, é mais rápido e mais fácil criar uma PR (solicitação de pull) para corrigir o problema propriamente dito. Praticamente todos os artigos exibem um botão de edição, conforme mostrado na figura a seguir. Clicar no botão **Editar** leva você ao arquivo de origem no GitHub.
+As edições rápidas simplificam o processo de relatar e corrigir pequenos erros e omissões em documentos. Apesar de todos os esforços, pequenos erros gramaticais e ortográficos aparecem em nossos documentos publicados. Embora você possa criar registros de problemas para relatar erros, é mais rápido e mais fácil criar uma PR (solicitação de pull) para corrigir o problema propriamente dito. Praticamente todos os artigos exibem um botão de edição, conforme mostrado na figura a seguir. Clicar no botão **Editar** (ou localizado equivalente) leva você ao arquivo de origem no GitHub.
 
 ![Localização do link de edição](./media/index/edit-article.png)
 
@@ -46,6 +46,12 @@ Após ter feito suas alterações, role até a parte inferior da página. Insira
 
 ![propondo a sua alteração](./media/index/submit-pull-request.png)
 
+Agora que você propôs sua alteração, você precisa pedir aos proprietários do repositório para "efetuar pull" de suas alterações para o repositório. Isso é feito usando algo chamado "solicitação de pull". Quando você clicou em **Propor alteração do arquivo** na figura acima, deveria ir para uma nova página semelhante à figura a seguir:
+
+![criar solicitação de pull](media/index/create-pull-request.png)
+
+Clique em **Criar Solicitação Pull**, insira um título (e, opcionalmente, uma descrição) para a solicitação pull e clique em **Criar Solicitação Pull** novamente.
+
 É isso! Membros de equipes de conteúdo examinarão e mesclarão sua solicitação de pull. Você poderá obter alguns comentários solicitando alterações caso você tenha feito alterações mais significativas.
 
 A interface do usuário de edição do GitHub responde às suas permissões no repositório. As imagens anteriores são precisas para colaboradores que não têm permissões de gravação para o repositório de destino. O GitHub cria automaticamente um fork para o repositório de destino em sua conta. Se você tem acesso de gravação para o repositório de destino, o GitHub cria nele um novo branch. O nome do branch tem o formato **\<GitHubId\>-patch-n** usando sua ID do GitHub e um identificador numérico para o branch do patch.
@@ -53,6 +59,12 @@ A interface do usuário de edição do GitHub responde às suas permissões no r
 Usamos solicitações de pull para todas as alterações, até mesmo para colaboradores que têm acesso de gravação. A maioria dos repositórios têm o branch `master` protegido, de modo que as atualizações precisam ser emitidas como solicitações de pull.
 
 A experiência de edição no navegador é a melhor para alterações secundárias ou esporádicas. Se você fizer colaborações grandes ou usar recursos avançados do Git (como gerenciamento de branch, resolução avançada de conflitos de mesclagem), precisará [criar um fork do repositório e trabalhar localmente](how-to-write-workflows-major.md).
+
+> [!NOTE]
+> Se habilitado, você pode editar um artigo em **qualquer idioma** e, com base no tipo de edição, ocorrerá o seguinte:
+> 1. qualquer alteração linguística aprovada também ajudará a melhorar nosso mecanismo de tradução automática
+> 2. qualquer edição que modifique significativamente o conteúdo do artigo será tratada internamente para enviar uma alteração para o mesmo artigo em inglês, a fim de que seja localizada em todos os idiomas, se aprovada.
+> Portanto, as melhorias sugeridas não afetarão apenas os artigos em seu próprio idioma, mas em todos os idiomas disponíveis.
 
 ## <a name="review-open-prs"></a>Examinar as solicitações de pull em aberto
 
