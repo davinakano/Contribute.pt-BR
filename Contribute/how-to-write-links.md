@@ -2,12 +2,12 @@
 title: Como usar links na documentação
 description: Este artigo oferece orientação sobre como criar links para conteúdo dentro do docs.microsoft.com.
 ms.date: 06/29/2017
-ms.openlocfilehash: dad0460cfb36594c17cef1b079c5fc14191f56f7
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 92c23f2b91c67d7a1695c5f1e5dcdc80a8517f6e
+ms.sourcegitcommit: 37cd16636d7dcfc5222ef5a5d60e4ff30f74485c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251475"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48030923"
 ---
 # <a name="using-links-in-documentation"></a>Usando links na documentação
 Este artigo descreve como usar hiperlinks de páginas hospedadas em docs.microsoft.com. É fácil adicionar links em markdown com poucas variações de convenções. Os links direcionam os usuários para o conteúdo na mesma página, apontam para outras páginas vizinhas ou para sites e URLs externos.
@@ -158,7 +158,7 @@ A parte &lt;moniker-name&gt; é opcional. Se ela for omitida, você será direci
 Ao usar essas URLs, você será redirecionado para a versão mais recente do conteúdo. Dessa forma, você não precisa especificar o moniker de uma versão. E não haverá links para um conteúdo conceitual que precisarão ser atualizados quando a versão for alterada.
 
 Para criar o link correto, localize no navegador a página à qual deseja vincular e copie a URL.
-Depois, remova "https://docs.microsoft.com" e as informações de localidade.
+Depois, remova ´ "https://docs.microsoft.com" ´ e as informações de localidade.
 
 Ao vincular por meio de um sumário, é necessário usar a URL completa sem as informações de localidade.
 
