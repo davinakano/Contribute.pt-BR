@@ -2,12 +2,12 @@
 title: Guia de estilo do Docs – Início rápido
 description: Este artigo é um guia breve para considerações de estilo e contém apenas os tópicos essenciais para começar com o docs.microsoft.com.
 ms.date: 07/25/2017
-ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
+ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40243013"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084389"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Início rápido de estilo e tom do Docs
 
@@ -15,7 +15,7 @@ Este início rápido é um breve guia para escrever conteúdo técnico para publ
 
 Práticas recomendadas:
 
-- Verifique a ortografia e a gramática em seus artigos, mesmo que seja necessário copiar e colar no Word para fazer isso.
+- Verifique a ortografia e a gramática em seus artigos, mesmo que seja necessário copiar e colar no Microsoft Word para fazer isso.
 - Use um tom casual e simpático, como se estivesse conversando com outra pessoa frente a frente.
 - Use frases simples. Com frases fáceis de ler, o leitor pode usar rapidamente as orientações compartilhadas.
 
@@ -42,14 +42,14 @@ Nossos artigos técnicos são traduzidos em vários idiomas e alguns são modifi
 ## <a name="other-style-and-voice-issues-to-watch-for"></a>Outros problemas de estilo e tom para prestar atenção
 
 - Não interrompa as etapas com comentários ou apartes.
-- Para etapas que incluem trechos de código, coloque as informações adicionais sobre a etapa no código como comentários. Isso reduz a quantidade de texto que as pessoas precisam ler. As informações importantes são copiadas no projeto de código para lembrar o leitor o que o código está fazendo ao se referir a ele mais tarde.
+- Para etapas que incluem snippets de código, coloque as informações adicionais sobre a etapa no código como comentários. Isso reduz a quantidade de texto que as pessoas precisam ler. As informações importantes são copiadas no projeto de código para lembrar o leitor o que o código está fazendo ao se referir a ele mais tarde.
 - Use a primeira letra da sentença em maiúscula para todos os títulos e cabeçalhos.
 - Use "entrar" e não "logon".
-- Inclua as palavras "da seguinte maneira" ou "a seguir" em qualquer frase que preceda um trecho ou uma lista de código.
+- Para ver mais diretrizes, confira o [Guia de Estilo de Escrita da Microsoft](https://docs.microsoft.com/style-guide/welcome).
 
 ## <a name="localized-documentation"></a>Documentação localizada
 
 - Se estiver contribuindo com a documentação localizada, consulte o [Portal de idiomas da Microsoft](https://www.microsoft.com/Language/Default.aspx).
 - Para obter diretrizes de localização, informações sobre estilo e uso de linguagem em publicações técnicas e para obter informações sobre formatos de dados específicos do mercado, baixe o [guia de estilo](https://www.microsoft.com/Language/StyleGuides) no seu idioma.
 - Para terminologia localizada da Microsoft, pesquise a [terminologia aprovada específica do produto](https://www.microsoft.com/Language/Default.aspx) ou baixe a [Coleção de terminologia da Microsoft](https://www.microsoft.com/Language/Terminology.aspx) em seu idioma.
-- Você pode saber mais na [seção de localização](https://docs.microsoft.com/style-guide/global-communications/) do guia de estilo da Microsoft.
+- Para saber mais sobre a localização, confira "Comunicações globais" no [Guia de Estilo de Escrita da Microsoft](https://docs.microsoft.com/style-guide/global-communications).
