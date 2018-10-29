@@ -2,12 +2,12 @@
 title: Guia de estilo do Docs – Início rápido
 description: Este artigo é um guia breve para considerações de estilo e contém apenas os tópicos essenciais para começar com o docs.microsoft.com.
 ms.date: 07/25/2017
-ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: f5c32d3fb71ef3513c68b9c506c823997bfe4d8f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084389"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805549"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Início rápido de estilo e tom do Docs
 
@@ -51,5 +51,5 @@ Nossos artigos técnicos são traduzidos em vários idiomas e alguns são modifi
 
 - Se estiver contribuindo com a documentação localizada, consulte o [Portal de idiomas da Microsoft](https://www.microsoft.com/Language/Default.aspx).
 - Para obter diretrizes de localização, informações sobre estilo e uso de linguagem em publicações técnicas e para obter informações sobre formatos de dados específicos do mercado, baixe o [guia de estilo](https://www.microsoft.com/Language/StyleGuides) no seu idioma.
-- Para terminologia localizada da Microsoft, pesquise a [terminologia aprovada específica do produto](https://www.microsoft.com/Language/Default.aspx) ou baixe a [Coleção de terminologia da Microsoft](https://www.microsoft.com/Language/Terminology.aspx) em seu idioma.
+- Para terminologia localizada da Microsoft, pesquise a [terminologia aprovada específica do produto](https://www.microsoft.com/Language/Default.aspx) ou baixe a [Coleção de terminologia da Microsoft](https://www.microsoft.com/language/Terminology) em seu idioma.
 - Para saber mais sobre a localização, confira "Comunicações globais" no [Guia de Estilo de Escrita da Microsoft](https://docs.microsoft.com/style-guide/global-communications).
