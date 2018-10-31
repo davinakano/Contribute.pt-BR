@@ -2,62 +2,62 @@
 title: Como usar o Markdown para escrever Docs
 description: Este artigo descreve as noções básicas e informações de referência para a linguagem Markdown usada para escrever artigos do docs.microsoft.com.
 ms.date: 07/13/2017
-ms.openlocfilehash: dca1ccba2ae4ebd08b6039f5d780e7a7ac92e79f
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238956"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805713"
 ---
-# <a name="how-to-use-markdown-for-writing-docs"></a><span data-ttu-id="7a140-103">Como usar o Markdown para escrever Docs</span><span class="sxs-lookup"><span data-stu-id="7a140-103">How to use Markdown for writing Docs</span></span>
+# <a name="how-to-use-markdown-for-writing-docs"></a><span data-ttu-id="5e09e-103">Como usar o Markdown para escrever Docs</span><span class="sxs-lookup"><span data-stu-id="5e09e-103">How to use Markdown for writing Docs</span></span>
 
-<span data-ttu-id="7a140-104">Os artigos do docs.microsoft.com são escritos em uma linguagem de marcação leve chamada [Markdown](https://daringfireball.net/projects/markdown/), que é fácil de ler e fácil de aprender.</span><span class="sxs-lookup"><span data-stu-id="7a140-104">Docs.microsoft.com articles are written in a lightweight markup language called [Markdown](https://daringfireball.net/projects/markdown/), which is both easy to read and easy to learn.</span></span> <span data-ttu-id="7a140-105">Por isso, tornou-se rapidamente um padrão do setor.</span><span class="sxs-lookup"><span data-stu-id="7a140-105">Because of this, it has quickly become an industry standard.</span></span>
+<span data-ttu-id="5e09e-104">Os artigos do [docs.microsoft.com](http://docs.microsoft.com) são escritos em uma linguagem de marcação leve chamada [Markdown](https://daringfireball.net/projects/markdown/), que é fácil de ler e aprender.</span><span class="sxs-lookup"><span data-stu-id="5e09e-104">[Docs.microsoft.com](http://docs.microsoft.com) articles are written in a lightweight markup language called [Markdown](https://daringfireball.net/projects/markdown/), which is both easy to read and easy to learn.</span></span> <span data-ttu-id="5e09e-105">Por isso, tornou-se rapidamente um padrão do setor.</span><span class="sxs-lookup"><span data-stu-id="5e09e-105">Because of this, it has quickly become an industry standard.</span></span>
 
-<span data-ttu-id="7a140-106">Como o conteúdo do Docs é armazenado no GitHub, ele pode usar um superconjunto de Markdown chamado [GFM (GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/), que fornece mais funcionalidades para necessidades de formatação comuns.</span><span class="sxs-lookup"><span data-stu-id="7a140-106">Because Docs content is stored in GitHub, it can use a superset of Markdown called [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), which provides additional functionality for common formatting needs.</span></span> <span data-ttu-id="7a140-107">Além disso, o OPS (Open Publishing Services) implementa o Analisador de Markdown Markdig.</span><span class="sxs-lookup"><span data-stu-id="7a140-107">Additionally, Open Publishing Services (OPS) implements Markdig Markdown Parser.</span></span> <span data-ttu-id="7a140-108">O Markdig é altamente compatível com o GFM (GitHub Flavored Markdown), agregando funcionalidades para habilitar recursos específicos do Docs.</span><span class="sxs-lookup"><span data-stu-id="7a140-108">Markdig is highly compatible with GitHub Flavored Markdown (GFM), adding functionality to enable Docs-specific features.</span></span>
+<span data-ttu-id="5e09e-106">Como o conteúdo do Docs é armazenado no GitHub, ele pode usar um superconjunto de Markdown chamado [GFM (GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/), que fornece mais funcionalidades para necessidades de formatação comuns.</span><span class="sxs-lookup"><span data-stu-id="5e09e-106">Since Docs content is stored in GitHub, it can use a superset of Markdown called [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), which provides additional functionality for common formatting needs.</span></span> <span data-ttu-id="5e09e-107">Além disso, o OPS (Open Publishing Services) implementa o Analisador de Markdown Markdig.</span><span class="sxs-lookup"><span data-stu-id="5e09e-107">Additionally, Open Publishing Services (OPS) implements Markdig Markdown Parser.</span></span> <span data-ttu-id="5e09e-108">O Markdig é altamente compatível com o GFM, agregando funcionalidades para habilitar recursos específicos do Docs.</span><span class="sxs-lookup"><span data-stu-id="5e09e-108">Markdig is highly compatible with GFM, adding functionality to enable Docs-specific features.</span></span>
 
-* <span data-ttu-id="7a140-109">O Markdig é um processador de Markdown extensível, em conformidade com CommonMark potente e rápido para .NET.</span><span class="sxs-lookup"><span data-stu-id="7a140-109">Markdig is a fast, powerful, CommonMark compliant, extensible Markdown processor for .NET.</span></span>
+* <span data-ttu-id="5e09e-109">O Markdig é um processador de Markdown extensível, em conformidade com CommonMark potente e rápido para .NET.</span><span class="sxs-lookup"><span data-stu-id="5e09e-109">Markdig is a fast, powerful, CommonMark compliant, extensible Markdown processor for .NET.</span></span>
 * https://github.com/lunet-io/markdig
-* <span data-ttu-id="7a140-110">Melhor suporte da comunidade</span><span class="sxs-lookup"><span data-stu-id="7a140-110">Better community support</span></span>
-* <span data-ttu-id="7a140-111">Melhor suporte de padrões</span><span class="sxs-lookup"><span data-stu-id="7a140-111">Better standards support</span></span>
+* <span data-ttu-id="5e09e-110">Melhor suporte da comunidade</span><span class="sxs-lookup"><span data-stu-id="5e09e-110">Better community support</span></span>
+* <span data-ttu-id="5e09e-111">Melhor suporte de padrões</span><span class="sxs-lookup"><span data-stu-id="5e09e-111">Better standards support</span></span>
 
-## <a name="markdown-basics"></a><span data-ttu-id="7a140-112">Noções básicas de markdown</span><span class="sxs-lookup"><span data-stu-id="7a140-112">Markdown basics</span></span>
+## <a name="markdown-basics"></a><span data-ttu-id="5e09e-112">Noções básicas de markdown</span><span class="sxs-lookup"><span data-stu-id="5e09e-112">Markdown basics</span></span>
 
-### <a name="headings"></a><span data-ttu-id="7a140-113">Títulos</span><span class="sxs-lookup"><span data-stu-id="7a140-113">Headings</span></span>
+### <a name="headings"></a><span data-ttu-id="5e09e-113">Títulos</span><span class="sxs-lookup"><span data-stu-id="5e09e-113">Headings</span></span>
 
-<span data-ttu-id="7a140-114">Para criar um título, use uma marca de hash (#), da seguinte forma:</span><span class="sxs-lookup"><span data-stu-id="7a140-114">To create a heading, you use a hash mark (#), as follows:</span></span>
-
-```markdown
-    # This is heading 1
-    ## This is heading 2
-    ### This is heading 3
-    #### This is heading 4
-```
-
-### <a name="bold-and-italic-text"></a><span data-ttu-id="7a140-115">Texto em negrito e em itálico</span><span class="sxs-lookup"><span data-stu-id="7a140-115">Bold and italic text</span></span>
-
-<span data-ttu-id="7a140-116">Para formatar o texto como **negrito**, coloque dois asteriscos de cada lado do texto:</span><span class="sxs-lookup"><span data-stu-id="7a140-116">To format text as **bold**, you enclose it in two asterisks:</span></span>
+<span data-ttu-id="5e09e-114">Para criar um título, use uma marca de hash (#), da seguinte forma:</span><span class="sxs-lookup"><span data-stu-id="5e09e-114">To create a heading, you use a hash mark (#), as follows:</span></span>
 
 ```markdown
-    This text is **bold**.
+# This is heading 1
+## This is heading 2
+### This is heading 3
+#### This is heading 4
 ```
 
-<span data-ttu-id="7a140-117">Para formatar o texto como *itálico*, coloque um único asterisco de cada lado do texto:</span><span class="sxs-lookup"><span data-stu-id="7a140-117">To format text as *italic*, you enclose it in a single asterisk:</span></span>
+### <a name="bold-and-italic-text"></a><span data-ttu-id="5e09e-115">Texto em negrito e em itálico</span><span class="sxs-lookup"><span data-stu-id="5e09e-115">Bold and italic text</span></span>
+
+<span data-ttu-id="5e09e-116">Para formatar o texto como **negrito**, coloque dois asteriscos de cada lado do texto:</span><span class="sxs-lookup"><span data-stu-id="5e09e-116">To format text as **bold**, you enclose it in two asterisks:</span></span>
 
 ```markdown
-    This text is *italic*.
+This text is **bold**.
 ```
 
-<span data-ttu-id="7a140-118">Para formatar o texto como ***negrito e itálico***, coloque três asteriscos de cada lado do texto:</span><span class="sxs-lookup"><span data-stu-id="7a140-118">To format text as both ***bold and italic***, you enclose it in three asterisks:</span></span>
+<span data-ttu-id="5e09e-117">Para formatar o texto como *itálico*, coloque um único asterisco de cada lado do texto:</span><span class="sxs-lookup"><span data-stu-id="5e09e-117">To format text as *italic*, you enclose it in a single asterisk:</span></span>
 
 ```markdown
-    This is text is both ***bold and italic***.
+This text is *italic*.
 ```
 
-### <a name="lists"></a><span data-ttu-id="7a140-119">Listas</span><span class="sxs-lookup"><span data-stu-id="7a140-119">Lists</span></span>
+<span data-ttu-id="5e09e-118">Para formatar o texto como ***negrito e itálico***, coloque três asteriscos de cada lado do texto:</span><span class="sxs-lookup"><span data-stu-id="5e09e-118">To format text as both ***bold and italic***, you enclose it in three asterisks:</span></span>
 
-#### <a name="unordered-list"></a><span data-ttu-id="7a140-120">Lista não ordenada</span><span class="sxs-lookup"><span data-stu-id="7a140-120">Unordered list</span></span>
+```markdown
+This is text is both ***bold and italic***.
+```
 
-<span data-ttu-id="7a140-121">Para formatar uma lista não ordenada/com marcador, use asteriscos ou traços.</span><span class="sxs-lookup"><span data-stu-id="7a140-121">To format an unordered/bulleted list, you can use either asterisks or dashes.</span></span> <span data-ttu-id="7a140-122">Por exemplo, o Markdown a seguir:</span><span class="sxs-lookup"><span data-stu-id="7a140-122">For example, the following Markdown:</span></span>
+### <a name="lists"></a><span data-ttu-id="5e09e-119">Listas</span><span class="sxs-lookup"><span data-stu-id="5e09e-119">Lists</span></span>
+
+#### <a name="unordered-list"></a><span data-ttu-id="5e09e-120">Lista não ordenada</span><span class="sxs-lookup"><span data-stu-id="5e09e-120">Unordered list</span></span>
+
+<span data-ttu-id="5e09e-121">Para formatar uma lista não ordenada/com marcador, use asteriscos ou traços.</span><span class="sxs-lookup"><span data-stu-id="5e09e-121">To format an unordered/bulleted list, you can use either asterisks or dashes.</span></span> <span data-ttu-id="5e09e-122">Por exemplo, o Markdown a seguir:</span><span class="sxs-lookup"><span data-stu-id="5e09e-122">For example, the following Markdown:</span></span>
 
 ```markdown
 - List item 1
@@ -65,13 +65,13 @@ ms.locfileid: "36238956"
 - List item 3
 ```
 
-<span data-ttu-id="7a140-123">será renderizado como:</span><span class="sxs-lookup"><span data-stu-id="7a140-123">will be rendered as:</span></span>
+<span data-ttu-id="5e09e-123">será renderizado como:</span><span class="sxs-lookup"><span data-stu-id="5e09e-123">will be rendered as:</span></span>
 
-- <span data-ttu-id="7a140-124">Item de lista 1</span><span class="sxs-lookup"><span data-stu-id="7a140-124">List item 1</span></span>
-- <span data-ttu-id="7a140-125">Item de lista 2</span><span class="sxs-lookup"><span data-stu-id="7a140-125">List item 2</span></span>
-- <span data-ttu-id="7a140-126">Item de lista 3</span><span class="sxs-lookup"><span data-stu-id="7a140-126">List item 3</span></span>
+- <span data-ttu-id="5e09e-124">Item de lista 1</span><span class="sxs-lookup"><span data-stu-id="5e09e-124">List item 1</span></span>
+- <span data-ttu-id="5e09e-125">Item de lista 2</span><span class="sxs-lookup"><span data-stu-id="5e09e-125">List item 2</span></span>
+- <span data-ttu-id="5e09e-126">Item de lista 3</span><span class="sxs-lookup"><span data-stu-id="5e09e-126">List item 3</span></span>
 
-<span data-ttu-id="7a140-127">Para aninhar uma lista em outra lista, recue os itens de lista filha.</span><span class="sxs-lookup"><span data-stu-id="7a140-127">To nest a list within another list, indent the child list items.</span></span> <span data-ttu-id="7a140-128">Por exemplo, o Markdown a seguir:</span><span class="sxs-lookup"><span data-stu-id="7a140-128">For example, the following Markdown:</span></span>
+<span data-ttu-id="5e09e-127">Para aninhar uma lista em outra lista, recue os itens de lista filha.</span><span class="sxs-lookup"><span data-stu-id="5e09e-127">To nest a list within another list, indent the child list items.</span></span> <span data-ttu-id="5e09e-128">Por exemplo, o Markdown a seguir:</span><span class="sxs-lookup"><span data-stu-id="5e09e-128">For example, the following Markdown:</span></span>
 
 ```markdown
 - List item 1
@@ -80,16 +80,16 @@ ms.locfileid: "36238956"
 - List item 2
 ```
 
-<span data-ttu-id="7a140-129">será renderizado como:</span><span class="sxs-lookup"><span data-stu-id="7a140-129">will be rendered as:</span></span>
+<span data-ttu-id="5e09e-129">será renderizado como:</span><span class="sxs-lookup"><span data-stu-id="5e09e-129">will be rendered as:</span></span>
 
-- <span data-ttu-id="7a140-130">Item de lista 1</span><span class="sxs-lookup"><span data-stu-id="7a140-130">List item 1</span></span>
-  - <span data-ttu-id="7a140-131">Item de lista A</span><span class="sxs-lookup"><span data-stu-id="7a140-131">List item A</span></span>
-  - <span data-ttu-id="7a140-132">Item de lista B</span><span class="sxs-lookup"><span data-stu-id="7a140-132">List item B</span></span>
-- <span data-ttu-id="7a140-133">Item de lista 2</span><span class="sxs-lookup"><span data-stu-id="7a140-133">List item 2</span></span>
+- <span data-ttu-id="5e09e-130">Item de lista 1</span><span class="sxs-lookup"><span data-stu-id="5e09e-130">List item 1</span></span>
+  - <span data-ttu-id="5e09e-131">Item de lista A</span><span class="sxs-lookup"><span data-stu-id="5e09e-131">List item A</span></span>
+  - <span data-ttu-id="5e09e-132">Item de lista B</span><span class="sxs-lookup"><span data-stu-id="5e09e-132">List item B</span></span>
+- <span data-ttu-id="5e09e-133">Item de lista 2</span><span class="sxs-lookup"><span data-stu-id="5e09e-133">List item 2</span></span>
 
-#### <a name="ordered-list"></a><span data-ttu-id="7a140-134">Lista ordenada</span><span class="sxs-lookup"><span data-stu-id="7a140-134">Ordered list</span></span>
+#### <a name="ordered-list"></a><span data-ttu-id="5e09e-134">Lista ordenada</span><span class="sxs-lookup"><span data-stu-id="5e09e-134">Ordered list</span></span>
 
-<span data-ttu-id="7a140-135">Para formatar uma lista ordenada/gradual, use números correspondentes.</span><span class="sxs-lookup"><span data-stu-id="7a140-135">To format an ordered/stepwise list, you use corresponding numbers.</span></span> <span data-ttu-id="7a140-136">Por exemplo, o Markdown a seguir:</span><span class="sxs-lookup"><span data-stu-id="7a140-136">For example, the following Markdown:</span></span>
+<span data-ttu-id="5e09e-135">Para formatar uma lista ordenada/gradual, use números correspondentes.</span><span class="sxs-lookup"><span data-stu-id="5e09e-135">To format an ordered/stepwise list, you use corresponding numbers.</span></span> <span data-ttu-id="5e09e-136">Por exemplo, o Markdown a seguir:</span><span class="sxs-lookup"><span data-stu-id="5e09e-136">For example, the following Markdown:</span></span>
 
 ```markdown
 1. First instruction
@@ -97,33 +97,33 @@ ms.locfileid: "36238956"
 3. Third instruction
 ```
 
-<span data-ttu-id="7a140-137">será renderizado como:</span><span class="sxs-lookup"><span data-stu-id="7a140-137">will be rendered as:</span></span>
+<span data-ttu-id="5e09e-137">será renderizado como:</span><span class="sxs-lookup"><span data-stu-id="5e09e-137">will be rendered as:</span></span>
 
-1. <span data-ttu-id="7a140-138">Primeira instrução</span><span class="sxs-lookup"><span data-stu-id="7a140-138">First instruction</span></span>
-2. <span data-ttu-id="7a140-139">Segunda instrução</span><span class="sxs-lookup"><span data-stu-id="7a140-139">Second instruction</span></span>
-3. <span data-ttu-id="7a140-140">Terceira instrução</span><span class="sxs-lookup"><span data-stu-id="7a140-140">Third instruction</span></span>
+1. <span data-ttu-id="5e09e-138">Primeira instrução</span><span class="sxs-lookup"><span data-stu-id="5e09e-138">First instruction</span></span>
+2. <span data-ttu-id="5e09e-139">Segunda instrução</span><span class="sxs-lookup"><span data-stu-id="5e09e-139">Second instruction</span></span>
+3. <span data-ttu-id="5e09e-140">Terceira instrução</span><span class="sxs-lookup"><span data-stu-id="5e09e-140">Third instruction</span></span>
 
-<span data-ttu-id="7a140-141">Para aninhar uma lista em outra lista, recue os itens de lista filha.</span><span class="sxs-lookup"><span data-stu-id="7a140-141">To nest a list within another list, indent the child list items.</span></span> <span data-ttu-id="7a140-142">Por exemplo, o Markdown a seguir:</span><span class="sxs-lookup"><span data-stu-id="7a140-142">For example, the following Markdown:</span></span>
+<span data-ttu-id="5e09e-141">Para aninhar uma lista em outra lista, recue os itens de lista filha.</span><span class="sxs-lookup"><span data-stu-id="5e09e-141">To nest a list within another list, indent the child list items.</span></span> <span data-ttu-id="5e09e-142">Por exemplo, o Markdown a seguir:</span><span class="sxs-lookup"><span data-stu-id="5e09e-142">For example, the following Markdown:</span></span>
 
 ```markdown
 1. First instruction
-    1. Sub-instruction
-    2. Sub-instruction
+   1. Sub-instruction
+   2. Sub-instruction
 2. Second instruction
 ```
 
-<span data-ttu-id="7a140-143">será renderizado como:</span><span class="sxs-lookup"><span data-stu-id="7a140-143">will be rendered as:</span></span>
+<span data-ttu-id="5e09e-143">será renderizado como:</span><span class="sxs-lookup"><span data-stu-id="5e09e-143">will be rendered as:</span></span>
 
-1. <span data-ttu-id="7a140-144">Primeira instrução</span><span class="sxs-lookup"><span data-stu-id="7a140-144">First instruction</span></span>
-    1. <span data-ttu-id="7a140-145">Subinstrução</span><span class="sxs-lookup"><span data-stu-id="7a140-145">Sub-instruction</span></span>
-    2. <span data-ttu-id="7a140-146">Subinstrução</span><span class="sxs-lookup"><span data-stu-id="7a140-146">Sub-instruction</span></span>
-2. <span data-ttu-id="7a140-147">Segunda instrução</span><span class="sxs-lookup"><span data-stu-id="7a140-147">Second instruction</span></span>
+1. <span data-ttu-id="5e09e-144">Primeira instrução</span><span class="sxs-lookup"><span data-stu-id="5e09e-144">First instruction</span></span>
+   1. <span data-ttu-id="5e09e-145">Subinstrução</span><span class="sxs-lookup"><span data-stu-id="5e09e-145">Sub-instruction</span></span>
+   2. <span data-ttu-id="5e09e-146">Subinstrução</span><span class="sxs-lookup"><span data-stu-id="5e09e-146">Sub-instruction</span></span>
+2. <span data-ttu-id="5e09e-147">Segunda instrução</span><span class="sxs-lookup"><span data-stu-id="5e09e-147">Second instruction</span></span>
 
-### <a name="tables"></a><span data-ttu-id="7a140-148">Tabelas</span><span class="sxs-lookup"><span data-stu-id="7a140-148">Tables</span></span>
+### <a name="tables"></a><span data-ttu-id="5e09e-148">Tabelas</span><span class="sxs-lookup"><span data-stu-id="5e09e-148">Tables</span></span>
 
-<span data-ttu-id="7a140-149">As tabelas não fazem parte da especificação principal do Markdown, mas são compatíveis com o GFM.</span><span class="sxs-lookup"><span data-stu-id="7a140-149">Tables are not part of the core Markdown specification, but GFM supports them.</span></span> <span data-ttu-id="7a140-150">Você pode criar tabelas usando os caracteres barra vertical (|) e hífen (-).</span><span class="sxs-lookup"><span data-stu-id="7a140-150">You can create tables by using the pipe (|) and hyphen (-) characters.</span></span> <span data-ttu-id="7a140-151">Os hifens criam o cabeçalho de cada coluna e as barras verticais separam cada coluna.</span><span class="sxs-lookup"><span data-stu-id="7a140-151">Hyphens create each column's header, while pipes separate each column.</span></span> <span data-ttu-id="7a140-152">Inclua uma linha em branco antes da sua tabela para que a renderização ocorra corretamente.</span><span class="sxs-lookup"><span data-stu-id="7a140-152">Include a blank line before your table so it's rendered correctly.</span></span>
+<span data-ttu-id="5e09e-149">As tabelas não fazem parte da especificação principal do Markdown, mas são compatíveis com o GFM.</span><span class="sxs-lookup"><span data-stu-id="5e09e-149">Tables are not part of the core Markdown specification, but GFM supports them.</span></span> <span data-ttu-id="5e09e-150">Você pode criar tabelas usando os caracteres barra vertical (|) e hífen (-).</span><span class="sxs-lookup"><span data-stu-id="5e09e-150">You can create tables by using the pipe (|) and hyphen (-) characters.</span></span> <span data-ttu-id="5e09e-151">Os hifens criam o cabeçalho de cada coluna e as barras verticais separam cada coluna.</span><span class="sxs-lookup"><span data-stu-id="5e09e-151">Hyphens create each column's header, while pipes separate each column.</span></span> <span data-ttu-id="5e09e-152">Inclua uma linha em branco antes da sua tabela para que a renderização ocorra corretamente.</span><span class="sxs-lookup"><span data-stu-id="5e09e-152">Include a blank line before your table so it's rendered correctly.</span></span>
 
-<span data-ttu-id="7a140-153">Por exemplo, o Markdown a seguir:</span><span class="sxs-lookup"><span data-stu-id="7a140-153">For example, the following Markdown:</span></span>
+<span data-ttu-id="5e09e-153">Por exemplo, o Markdown a seguir:</span><span class="sxs-lookup"><span data-stu-id="5e09e-153">For example, the following Markdown:</span></span>
 
 ```markdown
 | Fun                  | With                 | Tables          |
@@ -134,43 +134,43 @@ ms.locfileid: "36238956"
 | $1                   | $1                   | $1              |
 ```
 
-<span data-ttu-id="7a140-154">será renderizado como:</span><span class="sxs-lookup"><span data-stu-id="7a140-154">will be rendered as:</span></span>
+<span data-ttu-id="5e09e-154">será renderizado como:</span><span class="sxs-lookup"><span data-stu-id="5e09e-154">will be rendered as:</span></span>
 
-| <span data-ttu-id="7a140-155">Diversão</span><span class="sxs-lookup"><span data-stu-id="7a140-155">Fun</span></span>                  | <span data-ttu-id="7a140-156">Com</span><span class="sxs-lookup"><span data-stu-id="7a140-156">With</span></span>                 | <span data-ttu-id="7a140-157">Tabelas</span><span class="sxs-lookup"><span data-stu-id="7a140-157">Tables</span></span>          |
+| <span data-ttu-id="5e09e-155">Diversão</span><span class="sxs-lookup"><span data-stu-id="5e09e-155">Fun</span></span>                  | <span data-ttu-id="5e09e-156">Com</span><span class="sxs-lookup"><span data-stu-id="5e09e-156">With</span></span>                 | <span data-ttu-id="5e09e-157">Tabelas</span><span class="sxs-lookup"><span data-stu-id="5e09e-157">Tables</span></span>          |
 | :------------------- | -------------------: |:---------------:|
-| <span data-ttu-id="7a140-158">coluna alinhada à esquerda</span><span class="sxs-lookup"><span data-stu-id="7a140-158">left-aligned column</span></span>  | <span data-ttu-id="7a140-159">coluna alinhada à direita</span><span class="sxs-lookup"><span data-stu-id="7a140-159">right-aligned column</span></span> | <span data-ttu-id="7a140-160">coluna centralizada</span><span class="sxs-lookup"><span data-stu-id="7a140-160">centered column</span></span> |
-| <span data-ttu-id="7a140-161">$100</span><span class="sxs-lookup"><span data-stu-id="7a140-161">$100</span></span>                 | <span data-ttu-id="7a140-162">$100</span><span class="sxs-lookup"><span data-stu-id="7a140-162">$100</span></span>                 | <span data-ttu-id="7a140-163">$100</span><span class="sxs-lookup"><span data-stu-id="7a140-163">$100</span></span>            |
-| <span data-ttu-id="7a140-164">$10</span><span class="sxs-lookup"><span data-stu-id="7a140-164">$10</span></span>                  | <span data-ttu-id="7a140-165">$10</span><span class="sxs-lookup"><span data-stu-id="7a140-165">$10</span></span>                  | <span data-ttu-id="7a140-166">$10</span><span class="sxs-lookup"><span data-stu-id="7a140-166">$10</span></span>             |
-| <span data-ttu-id="7a140-167">$1</span><span class="sxs-lookup"><span data-stu-id="7a140-167">$1</span></span>                   | <span data-ttu-id="7a140-168">$1</span><span class="sxs-lookup"><span data-stu-id="7a140-168">$1</span></span>                   | <span data-ttu-id="7a140-169">$1</span><span class="sxs-lookup"><span data-stu-id="7a140-169">$1</span></span>              |
+| <span data-ttu-id="5e09e-158">coluna alinhada à esquerda</span><span class="sxs-lookup"><span data-stu-id="5e09e-158">left-aligned column</span></span>  | <span data-ttu-id="5e09e-159">coluna alinhada à direita</span><span class="sxs-lookup"><span data-stu-id="5e09e-159">right-aligned column</span></span> | <span data-ttu-id="5e09e-160">coluna centralizada</span><span class="sxs-lookup"><span data-stu-id="5e09e-160">centered column</span></span> |
+| <span data-ttu-id="5e09e-161">$100</span><span class="sxs-lookup"><span data-stu-id="5e09e-161">$100</span></span>                 | <span data-ttu-id="5e09e-162">$100</span><span class="sxs-lookup"><span data-stu-id="5e09e-162">$100</span></span>                 | <span data-ttu-id="5e09e-163">$100</span><span class="sxs-lookup"><span data-stu-id="5e09e-163">$100</span></span>            |
+| <span data-ttu-id="5e09e-164">$10</span><span class="sxs-lookup"><span data-stu-id="5e09e-164">$10</span></span>                  | <span data-ttu-id="5e09e-165">$10</span><span class="sxs-lookup"><span data-stu-id="5e09e-165">$10</span></span>                  | <span data-ttu-id="5e09e-166">$10</span><span class="sxs-lookup"><span data-stu-id="5e09e-166">$10</span></span>             |
+| <span data-ttu-id="5e09e-167">$1</span><span class="sxs-lookup"><span data-stu-id="5e09e-167">$1</span></span>                   | <span data-ttu-id="5e09e-168">$1</span><span class="sxs-lookup"><span data-stu-id="5e09e-168">$1</span></span>                   | <span data-ttu-id="5e09e-169">$1</span><span class="sxs-lookup"><span data-stu-id="5e09e-169">$1</span></span>              |
 
-<span data-ttu-id="7a140-170">Para saber mais sobre como criar tabelas, consulte:</span><span class="sxs-lookup"><span data-stu-id="7a140-170">For more information on creating tables, see:</span></span>
+<span data-ttu-id="5e09e-170">Para saber mais sobre como criar tabelas, consulte:</span><span class="sxs-lookup"><span data-stu-id="5e09e-170">For more information on creating tables, see:</span></span>
 
-- <span data-ttu-id="7a140-171">O [recurso de encapsulamento da tabela](#table-wrapping) do Markdig, que pode ajudar com a formatação de tabelas grandes</span><span class="sxs-lookup"><span data-stu-id="7a140-171">The Markdig [table wrapping feature](#table-wrapping), which can help with formatting of wide tables</span></span>
-- <span data-ttu-id="7a140-172">[Organizar informações com tabelas](https://help.github.com/articles/organizing-information-with-tables/) do GitHub</span><span class="sxs-lookup"><span data-stu-id="7a140-172">GitHub's [Organizing information with tables](https://help.github.com/articles/organizing-information-with-tables/)</span></span>
-- <span data-ttu-id="7a140-173">O aplicativo Web [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables)</span><span class="sxs-lookup"><span data-stu-id="7a140-173">The [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables) web app</span></span>
-- [<span data-ttu-id="7a140-174">Markdown Cheatsheet de Adam Pritchard</span><span class="sxs-lookup"><span data-stu-id="7a140-174">Adam Pritchard's Markdown Cheatsheet</span></span>](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)
-- [<span data-ttu-id="7a140-175">Markdown Extra de Michel Fortin</span><span class="sxs-lookup"><span data-stu-id="7a140-175">Michel Fortin's Markdown Extra</span></span>](https://michelf.ca/projects/php-markdown/extra/#table)
-- [<span data-ttu-id="7a140-176">Converta tabelas HTML para Markdown</span><span class="sxs-lookup"><span data-stu-id="7a140-176">Convert HTML tables to Markdown</span></span>](https://jmalarcon.github.io/markdowntables/)
+- <span data-ttu-id="5e09e-171">O [recurso de encapsulamento da tabela](#table-wrapping) do Markdig, que pode ajudar com a formatação de tabelas grandes.</span><span class="sxs-lookup"><span data-stu-id="5e09e-171">The Markdig [table wrapping feature](#table-wrapping), which can help with formatting of wide tables.</span></span>
+- <span data-ttu-id="5e09e-172">[Organizar informações com tabelas](https://help.github.com/articles/organizing-information-with-tables/) do GitHub.</span><span class="sxs-lookup"><span data-stu-id="5e09e-172">GitHub's [Organizing information with tables](https://help.github.com/articles/organizing-information-with-tables/).</span></span>
+- <span data-ttu-id="5e09e-173">O aplicativo Web [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables).</span><span class="sxs-lookup"><span data-stu-id="5e09e-173">The [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables) web app.</span></span>
+- <span data-ttu-id="5e09e-174">[Folha de referências do Markdown de Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables).</span><span class="sxs-lookup"><span data-stu-id="5e09e-174">[Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables).</span></span>
+- <span data-ttu-id="5e09e-175">[Markdown Extra de Michel Fortin](https://michelf.ca/projects/php-markdown/extra/#table).</span><span class="sxs-lookup"><span data-stu-id="5e09e-175">[Michel Fortin's Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#table).</span></span>
+- <span data-ttu-id="5e09e-176">[Converta tabelas HTML para Markdown](https://jmalarcon.github.io/markdowntables/).</span><span class="sxs-lookup"><span data-stu-id="5e09e-176">[Convert HTML tables to Markdown](https://jmalarcon.github.io/markdowntables/).</span></span>
 
-### <a name="links"></a><span data-ttu-id="7a140-177">Links</span><span class="sxs-lookup"><span data-stu-id="7a140-177">Links</span></span>
+### <a name="links"></a><span data-ttu-id="5e09e-177">Links</span><span class="sxs-lookup"><span data-stu-id="5e09e-177">Links</span></span>
 
-<span data-ttu-id="7a140-178">A sintaxe do Markdown para um link embutido é composta pela parte `[link text]`, que é o texto que receberá o hiperlink, seguida pela parte `(file-name.md)`, que é a URL ou o nome do arquivo de destino do link:</span><span class="sxs-lookup"><span data-stu-id="7a140-178">The Markdown syntax for an inline link consists of the `[link text]` portion, which is the text that will be hyperlinked, followed by the `(file-name.md)` portion, which is the URL or file name that's being linked to:</span></span>
+<span data-ttu-id="5e09e-178">A sintaxe do Markdown para um link embutido é composta pela parte `[link text]`, que é o texto que receberá o hiperlink, seguida pela parte `(file-name.md)`, que é a URL ou o nome do arquivo de destino do link:</span><span class="sxs-lookup"><span data-stu-id="5e09e-178">The Markdown syntax for an inline link consists of the `[link text]` portion, which is the text that will be hyperlinked, followed by the `(file-name.md)` portion, which is the URL or file name that's being linked to:</span></span>
 
  `[link text](file-name.md)`
 
-<span data-ttu-id="7a140-179">Para saber mais sobre vinculação, confira:</span><span class="sxs-lookup"><span data-stu-id="7a140-179">For more information on linking, see:</span></span>
+<span data-ttu-id="5e09e-179">Para saber mais sobre vinculação, confira:</span><span class="sxs-lookup"><span data-stu-id="5e09e-179">For more information on linking, see:</span></span>
 
-- <span data-ttu-id="7a140-180">O [guia de sintaxe do Markdown](https://daringfireball.net/projects/markdown/syntax#link) para obter detalhes sobre o suporte à vinculação de base do Markdown.</span><span class="sxs-lookup"><span data-stu-id="7a140-180">The [Markdown syntax guide](https://daringfireball.net/projects/markdown/syntax#link) for details on Markdown's base linking support.</span></span>
-- <span data-ttu-id="7a140-181">A seção [Links](how-to-write-links.md) deste guia para obter detalhes sobre a sintaxe de vinculação adicional que o Markdig fornece.</span><span class="sxs-lookup"><span data-stu-id="7a140-181">The [Links](how-to-write-links.md) section of this guide for details on additional linking syntax that Markdig provides.</span></span>
+- <span data-ttu-id="5e09e-180">O [guia de sintaxe do Markdown](https://daringfireball.net/projects/markdown/syntax#link) para obter detalhes sobre o suporte à vinculação de base do Markdown.</span><span class="sxs-lookup"><span data-stu-id="5e09e-180">The [Markdown syntax guide](https://daringfireball.net/projects/markdown/syntax#link) for details on Markdown's base linking support.</span></span>
+- <span data-ttu-id="5e09e-181">A seção [Links](how-to-write-links.md) deste guia para obter detalhes sobre a sintaxe de vinculação adicional que o Markdig fornece.</span><span class="sxs-lookup"><span data-stu-id="5e09e-181">The [Links](how-to-write-links.md) section of this guide for details on the additional linking syntax that Markdig provides.</span></span>
 
-### <a name="code-snippets"></a><span data-ttu-id="7a140-182">Trechos de código</span><span class="sxs-lookup"><span data-stu-id="7a140-182">Code snippets</span></span>
+### <a name="code-snippets"></a><span data-ttu-id="5e09e-182">Snippets de código</span><span class="sxs-lookup"><span data-stu-id="5e09e-182">Code snippets</span></span>
 
-<span data-ttu-id="7a140-183">O Markdown é compatível com o posicionamento de trechos de código, seja embutido em uma sentença, seja como um bloco "isolado" e separado entre as sentenças.</span><span class="sxs-lookup"><span data-stu-id="7a140-183">Markdown supports the placement of code snippets both inline in a sentence and as a separate "fenced" block between sentences.</span></span> <span data-ttu-id="7a140-184">Para obter detalhes, consulte:</span><span class="sxs-lookup"><span data-stu-id="7a140-184">For details, see:</span></span>
+<span data-ttu-id="5e09e-183">O Markdown é compatível com o posicionamento de snippets de código, seja embutido em uma sentença, seja como um bloco "isolado" e separado entre as sentenças.</span><span class="sxs-lookup"><span data-stu-id="5e09e-183">Markdown supports the placement of code snippets both inline in a sentence and as a separate "fenced" block between sentences.</span></span> <span data-ttu-id="5e09e-184">Para obter detalhes, consulte:</span><span class="sxs-lookup"><span data-stu-id="5e09e-184">For details, see:</span></span>
 
-- [<span data-ttu-id="7a140-185">Suporte nativo do Markdown para blocos de código</span><span class="sxs-lookup"><span data-stu-id="7a140-185">Markdown's native support for code blocks</span></span>](https://daringfireball.net/projects/markdown/syntax#precode)
-- [<span data-ttu-id="7a140-186">Suporte do GFM para isolamento de código e destaque de sintaxe</span><span class="sxs-lookup"><span data-stu-id="7a140-186">GFM support for code fencing and syntax highlighting</span></span>](https://help.github.com/articles/creating-and-highlighting-code-blocks/)
+- [<span data-ttu-id="5e09e-185">Suporte nativo do Markdown para blocos de código</span><span class="sxs-lookup"><span data-stu-id="5e09e-185">Markdown's native support for code blocks</span></span>](https://daringfireball.net/projects/markdown/syntax#precode)
+- [<span data-ttu-id="5e09e-186">Suporte do GFM para isolamento de código e destaque de sintaxe</span><span class="sxs-lookup"><span data-stu-id="5e09e-186">GFM support for code fencing and syntax highlighting</span></span>](https://help.github.com/articles/creating-and-highlighting-code-blocks/)
 
-<span data-ttu-id="7a140-187">Os blocos de código isolados representam uma maneira fácil de habilitar o destaque de sintaxe para seus trechos de código.</span><span class="sxs-lookup"><span data-stu-id="7a140-187">Fenced code blocks are an easy way to enable syntax highlighting for your code snippets.</span></span> <span data-ttu-id="7a140-188">O formato geral dos blocos de código isolados é:</span><span class="sxs-lookup"><span data-stu-id="7a140-188">The general format for fenced code blocks is:</span></span>
+<span data-ttu-id="5e09e-187">Os blocos de código isolados representam uma maneira fácil de habilitar o destaque de sintaxe para seus snippets de código.</span><span class="sxs-lookup"><span data-stu-id="5e09e-187">Fenced code blocks are an easy way to enable syntax highlighting for your code snippets.</span></span> <span data-ttu-id="5e09e-188">O formato geral dos blocos de código isolados é:</span><span class="sxs-lookup"><span data-stu-id="5e09e-188">The general format for fenced code blocks is:</span></span>
 
     ```alias
     ...
@@ -178,52 +178,53 @@ ms.locfileid: "36238956"
     ...
     ```
 
-<span data-ttu-id="7a140-189">O alias após os três caracteres de acento grave (\`) iniciais define o destaque de sintaxe a ser usado.</span><span class="sxs-lookup"><span data-stu-id="7a140-189">The alias after the initial three backtick (\`) characters defines the syntax highlighting to be used.</span></span> <span data-ttu-id="7a140-190">Veja a seguir uma lista de linguagens de programação normalmente usadas no conteúdo do Docs e no rótulo correspondente:</span><span class="sxs-lookup"><span data-stu-id="7a140-190">The following is a list of commonly used programming languages in Docs content and the matching label:</span></span>
+<span data-ttu-id="5e09e-189">O alias após os três caracteres de acento grave (\`) iniciais define o destaque de sintaxe a ser usado.</span><span class="sxs-lookup"><span data-stu-id="5e09e-189">The alias after the initial three backtick (\`) characters defines the syntax highlighting to be used.</span></span> <span data-ttu-id="5e09e-190">Veja a seguir uma lista de linguagens de programação normalmente usadas no conteúdo do Docs e no rótulo correspondente:</span><span class="sxs-lookup"><span data-stu-id="5e09e-190">The following is a list of commonly used programming languages in Docs content and the matching label:</span></span>
 
-<span data-ttu-id="7a140-191">Essas linguagens têm o suporte de nome amigável e a maioria tem realce de linguagem.</span><span class="sxs-lookup"><span data-stu-id="7a140-191">These languages have friendly name support and most have language highlighting.</span></span>
+<span data-ttu-id="5e09e-191">Essas linguagens têm o suporte de nome amigável e a maioria tem realce de linguagem.</span><span class="sxs-lookup"><span data-stu-id="5e09e-191">These languages have friendly name support and most have language highlighting.</span></span>
 
-|<span data-ttu-id="7a140-192">Nome</span><span class="sxs-lookup"><span data-stu-id="7a140-192">Name</span></span>|<span data-ttu-id="7a140-193">Rótulo de Markdown</span><span class="sxs-lookup"><span data-stu-id="7a140-193">Markdown Label</span></span>|
+|<span data-ttu-id="5e09e-192">Nome</span><span class="sxs-lookup"><span data-stu-id="5e09e-192">Name</span></span>|<span data-ttu-id="5e09e-193">Rótulo de Markdown</span><span class="sxs-lookup"><span data-stu-id="5e09e-193">Markdown Label</span></span>|
 |-----|-------|
-|<span data-ttu-id="7a140-194">Console do .NET</span><span class="sxs-lookup"><span data-stu-id="7a140-194">.NET Console</span></span>|<span data-ttu-id="7a140-195">dotnetcli</span><span class="sxs-lookup"><span data-stu-id="7a140-195">dotnetcli</span></span>|
-|<span data-ttu-id="7a140-196">ASP.NET (C#)</span><span class="sxs-lookup"><span data-stu-id="7a140-196">ASP.NET (C#)</span></span>|<span data-ttu-id="7a140-197">aspx-csharp</span><span class="sxs-lookup"><span data-stu-id="7a140-197">aspx-csharp</span></span>|
-|<span data-ttu-id="7a140-198">ASP.NET (VB)</span><span class="sxs-lookup"><span data-stu-id="7a140-198">ASP.NET (VB)</span></span>|<span data-ttu-id="7a140-199">aspx-vb</span><span class="sxs-lookup"><span data-stu-id="7a140-199">aspx-vb</span></span>|
-|<span data-ttu-id="7a140-200">AzCopy</span><span class="sxs-lookup"><span data-stu-id="7a140-200">AzCopy</span></span>|<span data-ttu-id="7a140-201">azcopy</span><span class="sxs-lookup"><span data-stu-id="7a140-201">azcopy</span></span>|
-|<span data-ttu-id="7a140-202">CLI do Azure</span><span class="sxs-lookup"><span data-stu-id="7a140-202">Azure CLI</span></span>|<span data-ttu-id="7a140-203">azurecli</span><span class="sxs-lookup"><span data-stu-id="7a140-203">azurecli</span></span>|
-|<span data-ttu-id="7a140-204">Azure PowerShell</span><span class="sxs-lookup"><span data-stu-id="7a140-204">Azure PowerShell</span></span>|<span data-ttu-id="7a140-205">azurepowershell</span><span class="sxs-lookup"><span data-stu-id="7a140-205">azurepowershell</span></span>|
-|<span data-ttu-id="7a140-206">C++</span><span class="sxs-lookup"><span data-stu-id="7a140-206">C++</span></span>|<span data-ttu-id="7a140-207">cpp</span><span class="sxs-lookup"><span data-stu-id="7a140-207">cpp</span></span>|
-|<span data-ttu-id="7a140-208">C++/CX</span><span class="sxs-lookup"><span data-stu-id="7a140-208">C++/CX</span></span>|<span data-ttu-id="7a140-209">cppcx</span><span class="sxs-lookup"><span data-stu-id="7a140-209">cppcx</span></span>|
-|<span data-ttu-id="7a140-210">C++/WinRT</span><span class="sxs-lookup"><span data-stu-id="7a140-210">C++/WinRT</span></span>|<span data-ttu-id="7a140-211">cppwinrt</span><span class="sxs-lookup"><span data-stu-id="7a140-211">cppwinrt</span></span>|
-|<span data-ttu-id="7a140-212">C#</span><span class="sxs-lookup"><span data-stu-id="7a140-212">C#</span></span>|<span data-ttu-id="7a140-213">csharp</span><span class="sxs-lookup"><span data-stu-id="7a140-213">csharp</span></span>|
-|<span data-ttu-id="7a140-214">CSHTML</span><span class="sxs-lookup"><span data-stu-id="7a140-214">CSHTML</span></span>|<span data-ttu-id="7a140-215">cshtml</span><span class="sxs-lookup"><span data-stu-id="7a140-215">cshtml</span></span>|
-|<span data-ttu-id="7a140-216">DAX</span><span class="sxs-lookup"><span data-stu-id="7a140-216">DAX</span></span>|<span data-ttu-id="7a140-217">dax</span><span class="sxs-lookup"><span data-stu-id="7a140-217">dax</span></span>|
-|<span data-ttu-id="7a140-218">F#</span><span class="sxs-lookup"><span data-stu-id="7a140-218">F#</span></span>|<span data-ttu-id="7a140-219">fsharp</span><span class="sxs-lookup"><span data-stu-id="7a140-219">fsharp</span></span>|
-|<span data-ttu-id="7a140-220">Go</span><span class="sxs-lookup"><span data-stu-id="7a140-220">Go</span></span>|<span data-ttu-id="7a140-221">go</span><span class="sxs-lookup"><span data-stu-id="7a140-221">go</span></span>|
-|<span data-ttu-id="7a140-222">HTML</span><span class="sxs-lookup"><span data-stu-id="7a140-222">HTML</span></span>|<span data-ttu-id="7a140-223">html</span><span class="sxs-lookup"><span data-stu-id="7a140-223">html</span></span>|
-|<span data-ttu-id="7a140-224">HTTP</span><span class="sxs-lookup"><span data-stu-id="7a140-224">HTTP</span></span>|<span data-ttu-id="7a140-225">http</span><span class="sxs-lookup"><span data-stu-id="7a140-225">http</span></span>|
-|<span data-ttu-id="7a140-226">Java</span><span class="sxs-lookup"><span data-stu-id="7a140-226">Java</span></span>|<span data-ttu-id="7a140-227">java</span><span class="sxs-lookup"><span data-stu-id="7a140-227">java</span></span>|
-|<span data-ttu-id="7a140-228">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7a140-228">JavaScript</span></span>|<span data-ttu-id="7a140-229">javascript</span><span class="sxs-lookup"><span data-stu-id="7a140-229">javascript</span></span>|
-|<span data-ttu-id="7a140-230">JSON</span><span class="sxs-lookup"><span data-stu-id="7a140-230">JSON</span></span>|<span data-ttu-id="7a140-231">json</span><span class="sxs-lookup"><span data-stu-id="7a140-231">json</span></span>|
-|<span data-ttu-id="7a140-232">Markdown</span><span class="sxs-lookup"><span data-stu-id="7a140-232">Markdown</span></span>|<span data-ttu-id="7a140-233">md</span><span class="sxs-lookup"><span data-stu-id="7a140-233">md</span></span>|
-|<span data-ttu-id="7a140-234">NodeJS</span><span class="sxs-lookup"><span data-stu-id="7a140-234">NodeJS</span></span>|<span data-ttu-id="7a140-235">nodejs</span><span class="sxs-lookup"><span data-stu-id="7a140-235">nodejs</span></span>|
-|<span data-ttu-id="7a140-236">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7a140-236">Objective-C</span></span>|<span data-ttu-id="7a140-237">objc</span><span class="sxs-lookup"><span data-stu-id="7a140-237">objc</span></span>|
-|<span data-ttu-id="7a140-238">OData</span><span class="sxs-lookup"><span data-stu-id="7a140-238">OData</span></span>|<span data-ttu-id="7a140-239">odata</span><span class="sxs-lookup"><span data-stu-id="7a140-239">odata</span></span>|
-|<span data-ttu-id="7a140-240">PHP</span><span class="sxs-lookup"><span data-stu-id="7a140-240">PHP</span></span>|<span data-ttu-id="7a140-241">php</span><span class="sxs-lookup"><span data-stu-id="7a140-241">php</span></span>|
-|<span data-ttu-id="7a140-242">Power Apps Formula</span><span class="sxs-lookup"><span data-stu-id="7a140-242">Power Apps Formula</span></span>|<span data-ttu-id="7a140-243">powerappsfl</span><span class="sxs-lookup"><span data-stu-id="7a140-243">powerappsfl</span></span>|
-|<span data-ttu-id="7a140-244">PowerShell</span><span class="sxs-lookup"><span data-stu-id="7a140-244">PowerShell</span></span>|<span data-ttu-id="7a140-245">powershell</span><span class="sxs-lookup"><span data-stu-id="7a140-245">powershell</span></span>|
-|<span data-ttu-id="7a140-246">Python</span><span class="sxs-lookup"><span data-stu-id="7a140-246">Python</span></span>|<span data-ttu-id="7a140-247">python</span><span class="sxs-lookup"><span data-stu-id="7a140-247">python</span></span>|
-|<span data-ttu-id="7a140-248">Q#</span><span class="sxs-lookup"><span data-stu-id="7a140-248">Q#</span></span>|<span data-ttu-id="7a140-249">qsharp</span><span class="sxs-lookup"><span data-stu-id="7a140-249">qsharp</span></span>|
-|<span data-ttu-id="7a140-250">Ruby</span><span class="sxs-lookup"><span data-stu-id="7a140-250">Ruby</span></span>|<span data-ttu-id="7a140-251">ruby</span><span class="sxs-lookup"><span data-stu-id="7a140-251">ruby</span></span>|
-|<span data-ttu-id="7a140-252">SQL</span><span class="sxs-lookup"><span data-stu-id="7a140-252">SQL</span></span>|<span data-ttu-id="7a140-253">sql</span><span class="sxs-lookup"><span data-stu-id="7a140-253">sql</span></span>|
-|<span data-ttu-id="7a140-254">Swift</span><span class="sxs-lookup"><span data-stu-id="7a140-254">Swift</span></span>|<span data-ttu-id="7a140-255">swift</span><span class="sxs-lookup"><span data-stu-id="7a140-255">swift</span></span>|
-|<span data-ttu-id="7a140-256">TypeScript</span><span class="sxs-lookup"><span data-stu-id="7a140-256">TypeScript</span></span>|<span data-ttu-id="7a140-257">typescript</span><span class="sxs-lookup"><span data-stu-id="7a140-257">typescript</span></span>|
-|<span data-ttu-id="7a140-258">VB</span><span class="sxs-lookup"><span data-stu-id="7a140-258">VB</span></span>|<span data-ttu-id="7a140-259">vb</span><span class="sxs-lookup"><span data-stu-id="7a140-259">vb</span></span>|
-|<span data-ttu-id="7a140-260">VSTS CLI</span><span class="sxs-lookup"><span data-stu-id="7a140-260">VSTS CLI</span></span>|<span data-ttu-id="7a140-261">vstscli</span><span class="sxs-lookup"><span data-stu-id="7a140-261">vstscli</span></span>|
-|<span data-ttu-id="7a140-262">XAML</span><span class="sxs-lookup"><span data-stu-id="7a140-262">XAML</span></span>|<span data-ttu-id="7a140-263">xaml</span><span class="sxs-lookup"><span data-stu-id="7a140-263">xaml</span></span>|
-|<span data-ttu-id="7a140-264">XML</span><span class="sxs-lookup"><span data-stu-id="7a140-264">XML</span></span>|<span data-ttu-id="7a140-265">xml</span><span class="sxs-lookup"><span data-stu-id="7a140-265">xml</span></span>|
+|<span data-ttu-id="5e09e-194">Console do .NET</span><span class="sxs-lookup"><span data-stu-id="5e09e-194">.NET Console</span></span>|<span data-ttu-id="5e09e-195">dotnetcli</span><span class="sxs-lookup"><span data-stu-id="5e09e-195">dotnetcli</span></span>|
+|<span data-ttu-id="5e09e-196">ASP.NET (C#)</span><span class="sxs-lookup"><span data-stu-id="5e09e-196">ASP.NET (C#)</span></span>|<span data-ttu-id="5e09e-197">aspx-csharp</span><span class="sxs-lookup"><span data-stu-id="5e09e-197">aspx-csharp</span></span>|
+|<span data-ttu-id="5e09e-198">ASP.NET (VB)</span><span class="sxs-lookup"><span data-stu-id="5e09e-198">ASP.NET (VB)</span></span>|<span data-ttu-id="5e09e-199">aspx-vb</span><span class="sxs-lookup"><span data-stu-id="5e09e-199">aspx-vb</span></span>|
+|<span data-ttu-id="5e09e-200">AzCopy</span><span class="sxs-lookup"><span data-stu-id="5e09e-200">AzCopy</span></span>|<span data-ttu-id="5e09e-201">azcopy</span><span class="sxs-lookup"><span data-stu-id="5e09e-201">azcopy</span></span>|
+|<span data-ttu-id="5e09e-202">CLI do Azure</span><span class="sxs-lookup"><span data-stu-id="5e09e-202">Azure CLI</span></span>|<span data-ttu-id="5e09e-203">azurecli</span><span class="sxs-lookup"><span data-stu-id="5e09e-203">azurecli</span></span>|
+|<span data-ttu-id="5e09e-204">Azure PowerShell</span><span class="sxs-lookup"><span data-stu-id="5e09e-204">Azure PowerShell</span></span>|<span data-ttu-id="5e09e-205">azurepowershell</span><span class="sxs-lookup"><span data-stu-id="5e09e-205">azurepowershell</span></span>|
+|<span data-ttu-id="5e09e-206">C++</span><span class="sxs-lookup"><span data-stu-id="5e09e-206">C++</span></span>|<span data-ttu-id="5e09e-207">cpp</span><span class="sxs-lookup"><span data-stu-id="5e09e-207">cpp</span></span>|
+|<span data-ttu-id="5e09e-208">C++/CX</span><span class="sxs-lookup"><span data-stu-id="5e09e-208">C++/CX</span></span>|<span data-ttu-id="5e09e-209">cppcx</span><span class="sxs-lookup"><span data-stu-id="5e09e-209">cppcx</span></span>|
+|<span data-ttu-id="5e09e-210">C++/WinRT</span><span class="sxs-lookup"><span data-stu-id="5e09e-210">C++/WinRT</span></span>|<span data-ttu-id="5e09e-211">cppwinrt</span><span class="sxs-lookup"><span data-stu-id="5e09e-211">cppwinrt</span></span>|
+|<span data-ttu-id="5e09e-212">C#</span><span class="sxs-lookup"><span data-stu-id="5e09e-212">C#</span></span>|<span data-ttu-id="5e09e-213">csharp</span><span class="sxs-lookup"><span data-stu-id="5e09e-213">csharp</span></span>|
+|<span data-ttu-id="5e09e-214">CSHTML</span><span class="sxs-lookup"><span data-stu-id="5e09e-214">CSHTML</span></span>|<span data-ttu-id="5e09e-215">cshtml</span><span class="sxs-lookup"><span data-stu-id="5e09e-215">cshtml</span></span>|
+|<span data-ttu-id="5e09e-216">DAX</span><span class="sxs-lookup"><span data-stu-id="5e09e-216">DAX</span></span>|<span data-ttu-id="5e09e-217">dax</span><span class="sxs-lookup"><span data-stu-id="5e09e-217">dax</span></span>|
+|<span data-ttu-id="5e09e-218">F#</span><span class="sxs-lookup"><span data-stu-id="5e09e-218">F#</span></span>|<span data-ttu-id="5e09e-219">fsharp</span><span class="sxs-lookup"><span data-stu-id="5e09e-219">fsharp</span></span>|
+|<span data-ttu-id="5e09e-220">Go</span><span class="sxs-lookup"><span data-stu-id="5e09e-220">Go</span></span>|<span data-ttu-id="5e09e-221">go</span><span class="sxs-lookup"><span data-stu-id="5e09e-221">go</span></span>|
+|<span data-ttu-id="5e09e-222">HTML</span><span class="sxs-lookup"><span data-stu-id="5e09e-222">HTML</span></span>|<span data-ttu-id="5e09e-223">html</span><span class="sxs-lookup"><span data-stu-id="5e09e-223">html</span></span>|
+|<span data-ttu-id="5e09e-224">HTTP</span><span class="sxs-lookup"><span data-stu-id="5e09e-224">HTTP</span></span>|<span data-ttu-id="5e09e-225">http</span><span class="sxs-lookup"><span data-stu-id="5e09e-225">http</span></span>|
+|<span data-ttu-id="5e09e-226">Java</span><span class="sxs-lookup"><span data-stu-id="5e09e-226">Java</span></span>|<span data-ttu-id="5e09e-227">java</span><span class="sxs-lookup"><span data-stu-id="5e09e-227">java</span></span>|
+|<span data-ttu-id="5e09e-228">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5e09e-228">JavaScript</span></span>|<span data-ttu-id="5e09e-229">javascript</span><span class="sxs-lookup"><span data-stu-id="5e09e-229">javascript</span></span>|
+|<span data-ttu-id="5e09e-230">JSON</span><span class="sxs-lookup"><span data-stu-id="5e09e-230">JSON</span></span>|<span data-ttu-id="5e09e-231">json</span><span class="sxs-lookup"><span data-stu-id="5e09e-231">json</span></span>|
+|<span data-ttu-id="5e09e-232">Markdown</span><span class="sxs-lookup"><span data-stu-id="5e09e-232">Markdown</span></span>|<span data-ttu-id="5e09e-233">md</span><span class="sxs-lookup"><span data-stu-id="5e09e-233">md</span></span>|
+|<span data-ttu-id="5e09e-234">NodeJS</span><span class="sxs-lookup"><span data-stu-id="5e09e-234">NodeJS</span></span>|<span data-ttu-id="5e09e-235">nodejs</span><span class="sxs-lookup"><span data-stu-id="5e09e-235">nodejs</span></span>|
+|<span data-ttu-id="5e09e-236">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5e09e-236">Objective-C</span></span>|<span data-ttu-id="5e09e-237">objc</span><span class="sxs-lookup"><span data-stu-id="5e09e-237">objc</span></span>|
+|<span data-ttu-id="5e09e-238">OData</span><span class="sxs-lookup"><span data-stu-id="5e09e-238">OData</span></span>|<span data-ttu-id="5e09e-239">odata</span><span class="sxs-lookup"><span data-stu-id="5e09e-239">odata</span></span>|
+|<span data-ttu-id="5e09e-240">PHP</span><span class="sxs-lookup"><span data-stu-id="5e09e-240">PHP</span></span>|<span data-ttu-id="5e09e-241">php</span><span class="sxs-lookup"><span data-stu-id="5e09e-241">php</span></span>|
+|<span data-ttu-id="5e09e-242">Power Apps Formula</span><span class="sxs-lookup"><span data-stu-id="5e09e-242">Power Apps Formula</span></span>|<span data-ttu-id="5e09e-243">powerappsfl</span><span class="sxs-lookup"><span data-stu-id="5e09e-243">powerappsfl</span></span>|
+|<span data-ttu-id="5e09e-244">PowerShell</span><span class="sxs-lookup"><span data-stu-id="5e09e-244">PowerShell</span></span>|<span data-ttu-id="5e09e-245">powershell</span><span class="sxs-lookup"><span data-stu-id="5e09e-245">powershell</span></span>|
+|<span data-ttu-id="5e09e-246">Python</span><span class="sxs-lookup"><span data-stu-id="5e09e-246">Python</span></span>|<span data-ttu-id="5e09e-247">python</span><span class="sxs-lookup"><span data-stu-id="5e09e-247">python</span></span>|
+|<span data-ttu-id="5e09e-248">Q#</span><span class="sxs-lookup"><span data-stu-id="5e09e-248">Q#</span></span>|<span data-ttu-id="5e09e-249">qsharp</span><span class="sxs-lookup"><span data-stu-id="5e09e-249">qsharp</span></span>|
+|<span data-ttu-id="5e09e-250">R</span><span class="sxs-lookup"><span data-stu-id="5e09e-250">R</span></span>|<span data-ttu-id="5e09e-251">r</span><span class="sxs-lookup"><span data-stu-id="5e09e-251">r</span></span>|
+|<span data-ttu-id="5e09e-252">Ruby</span><span class="sxs-lookup"><span data-stu-id="5e09e-252">Ruby</span></span>|<span data-ttu-id="5e09e-253">ruby</span><span class="sxs-lookup"><span data-stu-id="5e09e-253">ruby</span></span>|
+|<span data-ttu-id="5e09e-254">SQL</span><span class="sxs-lookup"><span data-stu-id="5e09e-254">SQL</span></span>|<span data-ttu-id="5e09e-255">sql</span><span class="sxs-lookup"><span data-stu-id="5e09e-255">sql</span></span>|
+|<span data-ttu-id="5e09e-256">Swift</span><span class="sxs-lookup"><span data-stu-id="5e09e-256">Swift</span></span>|<span data-ttu-id="5e09e-257">swift</span><span class="sxs-lookup"><span data-stu-id="5e09e-257">swift</span></span>|
+|<span data-ttu-id="5e09e-258">TypeScript</span><span class="sxs-lookup"><span data-stu-id="5e09e-258">TypeScript</span></span>|<span data-ttu-id="5e09e-259">typescript</span><span class="sxs-lookup"><span data-stu-id="5e09e-259">typescript</span></span>|
+|<span data-ttu-id="5e09e-260">VB</span><span class="sxs-lookup"><span data-stu-id="5e09e-260">VB</span></span>|<span data-ttu-id="5e09e-261">vb</span><span class="sxs-lookup"><span data-stu-id="5e09e-261">vb</span></span>|
+|<span data-ttu-id="5e09e-262">VSTS CLI</span><span class="sxs-lookup"><span data-stu-id="5e09e-262">VSTS CLI</span></span>|<span data-ttu-id="5e09e-263">vstscli</span><span class="sxs-lookup"><span data-stu-id="5e09e-263">vstscli</span></span>|
+|<span data-ttu-id="5e09e-264">XAML</span><span class="sxs-lookup"><span data-stu-id="5e09e-264">XAML</span></span>|<span data-ttu-id="5e09e-265">xaml</span><span class="sxs-lookup"><span data-stu-id="5e09e-265">xaml</span></span>|
+|<span data-ttu-id="5e09e-266">XML</span><span class="sxs-lookup"><span data-stu-id="5e09e-266">XML</span></span>|<span data-ttu-id="5e09e-267">xml</span><span class="sxs-lookup"><span data-stu-id="5e09e-267">xml</span></span>|
 
-#### <a name="example-c"></a><span data-ttu-id="7a140-266">Exemplo: C\#</span><span class="sxs-lookup"><span data-stu-id="7a140-266">Example: C\#</span></span>
+#### <a name="example-c"></a><span data-ttu-id="5e09e-268">Exemplo: C\#</span><span class="sxs-lookup"><span data-stu-id="5e09e-268">Example: C\#</span></span>
 
-<span data-ttu-id="7a140-267">__Markdown__</span><span class="sxs-lookup"><span data-stu-id="7a140-267">__Markdown__</span></span>
+<span data-ttu-id="5e09e-269">__Markdown__</span><span class="sxs-lookup"><span data-stu-id="5e09e-269">__Markdown__</span></span>
 
     ```csharp
     // Hello1.cs
@@ -236,7 +237,7 @@ ms.locfileid: "36238956"
     }
     ```
 
-<span data-ttu-id="7a140-268">__Renderização__</span><span class="sxs-lookup"><span data-stu-id="7a140-268">__Render__</span></span>
+<span data-ttu-id="5e09e-270">__Renderização__</span><span class="sxs-lookup"><span data-stu-id="5e09e-270">__Render__</span></span>
 
 ```csharp
 // Hello1.cs
@@ -249,9 +250,9 @@ public class Hello1
 }
 ```
 
-#### <a name="example-sql"></a><span data-ttu-id="7a140-269">Exemplo: SQL</span><span class="sxs-lookup"><span data-stu-id="7a140-269">Example: SQL</span></span>
+#### <a name="example-sql"></a><span data-ttu-id="5e09e-271">Exemplo: SQL</span><span class="sxs-lookup"><span data-stu-id="5e09e-271">Example: SQL</span></span>
 
-<span data-ttu-id="7a140-270">__Markdown__</span><span class="sxs-lookup"><span data-stu-id="7a140-270">__Markdown__</span></span>
+<span data-ttu-id="5e09e-272">__Markdown__</span><span class="sxs-lookup"><span data-stu-id="5e09e-272">__Markdown__</span></span>
 
     ```sql
     CREATE TABLE T1 (
@@ -260,7 +261,7 @@ public class Hello1
     );
     ```
 
-<span data-ttu-id="7a140-271">__Renderização__</span><span class="sxs-lookup"><span data-stu-id="7a140-271">__Render__</span></span>
+<span data-ttu-id="5e09e-273">__Renderização__</span><span class="sxs-lookup"><span data-stu-id="5e09e-273">__Render__</span></span>
 
 ```sql
 CREATE TABLE T1 (
@@ -269,103 +270,105 @@ CREATE TABLE T1 (
 );
 ```
 
-## <a name="ops-custom-markdown-extensions"></a><span data-ttu-id="7a140-272">Extensões de Markdown personalizada do OPS</span><span class="sxs-lookup"><span data-stu-id="7a140-272">OPS custom Markdown extensions</span></span>
+## <a name="ops-custom-markdown-extensions"></a><span data-ttu-id="5e09e-274">Extensões de Markdown personalizada do OPS</span><span class="sxs-lookup"><span data-stu-id="5e09e-274">OPS custom Markdown extensions</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="7a140-273">O OPS (Open Publishing Services) implementa um Analisador de Markdown Markdig, que é altamente compatível com o GFM (GitHub Flavored Markdown).</span><span class="sxs-lookup"><span data-stu-id="7a140-273">Open Publishing Services (OPS) implements a Markdig Parser for Markdown, which is highly compatible with GitHub Flavored Markdown (GFM).</span></span> <span data-ttu-id="7a140-274">O Markdig adiciona algumas funcionalidades por meio de extensões de Markdown.</span><span class="sxs-lookup"><span data-stu-id="7a140-274">Markdig adds some functionality through Markdown extensions.</span></span> <span data-ttu-id="7a140-275">Portanto, alguns artigos selecionados no Guia de Criação do OPS completo foram incluídos neste guia para referência.</span><span class="sxs-lookup"><span data-stu-id="7a140-275">As such, selected articles from the full OPS Authoring Guide are included in this guide for reference.</span></span> <span data-ttu-id="7a140-276">(Por exemplo, veja "extensões de Markdown e Markdig" e "Trechos de código" no sumário.)</span><span class="sxs-lookup"><span data-stu-id="7a140-276">(For example, see "Markdig and Markdown extensions" and "Code snippets" in the table of contents.)</span></span>
+> <span data-ttu-id="5e09e-275">O OPS (Open Publishing Services) implementa um Analisador de Markdown Markdig, que é altamente compatível com o GFM (GitHub Flavored Markdown).</span><span class="sxs-lookup"><span data-stu-id="5e09e-275">Open Publishing Services (OPS) implements a Markdig Parser for Markdown, which is highly compatible with GitHub Flavored Markdown (GFM).</span></span> <span data-ttu-id="5e09e-276">O Markdig adiciona algumas funcionalidades por meio de extensões de Markdown.</span><span class="sxs-lookup"><span data-stu-id="5e09e-276">Markdig adds some functionality through Markdown extensions.</span></span> <span data-ttu-id="5e09e-277">Portanto, alguns artigos selecionados no Guia de Criação do OPS completo foram incluídos neste guia para referência.</span><span class="sxs-lookup"><span data-stu-id="5e09e-277">As such, selected articles from the full OPS Authoring Guide are included in this guide for reference.</span></span> <span data-ttu-id="5e09e-278">(Por exemplo, veja "extensões de Markdown e Markdig" e "Snippets de código" no sumário.)</span><span class="sxs-lookup"><span data-stu-id="5e09e-278">(For example, see "Markdig and Markdown extensions" and "Code snippets" in the table of contents.)</span></span>
 
-<span data-ttu-id="7a140-277">Os artigos do Docs usam o GFM para a maior parte da formatação do artigo, como parágrafos, links, listas e cabeçalhos.</span><span class="sxs-lookup"><span data-stu-id="7a140-277">Docs articles use GFM for most article formatting, such as paragraphs, links, lists, and headings.</span></span> <span data-ttu-id="7a140-278">Para uma formatação mais avançada, os artigos podem usar recursos do Markdig, como:</span><span class="sxs-lookup"><span data-stu-id="7a140-278">For richer formatting, articles can use Markdig features such as:</span></span>
+<span data-ttu-id="5e09e-279">Os artigos do Docs usam o GFM para a maior parte da formatação do artigo, como parágrafos, links, listas e cabeçalhos.</span><span class="sxs-lookup"><span data-stu-id="5e09e-279">Docs articles use GFM for most article formatting, such as paragraphs, links, lists, and headings.</span></span> <span data-ttu-id="5e09e-280">Para uma formatação mais avançada, os artigos podem usar recursos do Markdig, como:</span><span class="sxs-lookup"><span data-stu-id="5e09e-280">For richer formatting, articles can use Markdig features such as:</span></span>
 
-- <span data-ttu-id="7a140-279">Blocos de nota</span><span class="sxs-lookup"><span data-stu-id="7a140-279">Note blocks</span></span>
-- <span data-ttu-id="7a140-280">Inclusões</span><span class="sxs-lookup"><span data-stu-id="7a140-280">Includes</span></span>
-- <span data-ttu-id="7a140-281">Seletores</span><span class="sxs-lookup"><span data-stu-id="7a140-281">Selectors</span></span>
-- <span data-ttu-id="7a140-282">Vídeos incorporados</span><span class="sxs-lookup"><span data-stu-id="7a140-282">Embedded videos</span></span>
-- <span data-ttu-id="7a140-283">Trechos/amostras de código</span><span class="sxs-lookup"><span data-stu-id="7a140-283">Code snippets/samples</span></span>
+- <span data-ttu-id="5e09e-281">Blocos de nota</span><span class="sxs-lookup"><span data-stu-id="5e09e-281">Note blocks</span></span>
+- <span data-ttu-id="5e09e-282">Inclusões</span><span class="sxs-lookup"><span data-stu-id="5e09e-282">Includes</span></span>
+- <span data-ttu-id="5e09e-283">Seletores</span><span class="sxs-lookup"><span data-stu-id="5e09e-283">Selectors</span></span>
+- <span data-ttu-id="5e09e-284">Vídeos incorporados</span><span class="sxs-lookup"><span data-stu-id="5e09e-284">Embedded videos</span></span>
+- <span data-ttu-id="5e09e-285">Snippets/amostras de código</span><span class="sxs-lookup"><span data-stu-id="5e09e-285">Code snippets/samples</span></span>
 
-<span data-ttu-id="7a140-284">Para obter a lista completa, veja "extensões de Markdown e Markdig" e "Trechos de código" no sumário.</span><span class="sxs-lookup"><span data-stu-id="7a140-284">For the complete list, refer to "Markdig and Markdown extensions" and "Code snippets" in the table of contents.</span></span>
+<span data-ttu-id="5e09e-286">Para obter a lista completa, veja "extensões de Markdown e Markdig" e "Snippets de código" no sumário.</span><span class="sxs-lookup"><span data-stu-id="5e09e-286">For the complete list, refer to "Markdig and Markdown extensions" and "Code snippets" in the table of contents.</span></span>
 
-### <a name="note-blocks"></a><span data-ttu-id="7a140-285">Blocos de nota</span><span class="sxs-lookup"><span data-stu-id="7a140-285">Note blocks</span></span>
+### <a name="note-blocks"></a><span data-ttu-id="5e09e-287">Blocos de nota</span><span class="sxs-lookup"><span data-stu-id="5e09e-287">Note blocks</span></span>
 
-<span data-ttu-id="7a140-286">Você pode escolher entre quatro tipos de blocos de notas para chamar atenção para um conteúdo específico:</span><span class="sxs-lookup"><span data-stu-id="7a140-286">You can choose from four types of note blocks to draw attention to specific content:</span></span>
+<span data-ttu-id="5e09e-288">Você pode escolher entre quatro tipos de blocos de notas para chamar atenção para um conteúdo específico:</span><span class="sxs-lookup"><span data-stu-id="5e09e-288">You can choose from four types of note blocks to draw attention to specific content:</span></span>
 
-- <span data-ttu-id="7a140-287">OBSERVAÇÃO</span><span class="sxs-lookup"><span data-stu-id="7a140-287">NOTE</span></span>
-- <span data-ttu-id="7a140-288">AVISO</span><span class="sxs-lookup"><span data-stu-id="7a140-288">WARNING</span></span>
-- <span data-ttu-id="7a140-289">DICA</span><span class="sxs-lookup"><span data-stu-id="7a140-289">TIP</span></span>
-- <span data-ttu-id="7a140-290">IMPORTANTE</span><span class="sxs-lookup"><span data-stu-id="7a140-290">IMPORTANT</span></span>
+- <span data-ttu-id="5e09e-289">OBSERVAÇÃO</span><span class="sxs-lookup"><span data-stu-id="5e09e-289">NOTE</span></span>
+- <span data-ttu-id="5e09e-290">AVISO</span><span class="sxs-lookup"><span data-stu-id="5e09e-290">WARNING</span></span>
+- <span data-ttu-id="5e09e-291">DICA</span><span class="sxs-lookup"><span data-stu-id="5e09e-291">TIP</span></span>
+- <span data-ttu-id="5e09e-292">IMPORTANTE</span><span class="sxs-lookup"><span data-stu-id="5e09e-292">IMPORTANT</span></span>
 
-<span data-ttu-id="7a140-291">Em geral, os blocos de notas devem ser usados com moderação porque eles podem atrapalhar.</span><span class="sxs-lookup"><span data-stu-id="7a140-291">In general, note blocks should be used sparingly because they can be disruptive.</span></span> <span data-ttu-id="7a140-292">Embora eles também deem suporte para blocos de código, imagens, listas e links, tente manter seus blocos de nota simples e diretos.</span><span class="sxs-lookup"><span data-stu-id="7a140-292">Although they also support code blocks, images, lists, and links, try to keep your note blocks simple and straightforward.</span></span>
+<span data-ttu-id="5e09e-293">Em geral, os blocos de notas devem ser usados com moderação porque eles podem atrapalhar.</span><span class="sxs-lookup"><span data-stu-id="5e09e-293">In general, note blocks should be used sparingly because they can be disruptive.</span></span> <span data-ttu-id="5e09e-294">Embora eles também deem suporte para blocos de código, imagens, listas e links, tente manter seus blocos de nota simples e diretos.</span><span class="sxs-lookup"><span data-stu-id="5e09e-294">Although they also support code blocks, images, lists, and links, try to keep your note blocks simple and straightforward.</span></span>
 
-### <a name="includes"></a><span data-ttu-id="7a140-293">Inclusões</span><span class="sxs-lookup"><span data-stu-id="7a140-293">Includes</span></span>
+### <a name="includes"></a><span data-ttu-id="5e09e-295">Inclusões</span><span class="sxs-lookup"><span data-stu-id="5e09e-295">Includes</span></span>
 
-<span data-ttu-id="7a140-294">Quando você tiver um texto ou arquivos de imagem reutilizáveis que precisem ser incluídos nos arquivos do artigo, use uma referência ao arquivo de "inclusão" por meio do recurso de inclusão de arquivo do Markdig.</span><span class="sxs-lookup"><span data-stu-id="7a140-294">When you have reusable text or image files that need to be included in article files, you can use a reference to the "include" file via the Markdig file include feature.</span></span> <span data-ttu-id="7a140-295">Esse recurso instrui o OPS a incluir o arquivo no arquivo do artigo no tempo de build, para que ele faça parte do artigo publicado.</span><span class="sxs-lookup"><span data-stu-id="7a140-295">This feature instructs OPS to include the file in your article file at build time, making it part of your published article.</span></span> <span data-ttu-id="7a140-296">Três tipos de inclusões estão disponíveis para ajudá-lo a reutilizar o conteúdo:</span><span class="sxs-lookup"><span data-stu-id="7a140-296">Three types of includes are available to help you reuse content:</span></span>
+<span data-ttu-id="5e09e-296">Quando você tiver um texto ou arquivos de imagem reutilizáveis que precisem ser incluídos nos arquivos do artigo, use uma referência ao arquivo de "inclusão" por meio do recurso de inclusão de arquivo do Markdig.</span><span class="sxs-lookup"><span data-stu-id="5e09e-296">When you have reusable text or image files that need to be included in article files, you can use a reference to the "include" file via the Markdig file include feature.</span></span> <span data-ttu-id="5e09e-297">Esse recurso instrui o OPS a incluir o arquivo no arquivo do artigo no tempo de build, para que ele faça parte do artigo publicado.</span><span class="sxs-lookup"><span data-stu-id="5e09e-297">This feature instructs OPS to include the file in your article file at build time, making it part of your published article.</span></span> <span data-ttu-id="5e09e-298">Três tipos de inclusões estão disponíveis para ajudá-lo a reutilizar o conteúdo:</span><span class="sxs-lookup"><span data-stu-id="5e09e-298">Three types of includes are available to help you reuse content:</span></span>
 
-- <span data-ttu-id="7a140-297">Embutido: reutilize um trecho de texto comum embutido dentro de outra frase.</span><span class="sxs-lookup"><span data-stu-id="7a140-297">Inline: Reuse a common text snippet inline with within another sentence.</span></span>
-- <span data-ttu-id="7a140-298">Bloco: reutilize um arquivo Markdown inteiro como um bloco aninhado dentro de uma seção de um artigo.</span><span class="sxs-lookup"><span data-stu-id="7a140-298">Block: Reuse an entire Markdown file as a block, nested within a section of an article.</span></span>
-- <span data-ttu-id="7a140-299">Imagem: é como a inclusão de imagem padrão é implementada no Docs.</span><span class="sxs-lookup"><span data-stu-id="7a140-299">Image: This is how standard image inclusion is implemented in Docs.</span></span>
+- <span data-ttu-id="5e09e-299">Embutido: reutilize um snippet de texto comum embutido dentro de outra frase.</span><span class="sxs-lookup"><span data-stu-id="5e09e-299">Inline: Reuse a common text snippet inline with within another sentence.</span></span>
+- <span data-ttu-id="5e09e-300">Bloco: reutilize um arquivo Markdown inteiro como um bloco aninhado dentro de uma seção de um artigo.</span><span class="sxs-lookup"><span data-stu-id="5e09e-300">Block: Reuse an entire Markdown file as a block, nested within a section of an article.</span></span>
+- <span data-ttu-id="5e09e-301">Imagem: é como a inclusão de imagem padrão é implementada no Docs.</span><span class="sxs-lookup"><span data-stu-id="5e09e-301">Image: This is how standard image inclusion is implemented in Docs.</span></span>
 
-<span data-ttu-id="7a140-300">A inclusão de um embutido ou de um bloco é apenas um arquivo Markdown (.md) simples.</span><span class="sxs-lookup"><span data-stu-id="7a140-300">An inline or block include is just a simple Markdown (.md) file.</span></span> <span data-ttu-id="7a140-301">Ele pode conter qualquer Markdown válido.</span><span class="sxs-lookup"><span data-stu-id="7a140-301">It can contain any valid Markdown.</span></span> <span data-ttu-id="7a140-302">Todos os arquivos Markdown de inclusão devem ser colocados em um [subdiretório `/includes` comum](git-github-fundamentals.md#includes-subdirectory), na raiz do repositório.</span><span class="sxs-lookup"><span data-stu-id="7a140-302">All include Markdown files should be placed in a [common `/includes` subdirectory](git-github-fundamentals.md#includes-subdirectory), in the root of the repository.</span></span> <span data-ttu-id="7a140-303">Quando o artigo é publicado, o arquivo incluído fica perfeitamente integrado.</span><span class="sxs-lookup"><span data-stu-id="7a140-303">When the article is published, the included file is seamlessly integrated into it.</span></span>
+<span data-ttu-id="5e09e-302">A inclusão de um embutido ou de um bloco é apenas um arquivo Markdown (.md) simples.</span><span class="sxs-lookup"><span data-stu-id="5e09e-302">An inline or block include is just a simple Markdown (.md) file.</span></span> <span data-ttu-id="5e09e-303">Ele pode conter qualquer Markdown válido.</span><span class="sxs-lookup"><span data-stu-id="5e09e-303">It can contain any valid Markdown.</span></span> <span data-ttu-id="5e09e-304">Todos os arquivos Markdown de inclusão devem ser colocados em um [subdiretório `/includes` comum](git-github-fundamentals.md#includes-subdirectory), na raiz do repositório.</span><span class="sxs-lookup"><span data-stu-id="5e09e-304">All include Markdown files should be placed in a [common `/includes` subdirectory](git-github-fundamentals.md#includes-subdirectory), in the root of the repository.</span></span> <span data-ttu-id="5e09e-305">Quando o artigo é publicado, o arquivo incluído fica perfeitamente integrado.</span><span class="sxs-lookup"><span data-stu-id="5e09e-305">When the article is published, the included file is seamlessly integrated into it.</span></span>
 
-<span data-ttu-id="7a140-304">Aqui estão os requisitos e as considerações para inclusões:</span><span class="sxs-lookup"><span data-stu-id="7a140-304">Here are requirements and considerations for includes:</span></span>
+<span data-ttu-id="5e09e-306">Aqui estão os requisitos e as considerações para inclusões:</span><span class="sxs-lookup"><span data-stu-id="5e09e-306">Here are requirements and considerations for includes:</span></span>
 
-- <span data-ttu-id="7a140-305">Use inclusões sempre que precisar que o mesmo texto apareça em vários artigos.</span><span class="sxs-lookup"><span data-stu-id="7a140-305">Use includes whenever you need the same text to appear in multiple articles.</span></span>
-- <span data-ttu-id="7a140-306">Use inclusões em bloco para quantidades consideráveis de conteúdo, como um ou dois parágrafos, um procedimento compartilhado ou uma seção compartilhada.</span><span class="sxs-lookup"><span data-stu-id="7a140-306">Use block includes for significant amounts of content--a paragraph or two, a shared procedure, or a shared section.</span></span> <span data-ttu-id="7a140-307">Não use-os para nada menor do que uma sentença.</span><span class="sxs-lookup"><span data-stu-id="7a140-307">Do not use them for anything smaller than a sentence.</span></span>
-- <span data-ttu-id="7a140-308">As inclusões não serão renderizadas no modo de exibição renderizado do GitHub do seu artigo, pois elas dependem de extensões do Markdig.</span><span class="sxs-lookup"><span data-stu-id="7a140-308">Includes won't be rendered in the GitHub rendered view of your article, because they rely on Markdig extensions.</span></span> <span data-ttu-id="7a140-309">Elas serão renderizadas somente após a publicação.</span><span class="sxs-lookup"><span data-stu-id="7a140-309">They'll be rendered only after publication.</span></span>
-- <span data-ttu-id="7a140-310">Verifique se todo o texto em uma inclusão está escrito em sentenças ou frases completas que não dependem do texto anterior ou seguinte no artigo que faz referência à inclusão.</span><span class="sxs-lookup"><span data-stu-id="7a140-310">Ensure that all the text in an include is written in complete sentences or phrases that do not depend on preceding text or following text in the article that references the include.</span></span> <span data-ttu-id="7a140-311">Se você ignorar essa orientação, criará uma cadeia de caracteres não traduzível no artigo que quebrará a experiência localizada.</span><span class="sxs-lookup"><span data-stu-id="7a140-311">Ignoring this guidance creates an untranslatable string in the article that breaks the localized experience.</span></span>
-- <span data-ttu-id="7a140-312">Não incorpore inclusões dentro de outras inclusões.</span><span class="sxs-lookup"><span data-stu-id="7a140-312">Don't embed includes within other includes.</span></span> <span data-ttu-id="7a140-313">Não há suporte para isso.</span><span class="sxs-lookup"><span data-stu-id="7a140-313">They are not supported.</span></span>
-- <span data-ttu-id="7a140-314">Coloque os arquivos de mídia em uma pasta de mídia específica para o subdiretório de inclusão, por exemplo, a pasta `<repo>`/includes/media.</span><span class="sxs-lookup"><span data-stu-id="7a140-314">Place media files in a media folder that's specific to the include subdirectory--for instance, the `<repo>`/includes/media folder.</span></span> <span data-ttu-id="7a140-315">O diretório de mídia não deve conter imagens em sua raiz.</span><span class="sxs-lookup"><span data-stu-id="7a140-315">The media directory should not contain any images in its root.</span></span> <span data-ttu-id="7a140-316">Se a inclusão não tiver imagens, não será necessário ter um diretório de mídia correspondente.</span><span class="sxs-lookup"><span data-stu-id="7a140-316">If the include does not have images, a corresponding media directory is not required.</span></span>
-- <span data-ttu-id="7a140-317">Assim como ocorre com os artigos regulares, não compartilhe a mídia entre arquivos de inclusão.</span><span class="sxs-lookup"><span data-stu-id="7a140-317">As with regular articles, don't share media between include files.</span></span> <span data-ttu-id="7a140-318">Use um arquivo separado com um nome exclusivo para cada inclusão e artigo.</span><span class="sxs-lookup"><span data-stu-id="7a140-318">Use a separate file with a unique name for each include and article.</span></span> <span data-ttu-id="7a140-319">Armazene o arquivo de mídia na pasta de mídia associada à inclusão.</span><span class="sxs-lookup"><span data-stu-id="7a140-319">Store the media file in the media folder that's associated with the include.</span></span>
-- <span data-ttu-id="7a140-320">Não use uma inclusão como único conteúdo de um artigo.</span><span class="sxs-lookup"><span data-stu-id="7a140-320">Don't use an include as the only content of an article.</span></span>  <span data-ttu-id="7a140-321">As inclusões servem como complemento ao conteúdo do restante do artigo.</span><span class="sxs-lookup"><span data-stu-id="7a140-321">Includes are meant to be supplemental to the content in the rest of the article.</span></span>
+- <span data-ttu-id="5e09e-307">Use inclusões sempre que precisar que o mesmo texto apareça em vários artigos.</span><span class="sxs-lookup"><span data-stu-id="5e09e-307">Use includes whenever you need the same text to appear in multiple articles.</span></span>
+- <span data-ttu-id="5e09e-308">Use inclusões em bloco para quantidades consideráveis de conteúdo, como um ou dois parágrafos, um procedimento compartilhado ou uma seção compartilhada.</span><span class="sxs-lookup"><span data-stu-id="5e09e-308">Use block includes for significant amounts of content--a paragraph or two, a shared procedure, or a shared section.</span></span> <span data-ttu-id="5e09e-309">Não use-os para nada menor do que uma sentença.</span><span class="sxs-lookup"><span data-stu-id="5e09e-309">Do not use them for anything smaller than a sentence.</span></span>
+- <span data-ttu-id="5e09e-310">As inclusões não serão renderizadas no modo de exibição renderizado do GitHub do seu artigo, pois elas dependem de extensões do Markdig.</span><span class="sxs-lookup"><span data-stu-id="5e09e-310">Includes won't be rendered in the GitHub rendered view of your article, because they rely on Markdig extensions.</span></span> <span data-ttu-id="5e09e-311">Elas serão renderizadas somente após a publicação.</span><span class="sxs-lookup"><span data-stu-id="5e09e-311">They'll be rendered only after publication.</span></span>
+- <span data-ttu-id="5e09e-312">Verifique se todo o texto em uma inclusão está escrito em sentenças ou frases completas que não dependem do texto anterior ou seguinte no artigo que faz referência à inclusão.</span><span class="sxs-lookup"><span data-stu-id="5e09e-312">Ensure that all the text in an include is written in complete sentences or phrases that do not depend on preceding text or following text in the article that references the include.</span></span> <span data-ttu-id="5e09e-313">Se você ignorar essa orientação, criará uma cadeia de caracteres não traduzível no artigo que quebrará a experiência localizada.</span><span class="sxs-lookup"><span data-stu-id="5e09e-313">Ignoring this guidance creates an untranslatable string in the article that breaks the localized experience.</span></span>
+- <span data-ttu-id="5e09e-314">Não incorpore inclusões dentro de outras inclusões.</span><span class="sxs-lookup"><span data-stu-id="5e09e-314">Don't embed includes within other includes.</span></span> <span data-ttu-id="5e09e-315">Não há suporte para isso.</span><span class="sxs-lookup"><span data-stu-id="5e09e-315">They are not supported.</span></span>
+- <span data-ttu-id="5e09e-316">Coloque os arquivos de mídia em uma pasta de mídia específica para o subdiretório de inclusão, por exemplo, a pasta `<repo>`/includes/media.</span><span class="sxs-lookup"><span data-stu-id="5e09e-316">Place media files in a media folder that's specific to the include subdirectory--for instance, the `<repo>`/includes/media folder.</span></span> <span data-ttu-id="5e09e-317">O diretório de mídia não deve conter imagens em sua raiz.</span><span class="sxs-lookup"><span data-stu-id="5e09e-317">The media directory should not contain any images in its root.</span></span> <span data-ttu-id="5e09e-318">Se a inclusão não tiver imagens, não será necessário ter um diretório de mídia correspondente.</span><span class="sxs-lookup"><span data-stu-id="5e09e-318">If the include does not have images, a corresponding media directory is not required.</span></span>
+- <span data-ttu-id="5e09e-319">Assim como ocorre com os artigos regulares, não compartilhe a mídia entre arquivos de inclusão.</span><span class="sxs-lookup"><span data-stu-id="5e09e-319">As with regular articles, don't share media between include files.</span></span> <span data-ttu-id="5e09e-320">Use um arquivo separado com um nome exclusivo para cada inclusão e artigo.</span><span class="sxs-lookup"><span data-stu-id="5e09e-320">Use a separate file with a unique name for each include and article.</span></span> <span data-ttu-id="5e09e-321">Armazene o arquivo de mídia na pasta de mídia associada à inclusão.</span><span class="sxs-lookup"><span data-stu-id="5e09e-321">Store the media file in the media folder that's associated with the include.</span></span>
+- <span data-ttu-id="5e09e-322">Não use uma inclusão como único conteúdo de um artigo.</span><span class="sxs-lookup"><span data-stu-id="5e09e-322">Don't use an include as the only content of an article.</span></span>  <span data-ttu-id="5e09e-323">As inclusões servem como complemento ao conteúdo do restante do artigo.</span><span class="sxs-lookup"><span data-stu-id="5e09e-323">Includes are meant to be supplemental to the content in the rest of the article.</span></span>
 
-### <a name="selectors"></a><span data-ttu-id="7a140-322">Seletores</span><span class="sxs-lookup"><span data-stu-id="7a140-322">Selectors</span></span>
+### <a name="selectors"></a><span data-ttu-id="5e09e-324">Seletores</span><span class="sxs-lookup"><span data-stu-id="5e09e-324">Selectors</span></span>
 
-<span data-ttu-id="7a140-323">Use seletores em artigos técnicos ao criar vários tipos do mesmo artigo, a fim de solucionar diferenças de implementação entre tecnologias e plataformas.</span><span class="sxs-lookup"><span data-stu-id="7a140-323">Use selectors in technical articles when you author multiple flavors of the same article, to address differences in implementation across technologies or platforms.</span></span> <span data-ttu-id="7a140-324">Normalmente, isso é mais aplicável ao nosso conteúdo de plataforma móvel para desenvolvedores.</span><span class="sxs-lookup"><span data-stu-id="7a140-324">This is typically most applicable to our mobile platform content for developers.</span></span> <span data-ttu-id="7a140-325">No momento, há dois tipos diferentes de seletores no Markdig, um seletor único e um seletor múltiplo.</span><span class="sxs-lookup"><span data-stu-id="7a140-325">There are currently two different types of selectors in Markdig, a single selector and a multi-selector.</span></span>
+<span data-ttu-id="5e09e-325">Use seletores em artigos técnicos ao criar vários tipos do mesmo artigo, a fim de solucionar diferenças de implementação entre tecnologias e plataformas.</span><span class="sxs-lookup"><span data-stu-id="5e09e-325">Use selectors in technical articles when you author multiple flavors of the same article, to address differences in implementation across technologies or platforms.</span></span> <span data-ttu-id="5e09e-326">Normalmente, isso é mais aplicável ao nosso conteúdo de plataforma móvel para desenvolvedores.</span><span class="sxs-lookup"><span data-stu-id="5e09e-326">This is typically most applicable to our mobile platform content for developers.</span></span> <span data-ttu-id="5e09e-327">No momento, há dois tipos diferentes de seletores no Markdig, um seletor único e um seletor múltiplo.</span><span class="sxs-lookup"><span data-stu-id="5e09e-327">There are currently two different types of selectors in Markdig, a single selector and a multi-selector.</span></span>
 
-<span data-ttu-id="7a140-326">Como o mesmo Markdown seletor vai para cada artigo na seleção, recomendamos posicionar o seletor do artigo em uma inclusão.</span><span class="sxs-lookup"><span data-stu-id="7a140-326">Because the same selector Markdown goes in each article in the selection, we recommend placing the selector for your article in an include.</span></span> <span data-ttu-id="7a140-327">Em seguida, você poderá referenciar essa inclusão em todos os artigos que usarem o mesmo seletor.</span><span class="sxs-lookup"><span data-stu-id="7a140-327">Then you can reference that include in all your articles that use the same selector.</span></span>
+<span data-ttu-id="5e09e-328">Como o mesmo Markdown seletor vai para cada artigo na seleção, recomendamos posicionar o seletor do artigo em uma inclusão.</span><span class="sxs-lookup"><span data-stu-id="5e09e-328">Because the same selector Markdown goes in each article in the selection, we recommend placing the selector for your article in an include.</span></span> <span data-ttu-id="5e09e-329">Em seguida, você poderá referenciar essa inclusão em todos os artigos que usarem o mesmo seletor.</span><span class="sxs-lookup"><span data-stu-id="5e09e-329">Then you can reference that include in all your articles that use the same selector.</span></span>
 
-### <a name="code-snippets"></a><span data-ttu-id="7a140-328">Trechos de código</span><span class="sxs-lookup"><span data-stu-id="7a140-328">Code snippets</span></span>
+### <a name="code-snippets"></a><span data-ttu-id="5e09e-330">Snippets de código</span><span class="sxs-lookup"><span data-stu-id="5e09e-330">Code snippets</span></span>
 
-<span data-ttu-id="7a140-329">O Markdig também é compatível com a inclusão avançada de código em um artigo por meio de sua extensão de trecho de código.</span><span class="sxs-lookup"><span data-stu-id="7a140-329">Markdig supports advanced inclusion of code in an article, via its code snippet extension.</span></span> <span data-ttu-id="7a140-330">Ela fornece renderização avançada que aproveita os recursos do GFM, como seleção de linguagem de programação e coloração de sintaxe, além de recursos incríveis como:</span><span class="sxs-lookup"><span data-stu-id="7a140-330">It provides advanced rendering that builds on GFM features such as programming language selection and syntax coloring, plus nice features such as:</span></span>
+<span data-ttu-id="5e09e-331">O Markdig também é compatível com a inclusão avançada de código em um artigo por meio de sua extensão de snippet de código.</span><span class="sxs-lookup"><span data-stu-id="5e09e-331">Markdig supports advanced inclusion of code in an article, via its code snippet extension.</span></span> <span data-ttu-id="5e09e-332">Ela fornece renderização avançada que aproveita os recursos do GFM, como seleção de linguagem de programação e coloração de sintaxe, além de recursos incríveis como:</span><span class="sxs-lookup"><span data-stu-id="5e09e-332">It provides advanced rendering that builds on GFM features such as programming language selection and syntax coloring, plus nice features such as:</span></span>
 
-- <span data-ttu-id="7a140-331">Inclusão de amostras/trechos de código centralizados de um repositório externo.</span><span class="sxs-lookup"><span data-stu-id="7a140-331">Inclusion of centralized code samples/snippets from an external repository.</span></span>
-- <span data-ttu-id="7a140-332">Interface do usuário com guias para mostrar várias versões de amostras de código em linguagens diferentes.</span><span class="sxs-lookup"><span data-stu-id="7a140-332">Tabbed UI to show multiple versions of code samples in different languages.</span></span>
+- <span data-ttu-id="5e09e-333">Inclusão de amostras/trechos de código centralizados de um repositório externo.</span><span class="sxs-lookup"><span data-stu-id="5e09e-333">Inclusion of centralized code samples/snippets from an external repository.</span></span>
+- <span data-ttu-id="5e09e-334">Interface do usuário com guias para mostrar várias versões de amostras de código em linguagens diferentes.</span><span class="sxs-lookup"><span data-stu-id="5e09e-334">Tabbed UI to show multiple versions of code samples in different languages.</span></span>
 
-## <a name="gotchas-and-troubleshooting"></a><span data-ttu-id="7a140-333">Armadilhas e solução de problemas</span><span class="sxs-lookup"><span data-stu-id="7a140-333">Gotchas and troubleshooting</span></span>
+## <a name="gotchas-and-troubleshooting"></a><span data-ttu-id="5e09e-335">Armadilhas e solução de problemas</span><span class="sxs-lookup"><span data-stu-id="5e09e-335">Gotchas and troubleshooting</span></span>
 
-### <a name="alt-text"></a><span data-ttu-id="7a140-334">Texto Alt</span><span class="sxs-lookup"><span data-stu-id="7a140-334">Alt text</span></span>
+### <a name="alt-text"></a><span data-ttu-id="5e09e-336">Texto Alt</span><span class="sxs-lookup"><span data-stu-id="5e09e-336">Alt text</span></span>
 
-<span data-ttu-id="7a140-335">Textos Alt que contenham caracteres sublinhado não serão renderizados adequadamente.</span><span class="sxs-lookup"><span data-stu-id="7a140-335">Alt text that contains underscores won't be rendered properly.</span></span> <span data-ttu-id="7a140-336">Por exemplo, em vez de usar isto:</span><span class="sxs-lookup"><span data-stu-id="7a140-336">For example, instead of using this:</span></span>
-
-```markdown
-![ADextension_2FA_Configure_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
-```
-
-<span data-ttu-id="7a140-337">Insira um escape para os sublinhados desta forma:</span><span class="sxs-lookup"><span data-stu-id="7a140-337">Escape the underscores like this:</span></span>
+<span data-ttu-id="5e09e-337">Textos Alt que contenham caracteres sublinhado não serão renderizados adequadamente.</span><span class="sxs-lookup"><span data-stu-id="5e09e-337">Alt text that contains underscores won't be rendered properly.</span></span> <span data-ttu-id="5e09e-338">Por exemplo, em vez de usar isto:</span><span class="sxs-lookup"><span data-stu-id="5e09e-338">For example, instead of using this:</span></span>
 
 ```markdown
-![ADextension\_2FA\_Configure\_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
-### <a name="apostrophes-and-quotation-marks"></a><span data-ttu-id="7a140-338">Apóstrofes e aspas</span><span class="sxs-lookup"><span data-stu-id="7a140-338">Apostrophes and quotation marks</span></span>
+<span data-ttu-id="5e09e-339">Insira um escape para os sublinhados desta forma:</span><span class="sxs-lookup"><span data-stu-id="5e09e-339">Escape the underscores like this:</span></span>
 
-<span data-ttu-id="7a140-339">Se você copiar do Word para um editor de Markdown, o texto poderá conter apóstrofes ou aspas "inteligentes" (inglesas).</span><span class="sxs-lookup"><span data-stu-id="7a140-339">If you copy from Word into a Markdown editor, the text might contain "smart" (curly) apostrophes or quotation marks.</span></span> <span data-ttu-id="7a140-340">Eles precisam ser codificados ou alterados para apóstrofos ou aspas simples.</span><span class="sxs-lookup"><span data-stu-id="7a140-340">These need to be encoded or changed to basic apostrophes or quotation marks.</span></span> <span data-ttu-id="7a140-341">Caso contrário, quando o arquivo for publicado poderão ocorrer erros como: Itâ€™s</span><span class="sxs-lookup"><span data-stu-id="7a140-341">Otherwise, you end up with things like this when the file is published: Itâ€™s</span></span>
+```markdown
+![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+```
 
-<span data-ttu-id="7a140-342">Estas são as codificações para as versões "inteligentes" dessas marcas de pontuação:</span><span class="sxs-lookup"><span data-stu-id="7a140-342">Here are the encodings for the "smart" versions of these punctuation marks:</span></span>
+### <a name="apostrophes-and-quotation-marks"></a><span data-ttu-id="5e09e-340">Apóstrofes e aspas</span><span class="sxs-lookup"><span data-stu-id="5e09e-340">Apostrophes and quotation marks</span></span>
 
-- <span data-ttu-id="7a140-343">Aspas à esquerda (de abertura): `&#8220;`</span><span class="sxs-lookup"><span data-stu-id="7a140-343">Left (opening) quotation mark: `&#8220;`</span></span>
-- <span data-ttu-id="7a140-344">Aspas à direita (de fechamento): `&#8221;`</span><span class="sxs-lookup"><span data-stu-id="7a140-344">Right (closing) quotation mark: `&#8221;`</span></span>
-- <span data-ttu-id="7a140-345">Aspas simples à direita (de fechamento) ou apóstrofe: `&#8217;`</span><span class="sxs-lookup"><span data-stu-id="7a140-345">Right (closing) single quotation mark or apostrophe: `&#8217;`</span></span>
-- <span data-ttu-id="7a140-346">Aspas simples à esquerda (de abertura) (raramente usadas): `&#8216;`</span><span class="sxs-lookup"><span data-stu-id="7a140-346">Left (opening) single quotation mark (rarely used): `&#8216;`</span></span>
+<span data-ttu-id="5e09e-341">Se você copiar do Word para um editor de Markdown, o texto poderá conter apóstrofes ou aspas "inteligentes" (inglesas).</span><span class="sxs-lookup"><span data-stu-id="5e09e-341">If you copy from Word into a Markdown editor, the text might contain "smart" (curly) apostrophes or quotation marks.</span></span> <span data-ttu-id="5e09e-342">Eles precisam ser codificados ou alterados para apóstrofos ou aspas simples.</span><span class="sxs-lookup"><span data-stu-id="5e09e-342">These need to be encoded or changed to basic apostrophes or quotation marks.</span></span>
+<span data-ttu-id="5e09e-343">Caso contrário, quando o arquivo for publicado poderão ocorrer erros como: Itâ€™s</span><span class="sxs-lookup"><span data-stu-id="5e09e-343">Otherwise, you end up with things like this when the file is published: Itâ€™s</span></span>
 
-### <a name="angle-brackets"></a><span data-ttu-id="7a140-347">Colchetes angulares</span><span class="sxs-lookup"><span data-stu-id="7a140-347">Angle brackets</span></span>
+<span data-ttu-id="5e09e-344">Estas são as codificações para as versões "inteligentes" dessas marcas de pontuação:</span><span class="sxs-lookup"><span data-stu-id="5e09e-344">Here are the encodings for the "smart" versions of these punctuation marks:</span></span>
 
-<span data-ttu-id="7a140-348">Se você usar colchetes angulares no texto (não no código) no arquivo, por exemplo, para indicar um espaço reservado, será necessário codificar manualmente os colchetes angulares.</span><span class="sxs-lookup"><span data-stu-id="7a140-348">If you use angle brackets in text (not code) in your file--for example, to denote a placeholder--you need to manually encode the angle brackets.</span></span> <span data-ttu-id="7a140-349">Caso contrário, o Markdown entenderá que eles são uma marca HTML.</span><span class="sxs-lookup"><span data-stu-id="7a140-349">Otherwise, Markdown thinks that they're intended to be an HTML tag.</span></span>
+- <span data-ttu-id="5e09e-345">Aspas à esquerda (de abertura): `&#8220;`</span><span class="sxs-lookup"><span data-stu-id="5e09e-345">Left (opening) quotation mark: `&#8220;`</span></span>
+- <span data-ttu-id="5e09e-346">Aspas à direita (de fechamento): `&#8221;`</span><span class="sxs-lookup"><span data-stu-id="5e09e-346">Right (closing) quotation mark: `&#8221;`</span></span>
+- <span data-ttu-id="5e09e-347">Aspas simples à direita (de fechamento) ou apóstrofe: `&#8217;`</span><span class="sxs-lookup"><span data-stu-id="5e09e-347">Right (closing) single quotation mark or apostrophe: `&#8217;`</span></span>
+- <span data-ttu-id="5e09e-348">Aspas simples à esquerda (de abertura) (raramente usadas): `&#8216;`</span><span class="sxs-lookup"><span data-stu-id="5e09e-348">Left (opening) single quotation mark (rarely used): `&#8216;`</span></span>
 
-<span data-ttu-id="7a140-350">Por exemplo, codifique `<script name>` como `&lt;script name&gt;`</span><span class="sxs-lookup"><span data-stu-id="7a140-350">For example, encode `<script name>` as `&lt;script name&gt;`</span></span>
+### <a name="angle-brackets"></a><span data-ttu-id="5e09e-349">Colchetes angulares</span><span class="sxs-lookup"><span data-stu-id="5e09e-349">Angle brackets</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="7a140-351">Consulte também</span><span class="sxs-lookup"><span data-stu-id="7a140-351">See also</span></span>
+<span data-ttu-id="5e09e-350">É comum usar colchetes angulares para denotar um espaço reservado.</span><span class="sxs-lookup"><span data-stu-id="5e09e-350">It is common to use angle brackets to denote a placeholder.</span></span> <span data-ttu-id="5e09e-351">Ao fazer isso em um texto (não no código), é necessário codificar os colchetes angulares.</span><span class="sxs-lookup"><span data-stu-id="5e09e-351">When you do this in text (not code), you must encode the angle brackets.</span></span> <span data-ttu-id="5e09e-352">Caso contrário, o Markdown entenderá que eles são uma marca HTML.</span><span class="sxs-lookup"><span data-stu-id="5e09e-352">Otherwise, Markdown thinks that they're intended to be an HTML tag.</span></span>
 
-### <a name="markdown-resources"></a><span data-ttu-id="7a140-352">Recursos do Markdown</span><span class="sxs-lookup"><span data-stu-id="7a140-352">Markdown resources</span></span>
+<span data-ttu-id="5e09e-353">Por exemplo, codifique `<script name>` como `&lt;script name&gt;`</span><span class="sxs-lookup"><span data-stu-id="5e09e-353">For example, encode `<script name>` as `&lt;script name&gt;`</span></span>
 
-- [<span data-ttu-id="7a140-353">Introdução a Markdown</span><span class="sxs-lookup"><span data-stu-id="7a140-353">Introduction to Markdown</span></span>](https://daringfireball.net/projects/markdown/syntax)
-- [<span data-ttu-id="7a140-354">Roteiro de Markdown do Docs</span><span class="sxs-lookup"><span data-stu-id="7a140-354">Docs Markdown cheat sheet</span></span>](./media/documents/markdown-cheatsheet.pdf?raw=true)
-- [<span data-ttu-id="7a140-355">Noções básicas de Markdown do GitHub</span><span class="sxs-lookup"><span data-stu-id="7a140-355">GitHub's Markdown Basics</span></span>](https://help.github.com/articles/markdown-basics/)
+## <a name="see-also"></a><span data-ttu-id="5e09e-354">Confira também:</span><span class="sxs-lookup"><span data-stu-id="5e09e-354">See also:</span></span>
+
+### <a name="markdown-resources"></a><span data-ttu-id="5e09e-355">Recursos do Markdown</span><span class="sxs-lookup"><span data-stu-id="5e09e-355">Markdown resources</span></span>
+
+- [<span data-ttu-id="5e09e-356">Introdução a Markdown</span><span class="sxs-lookup"><span data-stu-id="5e09e-356">Introduction to Markdown</span></span>](https://daringfireball.net/projects/markdown/syntax)
+- [<span data-ttu-id="5e09e-357">Roteiro de Markdown do Docs</span><span class="sxs-lookup"><span data-stu-id="5e09e-357">Docs Markdown cheat sheet</span></span>](./media/documents/markdown-cheatsheet.pdf?raw=true)
+- [<span data-ttu-id="5e09e-358">Noções básicas de Markdown do GitHub</span><span class="sxs-lookup"><span data-stu-id="5e09e-358">GitHub's Markdown Basics</span></span>](https://help.github.com/articles/markdown-basics/)
+- [<span data-ttu-id="5e09e-359">Guia de Markdown</span><span class="sxs-lookup"><span data-stu-id="5e09e-359">The Markdown Guide</span></span>](https://www.markdownguide.org/)
