@@ -1,20 +1,19 @@
 ---
-title: Pacote de criação de Docs para VS Code
-description: Este artigo descreve o pacote de extensões do VS Code para facilitar a criação de Markdown para o docs.microsoft.com.
+title: Pacote de Criação de Docs para Visual Studio Code
+description: Este artigo descreve o pacote de extensões do Visual Studio Code para facilitar a criação de Markdown para o docs.microsoft.com.
 author: meganbradley
 ms.author: mbradley
-manager: jemash
-ms.date: 04/06/2018
-ms.openlocfilehash: b9fedce0a73c5c4212ffd0893c745fab56677c8c
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.date: 10/22/2018
+ms.openlocfilehash: 00afafbbf16096ac6433c0ab276578d8d9084b51
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308906"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805644"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Pacote de criação de Docs para VS Code
 
-O Pacote de Criação de Docs é uma coleção de extensões do VS Code para auxiliar na criação de Markdown para o docs.microsoft.com. O pacote está [disponível no Marketplace do VS Code](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) e contém as seguintes extensões:
+O Pacote de Criação de Docs é uma coleção de extensões do Visual Studio Code para auxiliar na criação de Markdown para o docs.microsoft.com. O pacote está [disponível no Marketplace do VS Code](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) e contém as seguintes extensões:
 
 - [markdownlint:](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) um linter de Markdown popular criado por David Anson para ajudar a garantir que o Markdown siga as melhores práticas.
 - [Verificador Ortográfico de Código](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): um verificador ortográfico totalmente off-line pela Street Side Software.
@@ -24,9 +23,9 @@ O Pacote de Criação de Docs é uma coleção de extensões do VS Code para aux
 
 ## <a name="prerequisites-and-assumptions"></a>Pré-requisitos e suposições
 
-Para inserir links relativos com precisão, imagens e outros conteúdos internos com a extensão Markdown do Docs, é necessário que o escopo do espaço de trabalho do VS Code esteja definido como a raiz do seu repositório Open Publishing System (OPS) clonado.
+Para inserir links relativos com precisão, imagens e outros conteúdos internos com a extensão Markdown do Docs, é necessário que o escopo do workspace do VS Code esteja definido como a raiz do seu repositório Open Publishing System (OPS) clonado.
 
-Algumas das sintaxes compatíveis com a extensão, como alertas e trechos de código, são Markdown para OPS personalizado, e não serão renderizadas corretamente a menos que publicadas por meio do OPS.
+Algumas das sintaxes compatíveis com a extensão, como alertas e snippets, são Markdown para OPS personalizado, e não serão renderizadas corretamente a menos que publicadas por meio do OPS.
 
 ## <a name="how-to-use-the-docs-markdown-extension"></a>Como usar a extensão Markdown do Docs
 
@@ -47,7 +46,7 @@ Para acessar o menu do Markdown do Docs, digite `ALT+M`. É possível clicar ou 
 |Link para cabeçalho     |Insere um link para um marcador no arquivo atual ou outro arquivo no repositório.<br>`Bookmark in this file`: escolha dentre uma lista de cabeçalhos no arquivo atual para inserir um indicador devidamente formatado.<br>`Bookmark in another file`: primeiro, filtre por nome do arquivo e selecione o arquivo ao qual ele será vinculado. Em seguida, escolha o cabeçalho adequado dentro da imagem selecionada.|
 |Imagem        |Digite um texto alternativo (necessário para acessibilidade) e selecione-o. Em seguida, chame esse comando para filtrar a lista de arquivos de imagem compatíveis no repositório e selecione o que você desejar. Se você não tiver selecionado o texto alternativo ao chamar esse comando, você deverá selecioná-lo antes de selecionar um arquivo de imagem.|
 |Incluir      |Encontre um arquivo a ser inserido no arquivo atual.|
-|Trecho de código      |Encontre um trecho de código no repositório a ser inserido no arquivo atual.|
+|Snippet      |Encontre um snippet de código no repositório a ser inserido no arquivo atual.|
 |Vídeo        |Adicione um vídeo inserido.|
 |Modelo     |Crie um novo arquivo e aplique um modelo de Markdown. Confira [Modelos](#how-to-use-docs-templates) abaixo para saber mais.|
 
@@ -83,7 +82,7 @@ Consulte [Keybindings](https://code.visualstudio.com/docs/getstarted/keybindings
 Os usuários da versão de pré-lançamento da extensão observarão que a barra de ferramentas de criação não será mais exibida na parte inferior da janela do VS Code quando a extensão Markdown do Docs estiver instalada. Isso ocorre porque a barra de ferramentas ocupou muito espaço na barra de status do VS Code e não seguiu as práticas recomendadas para experiência do usuário de extensão, por isso ela foi preterida na nova extensão. No entanto, é possível exibir a barra de ferramentas opcionalmente atualizando seu arquivo settings.json do VS Code da seguinte forma:
 
 1. No VS Code, acesse Arquivo -> Preferências -> Configurações (`CTRL+Comma`).
-1. Selecione Configurações do usuário para alterar as configurações de todos os espaços de trabalho do VS Code ou as Configurações de Espaço de Trabalho para alterá-las apenas para o espaço de trabalho atual.
+1. Selecione Configurações do usuário para alterar as configurações de todos os workspaces do VS Code ou as Configurações de Workspace para alterá-las apenas para o workspace atual.
 1. No painel Configurações Padrão, encontre a Configuração de Extensão de Criação de Documentos e selecione o ícone de lápis ao lado da configuração desejada. Em seguida, será solicitado que você selecione `true` ou `false`. Depois de fazer sua seleção, o VS Code adicionará automaticamente o valor ao arquivo settings.json e você deverá recarregar a janela para que as alterações entrem em vigor.
 
 ## <a name="how-to-use-docs-templates"></a>Como usar modelos do Docs
@@ -103,12 +102,12 @@ A extensão Modelos oferece suporte a três campos de metadados dinâmicos: auth
 |----------|---------------|
 |author    |Sua ID do GitHub, se especificada no seu arquivo de configurações do VS Code.|
 |ms.author |Seu alias da Microsoft, se especificado no seu arquivo de configurações do VS Code. Se você não for funcionário da Microsoft, deixe isso não especificado.|
-|ms.date   |A data atual no formato compatível com Docs, MM/DD/AAAA. Observe que a data não será atualizada automaticamente se você atualizar o arquivo subsequentemente — você deve atualizá-lo manualmente para indicar a data de atualização do artigo.|
+|ms.date   |A data atual no formato compatível com Docs, MM/DD/AAAA. Observe que a data não será atualizada automaticamente se você atualizar o arquivo depois. É necessário atualizar manualmente o valor ms.date para indicar a data de publicação mais recente no site docs.microsoft.com.|
 
 ### <a name="to-set-author-github-id-andor-msauthor-microsoft-alias"></a>Para definir o author (ID do GitHub) e/ou ms.author (alias da Microsoft)
 
 1. No VS Code, acesse Arquivo -> Preferências -> Configurações (`CTRL+Comma`).
-1. Selecione Configurações do Usuário para alterar as configurações de todos os espaços de trabalho do VS Code ou as Configurações de Espaço de Trabalho para alterá-las apenas para o espaço de trabalho atual.
+1. Selecione Configurações do Usuário para alterar as configurações de todos os workspaces do VS Code ou as Configurações de Workspace para alterá-las apenas para o workspace atual.
 1. No painel Configurações Padrão à esquerda, encontre Configuração de Extensão de Modelos de Artigos do Docs, clique no ícone de lápis ao lado da configuração desejada e, em seguida, clique em Substituir nas configurações.
 1. O painel Configurações do Usuário será aberto lado a lado, com uma nova entrada na parte inferior.
 1. Adicione sua ID do GitHub ou alias de email da Microsoft, conforme apropriado, e salve o arquivo.

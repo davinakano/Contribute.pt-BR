@@ -2,18 +2,18 @@
 title: Como usar o Markdown para escrever Docs
 description: Este artigo descreve as noções básicas e informações de referência para a linguagem Markdown usada para escrever artigos do docs.microsoft.com.
 ms.date: 07/13/2017
-ms.openlocfilehash: dca1ccba2ae4ebd08b6039f5d780e7a7ac92e79f
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238956"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805713"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Como usar o Markdown para escrever Docs
 
-Os artigos do docs.microsoft.com são escritos em uma linguagem de marcação leve chamada [Markdown](https://daringfireball.net/projects/markdown/), que é fácil de ler e fácil de aprender. Por isso, tornou-se rapidamente um padrão do setor.
+Os artigos do [docs.microsoft.com](http://docs.microsoft.com) são escritos em uma linguagem de marcação leve chamada [Markdown](https://daringfireball.net/projects/markdown/), que é fácil de ler e aprender. Por isso, tornou-se rapidamente um padrão do setor.
 
-Como o conteúdo do Docs é armazenado no GitHub, ele pode usar um superconjunto de Markdown chamado [GFM (GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/), que fornece mais funcionalidades para necessidades de formatação comuns. Além disso, o OPS (Open Publishing Services) implementa o Analisador de Markdown Markdig. O Markdig é altamente compatível com o GFM (GitHub Flavored Markdown), agregando funcionalidades para habilitar recursos específicos do Docs.
+Como o conteúdo do Docs é armazenado no GitHub, ele pode usar um superconjunto de Markdown chamado [GFM (GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/), que fornece mais funcionalidades para necessidades de formatação comuns. Além disso, o OPS (Open Publishing Services) implementa o Analisador de Markdown Markdig. O Markdig é altamente compatível com o GFM, agregando funcionalidades para habilitar recursos específicos do Docs.
 
 * O Markdig é um processador de Markdown extensível, em conformidade com CommonMark potente e rápido para .NET.
 * https://github.com/lunet-io/markdig
@@ -27,10 +27,10 @@ Como o conteúdo do Docs é armazenado no GitHub, ele pode usar um superconjunto
 Para criar um título, use uma marca de hash (#), da seguinte forma:
 
 ```markdown
-    # This is heading 1
-    ## This is heading 2
-    ### This is heading 3
-    #### This is heading 4
+# This is heading 1
+## This is heading 2
+### This is heading 3
+#### This is heading 4
 ```
 
 ### <a name="bold-and-italic-text"></a>Texto em negrito e em itálico
@@ -38,19 +38,19 @@ Para criar um título, use uma marca de hash (#), da seguinte forma:
 Para formatar o texto como **negrito**, coloque dois asteriscos de cada lado do texto:
 
 ```markdown
-    This text is **bold**.
+This text is **bold**.
 ```
 
 Para formatar o texto como *itálico*, coloque um único asterisco de cada lado do texto:
 
 ```markdown
-    This text is *italic*.
+This text is *italic*.
 ```
 
 Para formatar o texto como ***negrito e itálico***, coloque três asteriscos de cada lado do texto:
 
 ```markdown
-    This is text is both ***bold and italic***.
+This is text is both ***bold and italic***.
 ```
 
 ### <a name="lists"></a>Listas
@@ -107,16 +107,16 @@ Para aninhar uma lista em outra lista, recue os itens de lista filha. Por exempl
 
 ```markdown
 1. First instruction
-    1. Sub-instruction
-    2. Sub-instruction
+   1. Sub-instruction
+   2. Sub-instruction
 2. Second instruction
 ```
 
 será renderizado como:
 
 1. Primeira instrução
-    1. Subinstrução
-    2. Subinstrução
+   1. Subinstrução
+   2. Subinstrução
 2. Segunda instrução
 
 ### <a name="tables"></a>Tabelas
@@ -145,12 +145,12 @@ será renderizado como:
 
 Para saber mais sobre como criar tabelas, consulte:
 
-- O [recurso de encapsulamento da tabela](#table-wrapping) do Markdig, que pode ajudar com a formatação de tabelas grandes
-- [Organizar informações com tabelas](https://help.github.com/articles/organizing-information-with-tables/) do GitHub
-- O aplicativo Web [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables)
-- [Markdown Cheatsheet de Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)
-- [Markdown Extra de Michel Fortin](https://michelf.ca/projects/php-markdown/extra/#table)
-- [Converta tabelas HTML para Markdown](https://jmalarcon.github.io/markdowntables/)
+- O [recurso de encapsulamento da tabela](#table-wrapping) do Markdig, que pode ajudar com a formatação de tabelas grandes.
+- [Organizar informações com tabelas](https://help.github.com/articles/organizing-information-with-tables/) do GitHub.
+- O aplicativo Web [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables).
+- [Folha de referências do Markdown de Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables).
+- [Markdown Extra de Michel Fortin](https://michelf.ca/projects/php-markdown/extra/#table).
+- [Converta tabelas HTML para Markdown](https://jmalarcon.github.io/markdowntables/).
 
 ### <a name="links"></a>Links
 
@@ -163,14 +163,14 @@ Para saber mais sobre vinculação, confira:
 - O [guia de sintaxe do Markdown](https://daringfireball.net/projects/markdown/syntax#link) para obter detalhes sobre o suporte à vinculação de base do Markdown.
 - A seção [Links](how-to-write-links.md) deste guia para obter detalhes sobre a sintaxe de vinculação adicional que o Markdig fornece.
 
-### <a name="code-snippets"></a>Trechos de código
+### <a name="code-snippets"></a>Snippets de código
 
-O Markdown é compatível com o posicionamento de trechos de código, seja embutido em uma sentença, seja como um bloco "isolado" e separado entre as sentenças. Para obter detalhes, consulte:
+O Markdown é compatível com o posicionamento de snippets de código, seja embutido em uma sentença, seja como um bloco "isolado" e separado entre as sentenças. Para obter detalhes, consulte:
 
 - [Suporte nativo do Markdown para blocos de código](https://daringfireball.net/projects/markdown/syntax#precode)
 - [Suporte do GFM para isolamento de código e destaque de sintaxe](https://help.github.com/articles/creating-and-highlighting-code-blocks/)
 
-Os blocos de código isolados representam uma maneira fácil de habilitar o destaque de sintaxe para seus trechos de código. O formato geral dos blocos de código isolados é:
+Os blocos de código isolados representam uma maneira fácil de habilitar o destaque de sintaxe para seus snippets de código. O formato geral dos blocos de código isolados é:
 
     ```alias
     ...
@@ -212,6 +212,7 @@ Essas linguagens têm o suporte de nome amigável e a maioria tem realce de ling
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
+|R|r|
 |Ruby|ruby|
 |SQL|sql|
 |Swift|swift|
@@ -272,7 +273,7 @@ CREATE TABLE T1 (
 ## <a name="ops-custom-markdown-extensions"></a>Extensões de Markdown personalizada do OPS
 
 > [!NOTE]
-> O OPS (Open Publishing Services) implementa um Analisador de Markdown Markdig, que é altamente compatível com o GFM (GitHub Flavored Markdown). O Markdig adiciona algumas funcionalidades por meio de extensões de Markdown. Portanto, alguns artigos selecionados no Guia de Criação do OPS completo foram incluídos neste guia para referência. (Por exemplo, veja "extensões de Markdown e Markdig" e "Trechos de código" no sumário.)
+> O OPS (Open Publishing Services) implementa um Analisador de Markdown Markdig, que é altamente compatível com o GFM (GitHub Flavored Markdown). O Markdig adiciona algumas funcionalidades por meio de extensões de Markdown. Portanto, alguns artigos selecionados no Guia de Criação do OPS completo foram incluídos neste guia para referência. (Por exemplo, veja "extensões de Markdown e Markdig" e "Snippets de código" no sumário.)
 
 Os artigos do Docs usam o GFM para a maior parte da formatação do artigo, como parágrafos, links, listas e cabeçalhos. Para uma formatação mais avançada, os artigos podem usar recursos do Markdig, como:
 
@@ -280,9 +281,9 @@ Os artigos do Docs usam o GFM para a maior parte da formatação do artigo, como
 - Inclusões
 - Seletores
 - Vídeos incorporados
-- Trechos/amostras de código
+- Snippets/amostras de código
 
-Para obter a lista completa, veja "extensões de Markdown e Markdig" e "Trechos de código" no sumário.
+Para obter a lista completa, veja "extensões de Markdown e Markdig" e "Snippets de código" no sumário.
 
 ### <a name="note-blocks"></a>Blocos de nota
 
@@ -299,7 +300,7 @@ Em geral, os blocos de notas devem ser usados com moderação porque eles podem 
 
 Quando você tiver um texto ou arquivos de imagem reutilizáveis que precisem ser incluídos nos arquivos do artigo, use uma referência ao arquivo de "inclusão" por meio do recurso de inclusão de arquivo do Markdig. Esse recurso instrui o OPS a incluir o arquivo no arquivo do artigo no tempo de build, para que ele faça parte do artigo publicado. Três tipos de inclusões estão disponíveis para ajudá-lo a reutilizar o conteúdo:
 
-- Embutido: reutilize um trecho de texto comum embutido dentro de outra frase.
+- Embutido: reutilize um snippet de texto comum embutido dentro de outra frase.
 - Bloco: reutilize um arquivo Markdown inteiro como um bloco aninhado dentro de uma seção de um artigo.
 - Imagem: é como a inclusão de imagem padrão é implementada no Docs.
 
@@ -322,9 +323,9 @@ Use seletores em artigos técnicos ao criar vários tipos do mesmo artigo, a fim
 
 Como o mesmo Markdown seletor vai para cada artigo na seleção, recomendamos posicionar o seletor do artigo em uma inclusão. Em seguida, você poderá referenciar essa inclusão em todos os artigos que usarem o mesmo seletor.
 
-### <a name="code-snippets"></a>Trechos de código
+### <a name="code-snippets"></a>Snippets de código
 
-O Markdig também é compatível com a inclusão avançada de código em um artigo por meio de sua extensão de trecho de código. Ela fornece renderização avançada que aproveita os recursos do GFM, como seleção de linguagem de programação e coloração de sintaxe, além de recursos incríveis como:
+O Markdig também é compatível com a inclusão avançada de código em um artigo por meio de sua extensão de snippet de código. Ela fornece renderização avançada que aproveita os recursos do GFM, como seleção de linguagem de programação e coloração de sintaxe, além de recursos incríveis como:
 
 - Inclusão de amostras/trechos de código centralizados de um repositório externo.
 - Interface do usuário com guias para mostrar várias versões de amostras de código em linguagens diferentes.
@@ -336,18 +337,19 @@ O Markdig também é compatível com a inclusão avançada de código em um arti
 Textos Alt que contenham caracteres sublinhado não serão renderizados adequadamente. Por exemplo, em vez de usar isto:
 
 ```markdown
-![ADextension_2FA_Configure_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 Insira um escape para os sublinhados desta forma:
 
 ```markdown
-![ADextension\_2FA\_Configure\_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 ### <a name="apostrophes-and-quotation-marks"></a>Apóstrofes e aspas
 
-Se você copiar do Word para um editor de Markdown, o texto poderá conter apóstrofes ou aspas "inteligentes" (inglesas). Eles precisam ser codificados ou alterados para apóstrofos ou aspas simples. Caso contrário, quando o arquivo for publicado poderão ocorrer erros como: Itâ€™s
+Se você copiar do Word para um editor de Markdown, o texto poderá conter apóstrofes ou aspas "inteligentes" (inglesas). Eles precisam ser codificados ou alterados para apóstrofos ou aspas simples.
+Caso contrário, quando o arquivo for publicado poderão ocorrer erros como: Itâ€™s
 
 Estas são as codificações para as versões "inteligentes" dessas marcas de pontuação:
 
@@ -358,14 +360,15 @@ Estas são as codificações para as versões "inteligentes" dessas marcas de po
 
 ### <a name="angle-brackets"></a>Colchetes angulares
 
-Se você usar colchetes angulares no texto (não no código) no arquivo, por exemplo, para indicar um espaço reservado, será necessário codificar manualmente os colchetes angulares. Caso contrário, o Markdown entenderá que eles são uma marca HTML.
+É comum usar colchetes angulares para denotar um espaço reservado. Ao fazer isso em um texto (não no código), é necessário codificar os colchetes angulares. Caso contrário, o Markdown entenderá que eles são uma marca HTML.
 
 Por exemplo, codifique `<script name>` como `&lt;script name&gt;`
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também:
 
 ### <a name="markdown-resources"></a>Recursos do Markdown
 
 - [Introdução a Markdown](https://daringfireball.net/projects/markdown/syntax)
 - [Roteiro de Markdown do Docs](./media/documents/markdown-cheatsheet.pdf?raw=true)
 - [Noções básicas de Markdown do GitHub](https://help.github.com/articles/markdown-basics/)
+- [Guia de Markdown](https://www.markdownguide.org/)

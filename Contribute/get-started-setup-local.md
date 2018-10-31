@@ -3,14 +3,13 @@ title: Configurar o repositório Git localmente
 description: Este artigo oferece orientação para criar seu repositório Git local e para contribuir com a documentação, incluindo o processo de fork e de clonagem.
 author: jasonwhowell
 ms.author: jasonh
-manager: kfile
 ms.date: 01/18/2018
-ms.openlocfilehash: 2ad0de552d481e2460ca0f56570181e33d0a6608
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238979"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805667"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Configurar o repositório do git localmente para documentação
 
@@ -60,7 +59,7 @@ A documentação hospedada em [docs.microsoft.com](https://docs.microsoft.com) r
 ## <a name="fork-the-repository"></a>Criar um fork do repositório
 Usando o repositório adequado, crie um fork do repositório em sua própria conta do GitHub usando o site do GitHub.
 
-É necessário um fork pessoal, já que todos os principais repositórios de documentação oferecem acesso somente leitura, o que significa que você não pode fazer alterações diretamente no conteúdo dos repositórios. Para fazer alterações, é necessário enviar uma [solicitação de pull](git-github-fundamentals.md#pull-requests) do seu fork para o repositório principal. Para facilitar esse processo, primeiro você precisa da sua própria cópia do repositório, na qual você terá acesso de gravação. Um *fork* do GitHub atende a esse objetivo.
+Um fork pessoal é necessário, visto que todos os repositórios de documentação principais oferecem acesso somente leitura. Para fazer alterações, é necessário enviar uma [solicitação de pull](git-github-fundamentals.md#pull-requests) do seu fork para o repositório principal. Para facilitar esse processo, primeiro você precisa da sua própria cópia do repositório, na qual você terá acesso de gravação. Um *fork* do GitHub atende a esse objetivo.
 
 1. Acesse a página do GitHub do repositório principal e clique no botão **Fork** no lado superior direito.
 
