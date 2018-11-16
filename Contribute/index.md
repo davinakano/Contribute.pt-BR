@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 921c63c2748149543bfc73e4b38278a2ed74ac56
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: dab2de80654fb55382b2ca7c9f78df36df9971dc
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805782"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609351"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Visão geral do guia do colaborador do Microsoft Docs
 
@@ -37,10 +37,12 @@ As edições rápidas simplificam o processo de relatar e corrigir pequenos erro
 
 Em seguida, clique no ícone de lápis mostrado na figura a seguir para editar o artigo.
 
-> [!NOTE]
-> Se o ícone de lápis está esmaecido, você precisa fazer logon na sua conta do GitHub ou criar uma conta. Faça suas alterações no editor da Web. Você pode clicar na guia **Visualizar alterações** para verificar a formatação da sua alteração.
-
 ![Localização do ícone de lápis](./media/index/editicon.png)
+
+> [!NOTE]
+> Se o ícone de lápis está esmaecido, você precisa fazer logon na sua conta do GitHub ou criar uma conta.
+
+Faça suas alterações no editor da Web. Você pode clicar na guia **Visualizar alterações** para verificar a formatação da sua alteração.
 
 Após ter feito suas alterações, role até a parte inferior da página. Insira um título e uma descrição para sua solicitação de pull e clique em **Propor alteração de arquivo** conforme mostrado na figura a seguir:
 
