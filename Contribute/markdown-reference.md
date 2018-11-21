@@ -8,16 +8,16 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: e248eafb0247b200313ba198f2545eca947f5627
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805869"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609535"
 ---
 # <a name="markdown-reference-for-ops"></a>Referência de Markdown para OPS
 
-Markdown é uma linguagem de marcação leve com sintaxe de formatação de texto sem formatação. O OPS dá suporte ao padrão CommonMark para Markdown, além de algumas extensões personalizadas de Markdown projetadas para oferecer conteúdo mais avançado no docs.microsoft.com. Este artigo oferece uma referência alfabética para usar Markdown em OPS para docs.microsoft.com.
+Markdown é uma linguagem de marcação leve com sintaxe de formatação de texto sem formatação. O OPS (Open Publishing Services) dá suporte ao padrão CommonMark para Markdown, além de algumas extensões personalizadas de Markdown projetadas para oferecer conteúdo mais avançado no docs.microsoft.com. Este artigo oferece uma referência alfabética para usar Markdown em OPS para docs.microsoft.com.
 
 É possível usar qualquer editor de texto para criar em Markdown. Para editores que facilitam a inserção da sintaxe padrão Markdown e das extensões personalizadas do OPS, recomendamos o [VS Code](https://code.visualstudio.com/) com o [Pacote de Criação de Docs](https://aka.ms/DocsAuthoringPack) instalado.
 
@@ -25,7 +25,7 @@ O OPS padronizou o Markdig para todos os novos repositórios. Os repositórios a
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>Alertas (Anotação, Dica, Importante, Atenção, Aviso)
 
-"Alertas" é uma extensão Markdown específica do OPS para criar citações em bloco que renderizam no docs.microsoft.com com cores e ícones que indicam a importância do conteúdo. Os seguintes tipos de alerta tem suporte:
+"Alertas" é uma extensão de Markdown específica do OPS para criar citações em bloco que renderizam no docs.microsoft.com com cores e ícones que indicam a importância do conteúdo. Os seguintes tipos de alerta tem suporte:
 
 ```markdown
 > [!NOTE]

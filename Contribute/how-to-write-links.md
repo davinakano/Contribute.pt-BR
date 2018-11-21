@@ -1,13 +1,15 @@
 ---
 title: Como usar links na documentação
 description: Este artigo oferece orientação sobre como criar links para conteúdo dentro do docs.microsoft.com.
-ms.date: 06/29/2017
-ms.openlocfilehash: 1820ed9af561964d7afe0b29827ee43526c72489
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+author: gewarren
+ms.author: gewarren
+ms.date: 10/31/2018
+ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805759"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609420"
 ---
 # <a name="using-links-in-documentation"></a>Usando links na documentação
 Este artigo descreve como usar hiperlinks de páginas hospedadas em docs.microsoft.com. É fácil adicionar links em markdown com poucas variações de convenções. Os links direcionam os usuários para o conteúdo na mesma página, apontam para outras páginas vizinhas ou para sites e URLs externos.
@@ -22,7 +24,7 @@ O back-end do site docs.microsoft.com usa o OPS (Open Publishing System) que imp
 As palavras que você inclui no texto do link devem ser amigáveis. Em outras palavras, devem ser palavras normais em português ou o título da página que o link abre.
 
 > [!IMPORTANT]
-> Não use "clique aqui". É ruim para SEO e não descreve adequadamente o destino.
+> Não use "clique aqui". É ruim para a otimização do mecanismo de pesquisa e não descreve adequadamente o destino.
 
 **Correto:**
 
@@ -56,7 +58,7 @@ Para criar um link embutido de um artigo técnico do Docs para outro artigo téc
 
   `[link text](../directory/article-name.md)`
 
-- Uma vinculação de artigos entre docsets (mesmo se estiverem no mesmo repositório): `[link text](./directory/article-name)`
+- Uma vinculação de artigos entre docsets (mesmo se estiverem no mesmo repositório):  `[link text](./directory/article-name)`
 
 > [!IMPORTANT]
 > Nenhum dos exemplos acima usa `~/` como parte do link. Se você estiver vinculado a um caminho na raiz do repositório, comece com `/`. A inclusão de `~/` gera links inválidos ao navegar pelos repositórios de origem no GitHub. Iniciar o caminho com `/` resolve este problema corretamente.
@@ -84,17 +86,23 @@ Você não precisa criar âncoras. Elas são geradas automaticamente no momento 
 
 Como os arquivos de inclusão estão localizados em outro diretório, você deve usar caminhos relativos mais longos. Para vincular a um artigo de um arquivo de inclusão, use este formato:
 
-    [link text](../articles/folder/article-name.md)
+   ```markdown
+   [link text](../articles/folder/article-name.md)
+   ```
 
 ## <a name="links-in-selectors"></a>Links em seletores
 
-Se você tiver seletores incorporados em uma inclusão, assim como a equipe de documentação do Azure, use a seguinte estrutura de link:
+Um seletor é um componente da navegação que aparece em artigos de documentação como uma lista suspensa. Quando um leitor seleciona um valor na lista suspensa, o navegador abre o artigo selecionado. Normalmente, a lista do seletor contém links para artigos com relação próxima, por exemplo, com o mesmo tema em diversas linguagens de programação ou uma série de artigos com relação próxima. 
 
-    > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
-    - [(Texto1 | Exemplo1 )](../articles/folder/article-name1.md)
-    - [(Texto1 | Exemplo2 )](../articles/folder/article-name2.md)
-    - [(Texto2 | Exemplo3 )](../articles/folder/article-name3.md)
-    - [(Texto2 | Exemplo4 )](../articles/folder/article-name4.md) -->
+Se você tiver seletores inseridos em uma inclusão, use a seguinte estrutura de link:
+
+   ```markdown
+   > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
+   - [(Text1 | Example1 )](../articles/folder/article-name1.md)
+   - [(Text1 | Example2 )](../articles/folder/article-name2.md)
+   - [(Text2 | Example3 )](../articles/folder/article-name3.md)
+   - [(Text2 | Example4 )](../articles/folder/article-name4.md) -->
+   ```
 
 ## <a name="reference-style-links"></a>Links de estilo de referência
 
@@ -102,23 +110,29 @@ Você pode usar os links em estilo de referência para facilitar a leitura do co
 
 Texto embutido:
 
-    I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```markdown
+   I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```
 
 Referências de link ao final do artigo:
 
-    <!--Reference links in article-->
-    [1]: http://google.com/
-    [2]: http://search.yahoo.com/
-    [3]: http://search.msn.com/
-
+   ```markdown
+   <!--Reference links in article-->
+   [1]: http://google.com/
+   [2]: http://search.yahoo.com/
+   [3]: http://search.msn.com/
+   ```
+   
 Lembre-se de incluir o espaço após os dois-pontos, antes do link. Ao vincular com outros artigos técnicos, se você se esquecer de incluir o espaço, o link quebrará no artigo publicado.
 
 ## <a name="links-to-pages-that-are-not-part-of-the-technical-documentation-set"></a>Links para páginas que não fazem parte do conjunto de documentação técnica
 
 Para vincular a uma página em outra propriedade da Microsoft (como uma página de preço, uma página de SLA ou qualquer coisa que não seja um artigo de documentação), use uma URL absoluta, mas omita a localidade. O objetivo aqui é que os links funcionem no GitHub e no site renderizado:
 
-    [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
-
+   ```markdown
+   [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
+   ```
+   
 ## <a name="links-to-third-party-sites"></a>Links para sites de terceiros
 
 A melhor experiência de usuário reduz ao máximo o envio do usuário para outro site. Portanto, os links para sites de terceiros, dos quais precisamos às vezes, devem ser baseados nestas informações:
@@ -146,7 +160,7 @@ Estrutura da URL:
   - `/powershell/azure/<topic-file-name>[?view=<moniker-name>]`
   - `/powershell/azure/<service-name>/<topic-file-name>[?view=<moniker-name>]`
 
-A parte &lt;moniker-name&gt; é opcional. Se ela for omitida, você será direcionado à versão mais recente do conteúdo. A parte &lt;service-name&gt; é um dos exemplos mostrados nas seguintes URLs base:
+A parte `<moniker-name>` é opcional. Se ela for omitida, você será direcionado à versão mais recente do conteúdo. A parte `<service-name>` é um dos exemplos mostrados nas seguintes URLs base:
 
 - Conteúdo do Azure PowerShell (AzureRM): [https://docs.microsoft.com/powershell/azure/](https://docs.microsoft.com/powershell/azure/)
 - Conteúdo do Azure PowerShell (ASM): [https://docs.microsoft.com/powershell/azure/_servicemanagement_](https://docs.microsoft.com/powershell/azure/servicemanagement)
