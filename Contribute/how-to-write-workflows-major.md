@@ -2,12 +2,12 @@
 title: Fluxo de trabalho de contribuição do GitHub para alterações importantes ou de execução longa
 description: Este artigo mostra como usar o fluxo de trabalho "principal" do colaborador para fazer contribuições nos artigos do docs.microsoft.com.
 ms.date: 08/30/2017
-ms.openlocfilehash: 31f9421fc5edbc2f65c5ff20a86da08c70211ec7
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 93e659df4f72c6a272d15fd7487eb3a997bdf3c8
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239815"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609377"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>Fluxo de trabalho de contribuição do GitHub para alterações importantes ou de execução longa
 
@@ -31,7 +31,7 @@ Antes de começar, vamos revisar alguns dos termos do Git/GitHub e monikers usad
 | Nome | Descrição |
 |-----------|-------------|
 |fork|Normalmente usado como um substantivo ao referir-se a uma cópia de um repositório principal do GitHub. Na prática, um fork é só outro repositório. Mas é especial, no fato de que o GitHub mantém uma conexão com o repositório principal/pai. Às vezes, é usado como verbo, como em "Primeiro você deve criar o fork do repositório".|
-|remote|Uma conexão nomeada com um repositório remoto, como o remoto de "origin" ou "upstream". O Git se refere a eles como remotos porque eles são usados para referenciar um repositório hospedado em outro computador. Nesse fluxo de trabalho, um remote é sempre um repositório do GitHub.|
+|remote|Uma conexão nomeada com um repositório remoto, como o remoto de "origin" ou "upstream". O Git se refere a ele como remoto porque ele é usado para referenciar um repositório hospedado em outro computador. Nesse fluxo de trabalho, um remote é sempre um repositório do GitHub.|
 |origin|O nome atribuído à conexão entre o repositório local e o repositório do qual ele foi clonado. Neste fluxo de trabalho, origin representa a conexão com seu fork. Às vezes, é usado como um moniker para o próprio repositório de origem, como em “Lembre-se de enviar suas alterações por push para a origem”.|
 |upstream|Assim como o remote origin, upstream é uma conexão nomeada com outro repositório. Neste fluxo de trabalho, upstream representa a conexão entre seu repositório local e o repositório principal, a partir do qual seu fork foi criado. Às vezes, é usado como um moniker para o próprio repositório upstream, como em “Lembre-se de enviar suas alterações por push do upstream”.|
 
@@ -44,7 +44,7 @@ Neste fluxo de trabalho, as alterações fluem em um ciclo repetitivo. Começand
 
 ### <a name="use-github-flow"></a>Use o fluxo do GitHub
 
-Lembre-se do que viu em [Noções básicas do Git e do GitHub](git-github-fundamentals.md#git), que um repositório do Git contém um branch mestre, além de outros branches em progresso que não foram integrados ao mestre. Sempre que você introduz um conjunto de alterações relacionadas logicamente, uma prática recomendada é criar um *branch de trabalho* para gerenciar as alterações no fluxo de trabalho. Chamamos de branch de trabalho, pois é um espaço de trabalho para iterar/refinar as alterações, até que elas possam ser reintegradas ao branch mestre.
+Lembre-se do que viu em [Noções básicas do Git e do GitHub](git-github-fundamentals.md#git), que um repositório do Git contém um branch mestre, além de outros branches em progresso que não foram integrados ao mestre. Sempre que você introduz um conjunto de alterações relacionadas logicamente, uma prática recomendada é criar um *branch de trabalho* para gerenciar as alterações no fluxo de trabalho. Chamamos de branch de trabalho, pois é um workspace para iterar/refinar as alterações, até que elas possam ser reintegradas ao branch mestre.
 
 O isolamento de alterações relacionadas em um branch específico permite que você controle e introduza essas alterações de forma independente, direcionando-as a um período de lançamento específico no ciclo de publicação. Na realidade, dependendo do tipo de trabalho que você faz, é possível que você acabe criando vários branches de trabalho no repositório. Não é incomum trabalhar em vários branches simultaneamente, cada um representando um projeto diferente.
 

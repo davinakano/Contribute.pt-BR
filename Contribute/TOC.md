@@ -11,6 +11,11 @@
 ## [Início rápido de estilo e tom](style-quick-start.md)
 ## [Links](how-to-write-links.md)
 ## [Pacote de Criação do Docs](how-to-write-docs-auth-pack.md)
+# Orientações específicas do conjunto de documentação
+## [Documentos do .NET](dotnet-contribute.md)
+### [Contribuir para documentos do .NET](dotnet-contribute-process.md)
+### [Convenções de estilo dos documentos do .NET](dotnet-style-guide.md)
+### [Guia de tom e comunicação](dotnet-voice-tone.md)
 
 <!--
 ## Creating new content

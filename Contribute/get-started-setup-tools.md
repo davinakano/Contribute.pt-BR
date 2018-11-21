@@ -5,12 +5,12 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 715634a9a2342311eb1d358cb8379f90a7074d80
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251477"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609374"
 ---
 # <a name="install-content-authoring-tools"></a>Instalar ferramentas de criação de conteúdo
 
@@ -47,7 +47,7 @@ Markdown é uma linguagem de marcação leve que é fácil de ler e de aprender.
 
 O texto de Markdown é salvo em arquivos com extensão .md.
 
-Detalhes adicionais de como escrever com Markdown, incluindo as noções básicas de Markdown e os recursos compatíveis nas extensões de Markdown personalizadas do OPS serão abordados mais tarde em [Como usar Markdown](how-to-write-use-markdown.md).
+Detalhes adicionais de como escrever com Markdown, incluindo as noções básicas de Markdown e os recursos compatíveis nas extensões de Markdown personalizadas do OPS (Open Publishing Services) serão abordados nos artigos [Como usar o Markdown para escrever Docs](how-to-write-use-markdown.md) e [Referência de Markdown para OPS](markdown-reference.md).
 
 ## <a name="visual-studio-code"></a>Visual Studio Code
 

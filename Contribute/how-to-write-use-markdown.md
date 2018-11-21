@@ -2,12 +2,12 @@
 title: Como usar o Markdown para escrever Docs
 description: Este artigo descreve as noções básicas e informações de referência para a linguagem Markdown usada para escrever artigos do docs.microsoft.com.
 ms.date: 07/13/2017
-ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 21194c4bd6020d847b526a4d9544c826aa199e2a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805713"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609512"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Como usar o Markdown para escrever Docs
 
@@ -33,6 +33,14 @@ Para criar um título, use uma marca de hash (#), da seguinte forma:
 #### This is heading 4
 ```
 
+Os cabeçalhos devem ter o estilo atx, ou seja, usar 1 a 6 caracteres de hash (#) no início da linha para indicar um cabeçalho, correspondente aos cabeçalhos HTML H1 a H6. Exemplos de cabeçalhos de primeiro a quarto nível são usados acima.
+
+**Deve** haver pelo menos um cabeçalho de primeiro nível (H1) em seu tópico, que será exibido como o título de página.
+
+Se o cabeçalho terminar com um caractere `#`, você precisará adicionar um caractere `#` extra ao final para que o título seja renderizado corretamente. Por exemplo, `# Async Programming in F# #`.
+
+Cabeçalhos de segundo nível geram o Sumário na página que aparece na seção "Neste artigo" abaixo do título de página.
+
 ### <a name="bold-and-italic-text"></a>Texto em negrito e em itálico
 
 Para formatar o texto como **negrito**, coloque dois asteriscos de cada lado do texto:
@@ -52,6 +60,18 @@ Para formatar o texto como ***negrito e itálico***, coloque três asteriscos de
 ```markdown
 This is text is both ***bold and italic***.
 ```
+
+### <a name="blockquotes"></a>Citações em bloco
+
+Citações em bloco são criadas usando o caractere `>`:
+
+```markdown
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
+```
+
+O exemplo anterior é renderizado da seguinte forma:
+
+> A seca já dura dez milhões de anos, e o reino dos terríveis lagartos terminou há muito tempo. Aqui no Equador, no continente que um dia seria conhecido com África, a luta pela existência chegou ao ápice da ferocidade e o vencedor ainda não está à vista. Nestas terras estéreis e áridas, somente os pequenos, os rápidos ou os fortes podem prosperar ou até mesmo esperar sobreviver.
 
 ### <a name="lists"></a>Listas
 
@@ -93,8 +113,8 @@ Para formatar uma lista ordenada/gradual, use números correspondentes. Por exem
 
 ```markdown
 1. First instruction
-2. Second instruction
-3. Third instruction
+1. Second instruction
+1. Third instruction
 ```
 
 será renderizado como:
@@ -108,8 +128,8 @@ Para aninhar uma lista em outra lista, recue os itens de lista filha. Por exempl
 ```markdown
 1. First instruction
    1. Sub-instruction
-   2. Sub-instruction
-2. Second instruction
+   1. Sub-instruction
+1. Second instruction
 ```
 
 será renderizado como:
@@ -118,6 +138,8 @@ será renderizado como:
    1. Subinstrução
    2. Subinstrução
 2. Segunda instrução
+
+Observe que usamos '1.' para todas as entradas. Isso facilita a análise de comparações quando atualizações posteriores incluírem novas etapas ou removerem etapas existentes.
 
 ### <a name="tables"></a>Tabelas
 
@@ -194,6 +216,8 @@ Essas linguagens têm o suporte de nome amigável e a maioria tem realce de ling
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
 |C#|csharp|
+|C# no navegador|csharp-interactive|
+|Console|console|
 |CSHTML|cshtml|
 |DAX|dax|
 |F#|fsharp|
@@ -221,6 +245,8 @@ Essas linguagens têm o suporte de nome amigável e a maioria tem realce de ling
 |VSTS CLI|vstscli|
 |XAML|xaml|
 |XML|xml|
+
+O nome `csharp-interactive` especifica a linguagem C#, bem como a capacidade de executar os exemplos no navegador. Esses trechos são compilados e executados em um contêiner do Docker e os resultados da execução do programa são exibidos na janela do navegador do usuário.
 
 #### <a name="example-c"></a>Exemplo: C\#
 
@@ -256,8 +282,8 @@ __Markdown__
 
     ```sql
     CREATE TABLE T1 (
-      c1 int PRIMARY KEY,
-      c2 varchar(50) SPARSE NULL
+      c1 int PRIMARY KEY,
+      c2 varchar(50) SPARSE NULL
     );
     ```
 
@@ -265,8 +291,8 @@ __Renderização__
 
 ```sql
 CREATE TABLE T1 (
-  c1 int PRIMARY KEY,
-  c2 varchar(50) SPARSE NULL
+  c1 int PRIMARY KEY,
+  c2 varchar(50) SPARSE NULL
 );
 ```
 
@@ -296,6 +322,36 @@ Você pode escolher entre quatro tipos de blocos de notas para chamar atenção 
 
 Em geral, os blocos de notas devem ser usados com moderação porque eles podem atrapalhar. Embora eles também deem suporte para blocos de código, imagens, listas e links, tente manter seus blocos de nota simples e diretos.
 
+Exemplos:
+
+```markdown
+> [!NOTE]
+> This is a NOTE
+
+> [!WARNING]
+> This is a WARNING
+
+> [!TIP]
+> This is a TIP
+
+> [!IMPORTANT]
+> This is IMPORTANT
+```
+
+Eles são renderizados da seguinte forma:
+
+> [!NOTE]
+> Isto é uma ANOTAÇÃO
+
+> [!WARNING]
+> Isto é um AVISO
+
+> [!TIP]
+> Isto é uma DICA
+
+> [!IMPORTANT]
+> Isto é IMPORTANTE
+
 ### <a name="includes"></a>Inclusões
 
 Quando você tiver um texto ou arquivos de imagem reutilizáveis que precisem ser incluídos nos arquivos do artigo, use uma referência ao arquivo de "inclusão" por meio do recurso de inclusão de arquivo do Markdig. Esse recurso instrui o OPS a incluir o arquivo no arquivo do artigo no tempo de build, para que ele faça parte do artigo publicado. Três tipos de inclusões estão disponíveis para ajudá-lo a reutilizar o conteúdo:
@@ -317,13 +373,29 @@ Aqui estão os requisitos e as considerações para inclusões:
 - Assim como ocorre com os artigos regulares, não compartilhe a mídia entre arquivos de inclusão. Use um arquivo separado com um nome exclusivo para cada inclusão e artigo. Armazene o arquivo de mídia na pasta de mídia associada à inclusão.
 - Não use uma inclusão como único conteúdo de um artigo.  As inclusões servem como complemento ao conteúdo do restante do artigo.
 
+Exemplo:
+
+```markdown
+[!INCLUDE[sample include file](../includes/sampleinclude.md)]
+```
+
 ### <a name="selectors"></a>Seletores
 
 Use seletores em artigos técnicos ao criar vários tipos do mesmo artigo, a fim de solucionar diferenças de implementação entre tecnologias e plataformas. Normalmente, isso é mais aplicável ao nosso conteúdo de plataforma móvel para desenvolvedores. No momento, há dois tipos diferentes de seletores no Markdig, um seletor único e um seletor múltiplo.
 
 Como o mesmo Markdown seletor vai para cada artigo na seleção, recomendamos posicionar o seletor do artigo em uma inclusão. Em seguida, você poderá referenciar essa inclusão em todos os artigos que usarem o mesmo seletor.
 
-### <a name="code-snippets"></a>Snippets de código
+A seguir, é mostrado um seletor de exemplo:
+
+```markdown
+> [!div class="op_single_selector"]
+- [macOS](../docs/core/tutorials/using-on-macos.md)
+- [Windows](../docs/core/tutorials/with-visual-studio.md)
+```
+
+Você pode ver um exemplo dos seletores em ação nos [Documentos do Azure](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic).
+
+### <a name="code-includes"></a>Inclusões de código
 
 O Markdig também é compatível com a inclusão avançada de código em um artigo por meio de sua extensão de snippet de código. Ela fornece renderização avançada que aproveita os recursos do GFM, como seleção de linguagem de programação e coloração de sintaxe, além de recursos incríveis como:
 
@@ -348,8 +420,7 @@ Insira um escape para os sublinhados desta forma:
 
 ### <a name="apostrophes-and-quotation-marks"></a>Apóstrofes e aspas
 
-Se você copiar do Word para um editor de Markdown, o texto poderá conter apóstrofes ou aspas "inteligentes" (inglesas). Eles precisam ser codificados ou alterados para apóstrofos ou aspas simples.
-Caso contrário, quando o arquivo for publicado poderão ocorrer erros como: Itâ€™s
+Se você copiar do Word para um editor de Markdown, o texto poderá conter apóstrofes ou aspas "inteligentes" (inglesas). Eles precisam ser codificados ou alterados para apóstrofos ou aspas simples. Caso contrário, quando o arquivo for publicado poderão ocorrer erros como: Itâ€™s
 
 Estas são as codificações para as versões "inteligentes" dessas marcas de pontuação:
 
