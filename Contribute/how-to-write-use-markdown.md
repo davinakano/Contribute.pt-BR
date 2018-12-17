@@ -2,12 +2,12 @@
 title: Como usar o Markdown para escrever Docs
 description: Este artigo descreve as noções básicas e informações de referência para a linguagem Markdown usada para escrever artigos do docs.microsoft.com.
 ms.date: 07/13/2017
-ms.openlocfilehash: 21194c4bd6020d847b526a4d9544c826aa199e2a
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 8613d525afc11caf9ec760c4f15ea44010781634
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609512"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245885"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Como usar o Markdown para escrever Docs
 
@@ -282,8 +282,8 @@ __Markdown__
 
     ```sql
     CREATE TABLE T1 (
-      c1 int PRIMARY KEY,
-      c2 varchar(50) SPARSE NULL
+      c1 int PRIMARY KEY,
+      c2 varchar(50) SPARSE NULL
     );
     ```
 
@@ -291,8 +291,8 @@ __Renderização__
 
 ```sql
 CREATE TABLE T1 (
-  c1 int PRIMARY KEY,
-  c2 varchar(50) SPARSE NULL
+  c1 int PRIMARY KEY,
+  c2 varchar(50) SPARSE NULL
 );
 ```
 
@@ -304,7 +304,7 @@ CREATE TABLE T1 (
 Os artigos do Docs usam o GFM para a maior parte da formatação do artigo, como parágrafos, links, listas e cabeçalhos. Para uma formatação mais avançada, os artigos podem usar recursos do Markdig, como:
 
 - Blocos de nota
-- Inclusões
+- Arquivos de inclusão
 - Seletores
 - Vídeos incorporados
 - Snippets/amostras de código
@@ -352,26 +352,26 @@ Eles são renderizados da seguinte forma:
 > [!IMPORTANT]
 > Isto é IMPORTANTE
 
-### <a name="includes"></a>Inclusões
+### <a name="include-files"></a>Arquivos de inclusão
 
-Quando você tiver um texto ou arquivos de imagem reutilizáveis que precisem ser incluídos nos arquivos do artigo, use uma referência ao arquivo de "inclusão" por meio do recurso de inclusão de arquivo do Markdig. Esse recurso instrui o OPS a incluir o arquivo no arquivo do artigo no tempo de build, para que ele faça parte do artigo publicado. Três tipos de inclusões estão disponíveis para ajudá-lo a reutilizar o conteúdo:
+Quando você tiver um texto ou arquivos de imagem reutilizáveis que precisem ser incluídos nos arquivos do artigo, use uma referência ao arquivo de "inclusão" por meio do recurso de inclusão de arquivo do Markdig. Esse recurso instrui o OPS a incluir o arquivo no arquivo do artigo no tempo de build, para que ele faça parte do artigo publicado. Três tipos de referências de inclusão estão disponíveis para ajudar você a reutilizar o conteúdo:
 
-- Embutido: reutilize um snippet de texto comum embutido dentro de outra frase.
-- Bloco: reutilize um arquivo Markdown inteiro como um bloco aninhado dentro de uma seção de um artigo.
-- Imagem: é como a inclusão de imagem padrão é implementada no Docs.
+- Embutido: Reutilize um snippet de texto comum embutido dentro de outra sentença.
+- Bloco: Reutilize um arquivo Markdown inteiro como um bloco aninhado dentro de uma seção de um artigo.
+- Imagem: É como a inclusão de imagem padrão é implementada no Docs.
 
-A inclusão de um embutido ou de um bloco é apenas um arquivo Markdown (.md) simples. Ele pode conter qualquer Markdown válido. Todos os arquivos Markdown de inclusão devem ser colocados em um [subdiretório `/includes` comum](git-github-fundamentals.md#includes-subdirectory), na raiz do repositório. Quando o artigo é publicado, o arquivo incluído fica perfeitamente integrado.
+Um arquivo de inclusão embutido ou de bloco é apenas um arquivo Markdown (.md) simples. Ele pode conter qualquer Markdown válido. Todos os arquivos Markdown de inclusão devem ser colocados em um [subdiretório `/includes` comum](git-github-fundamentals.md#includes-subdirectory), na raiz do repositório. Quando o artigo é publicado, o arquivo incluído fica perfeitamente integrado.
 
-Aqui estão os requisitos e as considerações para inclusões:
+Aqui estão os requisitos e as considerações para arquivos de inclusão:
 
-- Use inclusões sempre que precisar que o mesmo texto apareça em vários artigos.
-- Use inclusões em bloco para quantidades consideráveis de conteúdo, como um ou dois parágrafos, um procedimento compartilhado ou uma seção compartilhada. Não use-os para nada menor do que uma sentença.
-- As inclusões não serão renderizadas no modo de exibição renderizado do GitHub do seu artigo, pois elas dependem de extensões do Markdig. Elas serão renderizadas somente após a publicação.
-- Verifique se todo o texto em uma inclusão está escrito em sentenças ou frases completas que não dependem do texto anterior ou seguinte no artigo que faz referência à inclusão. Se você ignorar essa orientação, criará uma cadeia de caracteres não traduzível no artigo que quebrará a experiência localizada.
-- Não incorpore inclusões dentro de outras inclusões. Não há suporte para isso.
-- Coloque os arquivos de mídia em uma pasta de mídia específica para o subdiretório de inclusão, por exemplo, a pasta `<repo>`/includes/media. O diretório de mídia não deve conter imagens em sua raiz. Se a inclusão não tiver imagens, não será necessário ter um diretório de mídia correspondente.
-- Assim como ocorre com os artigos regulares, não compartilhe a mídia entre arquivos de inclusão. Use um arquivo separado com um nome exclusivo para cada inclusão e artigo. Armazene o arquivo de mídia na pasta de mídia associada à inclusão.
-- Não use uma inclusão como único conteúdo de um artigo.  As inclusões servem como complemento ao conteúdo do restante do artigo.
+- Use um arquivo de inclusão sempre que precisar que o mesmo texto apareça em vários artigos.
+- Use uma referência de inclusão em bloco para quantidades consideráveis de conteúdo, como um ou dois parágrafos, um procedimento compartilhado ou uma seção compartilhada. Não use-os para nada menor do que uma sentença.
+- As referências de inclusão não serão renderizadas na exibição do artigo renderizada do GitHub, pois elas dependem de extensões do Markdig. Elas serão renderizadas somente após a publicação.
+- Verifique se todo o texto em um arquivo de inclusão está escrito em sentenças ou frases completas que não dependem do texto anterior ou seguinte no artigo que faz referência ao arquivo de inclusão. Se você ignorar essa orientação, criará uma cadeia de caracteres não traduzível no artigo que quebrará a experiência localizada.
+- Não insira referências de inclusão em outros arquivos de inclusão. Não há suporte para isso.
+- Coloque os arquivos de mídia em uma pasta de mídia específica para o subdiretório de inclusão, por exemplo, a pasta `<repo>`/includes/media. O diretório de mídia não deve conter imagens em sua raiz. Se o arquivo de inclusão não tiver imagens, não será necessário ter um diretório de mídia correspondente.
+- Assim como ocorre com os artigos regulares, não compartilhe a mídia entre arquivos de inclusão. Use um arquivo separado com um nome exclusivo para cada artigo e arquivo de inclusão. Armazene o arquivo de mídia na pasta de mídia associada ao arquivo de inclusão.
+- Não use um arquivo de inclusão como o único conteúdo de um artigo.  Os arquivos de inclusão servem como complemento ao conteúdo do restante do artigo.
 
 Exemplo:
 
@@ -383,7 +383,7 @@ Exemplo:
 
 Use seletores em artigos técnicos ao criar vários tipos do mesmo artigo, a fim de solucionar diferenças de implementação entre tecnologias e plataformas. Normalmente, isso é mais aplicável ao nosso conteúdo de plataforma móvel para desenvolvedores. No momento, há dois tipos diferentes de seletores no Markdig, um seletor único e um seletor múltiplo.
 
-Como o mesmo Markdown seletor vai para cada artigo na seleção, recomendamos posicionar o seletor do artigo em uma inclusão. Em seguida, você poderá referenciar essa inclusão em todos os artigos que usarem o mesmo seletor.
+Já que o mesmo Markdown seletor vai para cada artigo na seleção, é recomendável posicionar o seletor do artigo em um arquivo de inclusão. Em seguida, você poderá referenciar esse arquivo de inclusão em todos os artigos que usarem o mesmo seletor.
 
 A seguir, é mostrado um seletor de exemplo:
 
@@ -395,7 +395,7 @@ A seguir, é mostrado um seletor de exemplo:
 
 Você pode ver um exemplo dos seletores em ação nos [Documentos do Azure](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic).
 
-### <a name="code-includes"></a>Inclusões de código
+### <a name="code-include-references"></a>Referências de inclusão de código
 
 O Markdig também é compatível com a inclusão avançada de código em um artigo por meio de sua extensão de snippet de código. Ela fornece renderização avançada que aproveita os recursos do GFM, como seleção de linguagem de programação e coloração de sintaxe, além de recursos incríveis como:
 
@@ -420,7 +420,7 @@ Insira um escape para os sublinhados desta forma:
 
 ### <a name="apostrophes-and-quotation-marks"></a>Apóstrofes e aspas
 
-Se você copiar do Word para um editor de Markdown, o texto poderá conter apóstrofes ou aspas "inteligentes" (inglesas). Eles precisam ser codificados ou alterados para apóstrofos ou aspas simples. Caso contrário, quando o arquivo for publicado poderão ocorrer erros como: Itâ€™s
+Se você copiar do Word para um editor de Markdown, o texto poderá conter apóstrofes ou aspas "inteligentes" (inglesas). Eles precisam ser codificados ou alterados para apóstrofos ou aspas simples. Caso contrário, quando o arquivo for publicado, poderão ocorrer erros como: Itâ€™s
 
 Estas são as codificações para as versões "inteligentes" dessas marcas de pontuação:
 

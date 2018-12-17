@@ -2,12 +2,12 @@
 title: Processo de contribuição para repositórios de documentos do .NET
 description: Este artigo fornece uma breve introdução à contribuição com repositórios de documentos do .NET. Você aprenderá quais repositórios são usados, o processo para organizar o conteúdo e as políticas para gerenciar exemplos de código e outros ativos.
 ms.date: 11/07/2018
-ms.openlocfilehash: b83a3080f1abd4df8caaa9d10859760006216e86
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 0e7199b72cf9b94d00a09fb180ffef0558c59a53
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609752"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245839"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>Processo para contribuir com documentos do .NET
 
@@ -24,7 +24,7 @@ Seguir estas diretrizes garantirá uma melhor experiência para você e para nó
 
 ## <a name="make-a-contribution-to-net-docs"></a>Contribuir com documentos do .NET
 
-**Etapa 1:** ignore esta etapa no caso de alterações pequenas. Se estiver interessado em escrever novo conteúdo ou em revisar minuciosamente o conteúdo existente, registre um [problema](https://github.com/dotnet/docs/issues) descrevendo o que você deseja fazer.
+**Etapa 1:** Ignore esta etapa no caso de alterações pequenas. Se estiver interessado em escrever novo conteúdo ou em revisar minuciosamente o conteúdo existente, registre um [problema](https://github.com/dotnet/docs/issues) descrevendo o que você deseja fazer.
 
 O conteúdo na pasta **docs** é organizado em seções que são refletidas no Sumário. Defina onde o tópico ficará localizado no Sumário. Receba comentários sobre sua proposta.
 
@@ -42,11 +42,11 @@ Você também pode examinar nossa lista de [problemas em aberto](https://github.
 
 Depois de escolher uma tarefa na qual trabalhar, siga o guia de [introdução](get-started-setup-github.md) para criar uma conta do GitHub e configurar seu ambiente.
 
-**Etapa 2:** crie um fork dos repositórios `/dotnet/docs`, `dotnet/samples`, `dotnet/dotnet-api-docs`, `dotnet/roslyn-api-docs` ou `dotnet/ml-api-docs` conforme necessário e crie um branch para suas alterações.
+**Etapa 2:** Crie um fork dos repositórios `/dotnet/docs`, `dotnet/samples`, `dotnet/dotnet-api-docs`, `dotnet/roslyn-api-docs` ou `dotnet/ml-api-docs` conforme necessário e crie um branch para suas alterações.
 
 Para alterações pequenas, confira as instruções sobre edição no GitHub na [página inicial](index.md#quick-edits-to-existing-documents) do guia para colaboradores.
 
-**Etapa 3:** faça as alterações nesse novo branch.
+**Etapa 3:** Faça as alterações nesse novo branch.
 
 Caso de trate de um novo tópico, você pode usar este [arquivo de modelo](dotnet-style-guide.md) como ponto de partida. Ele contém as diretrizes de escrita e explica os metadados necessários para cada artigo, como as informações sobre o autor.
 
@@ -65,7 +65,7 @@ Certifique-se de seguir toda a sintaxe de Markdown adequada. Para ver exemplos c
             /porting-overview
                 portability_report.png
 
-**Etapa 4:** enviar uma PR (solicitação de pull) do seu branch para o branch mestre.
+**Etapa 4:** Envie uma PR (solicitação de pull) do seu branch para o branch mestre.
 
 > [!IMPORTANT]
 > A funcionalidade de [automação de comentários](how-to-write-workflows-major.md#review-and-sign-off) não está disponível em nenhum dos repositórios de documentos do .NET no momento. Membros da equipe de documentos do .NET examinarão e mesclarão sua PR.
@@ -76,7 +76,7 @@ Se a PR corrigir um problema existente, adicione a palavra-chave `Fixes #Issue_N
 
 A equipe do .NET examinará sua PR e informará se forem necessárias atualizações/alterações para aprová-la.
 
-**Etapa 5:** faça as alterações necessárias em seu branch conforme discutido com a equipe.
+**Etapa 5:** Faça as atualizações necessárias em seu branch conforme discutido com a equipe.
 
 Os profissionais responsáveis pela manutenção mesclarão sua PR ao branch mestre quando os comentários tiverem sido aplicados e sua alteração for aprovada.
 
@@ -131,6 +131,7 @@ Para criar um exemplo:
 2. Escreva o tópico que explica os conceitos demonstrados em seu exemplo (exemplo: `docs/standard/linq/where-clause.md`).
 3. Escreva o exemplo (exemplo: `WhereClause-Sample1.cs`).
 4. Crie um Program.cs com um ponto de entrada principal que chama seus exemplos. Se já houver um, adicione a chamada ao exemplo:
+
     ```csharp
     public class Program
     {
@@ -143,6 +144,7 @@ Para criar um exemplo:
         }
     }
     ```
+
 Você compila qualquer snippet ou exemplo do .NET Core usando a CLI do .NET Core, que pode ser instalada com o [SDK do .NET Core](https://www.microsoft.com/net/download). Para compilar e executar seu exemplo:
 
 1. Vá até a pasta de exemplos e compile para verificar se há erros:
