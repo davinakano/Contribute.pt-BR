@@ -2,12 +2,12 @@
 title: Modelo e folha de referências para artigos do .NET
 description: Este artigo contém um modelo útil que você pode usar para criar novos artigos para os repositórios de documentos do .NET
 ms.date: 11/07/2018
-ms.openlocfilehash: 15f64ec86c475e2da2f6539c8f388d076389c4e0
-ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
+ms.openlocfilehash: 08c8e19c858e7417d49cc2de543c67f330b93e89
+ms.sourcegitcommit: b0556fc33803358009a030ac9efcaed23f562868
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52299650"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53264492"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Modelo de metadados e Markdown para documentos do .NET
 
@@ -31,10 +31,10 @@ ms.date: [CREATION/UPDATE DATE - mm/dd/yyyy]
 
 - Você **precisa** ter um espaço entre os dois-pontos (:) e o valor de um elemento de metadados.
 - Os dois-pontos em um valor (por exemplo, um título) interrompem o analisador de metadados. Nesse caso, coloque o título entre aspas duplas (por exemplo, `title: "Writing .NET Core console apps: An advanced step-by-step guide"`).
-- **title**: aparece nos resultados do mecanismo de pesquisa resultados. O título não deve ser idêntico ao título em seu cabeçalho H1 e deve contar no máximo 60 caracteres.
-- **description**: resume o conteúdo do artigo. Normalmente, é mostrado na página de resultados da pesquisa, mas não é usado para classificação na pesquisa. O tamanho deve ser de 115 a 145 caracteres, incluindo os espaços.
-- **author**: o campo de autor deve contar o **nome de usuário do GitHub** do autor.
-- **ms.date**: a data da última atualização significativa. Atualize em artigos existentes se você tiver revisado e atualizado o artigo inteiro. Correções pequenas, como de erros de digitação ou semelhante, não garantem uma atualização.
+- **title**: Aparece nos resultados do mecanismo de pesquisa. O título não deve ser idêntico ao título em seu cabeçalho H1 e deve contar no máximo 60 caracteres.
+- **description**: Resume o conteúdo do artigo. Normalmente, é mostrado na página de resultados da pesquisa, mas não é usado para classificação na pesquisa. O tamanho deve ser de 115 a 145 caracteres, incluindo os espaços.
+- **author**: O campo de autor deve conter o **nome de usuário do GitHub** do autor.
+- **ms.date**: A data da última atualização significativa. Atualize em artigos existentes se você tiver revisado e atualizado o artigo inteiro. Correções pequenas, como de erros de digitação ou semelhante, não garantem uma atualização.
 
 Outros metadados são anexados a cada artigo, mas normalmente nós aplicamos a maior parte dos valores de metadados no nível da pasta, especificado em **docfx.json**.
 
@@ -144,7 +144,7 @@ Você pode incluir o código usando a seguinte sintaxe:
   * Usado para especificar como o código deve ser recuperado do arquivo:
     * `#`: `#{tagname}` (nome da tag) *ou* `#L{startlinenumber}-L{endlinenumber}` (intervalo de linhas).
     Nós não incentivamos o uso de números de linha porque eles são muito frágeis. O nome da tag é o modo preferencial de referenciar trechos de código. Use nomes de tag significativos. (Muitos trechos foram migrados de uma plataforma anterior e as tags têm nomes como `Snippet1`, `Snippet2`, etc. Essa prática é muito mais difícil de manter.)
-    * `range`: `?range=1,3-5` um intervalo de linhas. Este exemplo inclui as linhas 1, 3, 4 e 5.
+    * `range`: `?range=1,3-5` Um intervalo de linhas. Este exemplo inclui as linhas 1, 3, 4 e 5.
 
 Recomendamos usar a opção de nome de tag sempre que possível. O nome da tag é o nome de uma região ou de um comentário no código no formato do `Snippettagname` presente no código-fonte. O seguinte exemplo mostra como fazer referência ao nome de tag `BasicThrow`:
 
@@ -244,13 +244,13 @@ Links de botão:
 
 ```markdown
 > [!div class="button"]
-[button links](dotnet-contribute.md)
+> [button links](dotnet-contribute.md)
 ```
 
 Isso será renderizado da seguinte forma:
 
 > [!div class="button"]
-[links de botão](dotnet-contribute.md)
+> [links de botão](dotnet-contribute.md)
 
 Você pode ver um exemplo dos botões em ação nos [Documentos do Visual Studio](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-2---download-visual-studio).
 
@@ -258,8 +258,8 @@ Você pode ver um exemplo dos botões em ação nos [Documentos do Visual Studio
 
 ```markdown
 >[!div class="step-by-step"]
-[Pre](../docs/csharp/expression-trees-interpreting.md)
-[Next](../docs/csharp/expression-trees-translating.md)
+> [Pre](../docs/csharp/expression-trees-interpreting.md)
+> [Next](../docs/csharp/expression-trees-translating.md)
 ```
 
 Você pode ver um exemplo das instruções passo a passo em ação no [Guia de C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/program-structure).
