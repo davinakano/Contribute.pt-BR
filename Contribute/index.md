@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: dab2de80654fb55382b2ca7c9f78df36df9971dc
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 4a9a7573a62cfc7d5187b90de7e1fe147825273e
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609351"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712845"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Visão geral do guia do colaborador do Microsoft Docs
 
@@ -37,7 +37,7 @@ As edições rápidas simplificam o processo de relatar e corrigir pequenos erro
 
 Em seguida, clique no ícone de lápis mostrado na figura a seguir para editar o artigo.
 
-![Localização do ícone de lápis](./media/index/editicon.png)
+![Localização do ícone de lápis](./media/index/edit-icon.png)
 
 > [!NOTE]
 > Se o ícone de lápis está esmaecido, você precisa fazer logon na sua conta do GitHub ou criar uma conta.
