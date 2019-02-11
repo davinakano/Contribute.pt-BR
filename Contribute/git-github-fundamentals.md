@@ -2,12 +2,12 @@
 title: Conceitos básicos do Git e do GitHub para Documentação
 description: Este artigo explica uma visão geral do Git, do repositório do GitHub e como o conteúdo é organizado, além de convenções de nomenclatura usadas para docs.microsoft.com.
 ms.date: 06/30/2017
-ms.openlocfilehash: 05c758845007f859382014166e88fd9614cdb873
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: b7eb82f299d3efcdb1e49649fb77367ef8ba3fae
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805690"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712868"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Conceitos básicos do Git e do GitHub para o Docs
 
@@ -58,7 +58,7 @@ Cada diretório de artigo contém um subdiretório `/media` para os arquivos de 
 
 Sempre que houver conteúdo reutilizável compartilhado entre dois ou mais artigos, ele será colocado em um subdiretório `/includes` fora do diretório `articles` principal. Em um arquivo Markdown que use o arquivo de inclusão, uma extensão de Markdown "include" correspondente será colocada no local em que o arquivo de inclusão deve ser referenciado.
 
-Consulte [Como usar o Markdown: inclusões](how-to-write-use-markdown.md#includes) para obter orientação adicional.
+Confira [Como usar Markdown: inclui](how-to-write-use-markdown.md#include-files) para orientações adicionais.
 
 ### <a name="markdown-file-template"></a>Modelo de arquivo Markdown
 

@@ -1,24 +1,19 @@
 ---
 title: Como usar o Markdown para escrever Docs
 description: Este artigo descreve as noções básicas e informações de referência para a linguagem Markdown usada para escrever artigos do docs.microsoft.com.
-ms.date: 07/13/2017
-ms.openlocfilehash: ef75ffd59b75db5757822642f651d863906cf14c
-ms.sourcegitcommit: 18c271ebec920bb976a4bc901f4ab8c1d36b02fa
+ms.date: 01/29/2019
+ms.openlocfilehash: 5235189d11c8c20ac20c91572d8bafcf525fb7c0
+ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53615825"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887288"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Como usar o Markdown para escrever Docs
 
 Os artigos do [docs.microsoft.com](http://docs.microsoft.com) são escritos em uma linguagem de marcação leve chamada [Markdown](https://daringfireball.net/projects/markdown/), que é fácil de ler e aprender. Por isso, tornou-se rapidamente um padrão do setor.
 
-Como o conteúdo do Docs é armazenado no GitHub, ele pode usar um superconjunto de Markdown chamado [GFM (GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/), que fornece mais funcionalidades para necessidades de formatação comuns. Além disso, o OPS (Open Publishing Services) implementa o Analisador de Markdown Markdig. O Markdig é altamente compatível com o GFM, agregando funcionalidades para habilitar recursos específicos do Docs.
-
-* O Markdig é um processador de Markdown extensível, em conformidade com CommonMark potente e rápido para .NET.
-* https://github.com/lunet-io/markdig
-* Melhor suporte da comunidade
-* Melhor suporte de padrões
+O back-end do site docs.microsoft.com usa o OPS (Open Publishing System) que oferece suporte ao markdown [CommonMark](https://commonmark.org/) analisado pelo [Markdig](https://github.com/lunet-io/markdig) e também oferece suporte ao [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/). Esses tipos de markdown são compatíveis principalmente com o [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), já que a maioria dos documentos são armazenados no GitHub e podem ser editados lá. Mais funcionalidades são adicionadas pelas extensões de Markdown.
 
 ## <a name="markdown-basics"></a>Noções básicas de markdown
 
@@ -220,6 +215,7 @@ Essas linguagens têm o suporte de nome amigável e a maioria tem realce de ling
 |Console|console|
 |CSHTML|cshtml|
 |DAX|dax|
+|Docker|dockerfile|
 |F#|fsharp|
 |Go|go|
 |HTML|html|
@@ -227,8 +223,8 @@ Essas linguagens têm o suporte de nome amigável e a maioria tem realce de ling
 |Java|java|
 |JavaScript|javascript|
 |JSON|json|
+|Linguagem de Consulta Kusto|kusto|
 |Markdown|md|
-|NodeJS|nodejs|
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
@@ -243,7 +239,6 @@ Essas linguagens têm o suporte de nome amigável e a maioria tem realce de ling
 |Swift|swift|
 |TypeScript|typescript|
 |VB|vb|
-|VSTS CLI|vstscli|
 |XAML|xaml|
 |XML|xml|
 

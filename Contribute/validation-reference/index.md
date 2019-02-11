@@ -1,29 +1,17 @@
 ---
 author: meganbradley
 ms.author: mbradley
-ms.openlocfilehash: fa048980afcf3c50f7d990f9c88064df6ee5ebb5
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: 5488ba364ea561a732357bcebf9bf66039c26542
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084424"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712776"
 ---
-# <a name="docs-pr-validation-service"></a>Serviço de validação Docs PR
+# <a name="docs-validation-reference"></a>Referência da validação de documentos
 
-O serviço de validação Docs PR é um aplicativo do GitHub que executa regras de validação em arquivos em um PR.
+Os artigos nesta seção fornecem informações sobre Erros, Avisos e Sugestões que você pode ver ao enviar um PR a um repositório docs.microsoft.com ou ao criar um repositório para publicação em docs.microsoft.com.
 
-Quando o serviço de validação estiver habilitado em um repositório, o seguinte comportamento ocorrerá:
+Observe que nem todos os problemas surgirão em todos os repositórios, alguns são específicos de determinados conjuntos de conteúdo. Corrija os problemas listados em seu relatório de compilação e não todos os problemas descritos nesta referência.
 
-1. Você envia um PR.
-1. No comentário do GitHub que indica o status do PR, você verá o status de "verificações" habilitado no repositório. Neste exemplo, há duas verificações habilitadas, "Confirmar Validação" e "OpenPublishing.Build":
-
-   ![algumas verificações falharam](media/validation-failed.png)
-
-   O build poderá passar mesmo se a confirmação da validação falhar.
-
-1. Clique em **Detalhes** para saber mais.
-1. Na página Detalhes, você verá todas as verificações de validação que falharam, com informações sobre como corrigir os problemas:
-
-   ![mensagem de validação](media/validation-details.png)
-
-Confira o sumário à esquerda deste artigo para ver a lista de validações do serviço no momento.
+Observe também que essa referência não está completa. Novos artigos serão adicionados e vinculados a partir dos códigos de erro do relatório de compilação como um esforço contínuo. Embora os relatórios de compilação sejam públicos, algumas das informações necessárias para corrigir alguns problemas não estão disponíveis fora da Microsoft. Se você não encontrar a documentação de um Erro ou Aviso, se a mensagem ou a documentação não estiver clara ou se você for um colaborador que não pertença à Microsoft e não puder acessar mais informações, use o botão de comentários da documentação abaixo para registrar um problema do GitHub.
