@@ -4,17 +4,17 @@ description: Este artigo oferece orientação sobre como criar links para conte�
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 9dc1b6dc2ac19b8f28a5a137817245f9a8c34eaf
+ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609420"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887242"
 ---
 # <a name="using-links-in-documentation"></a>Usando links na documentação
 Este artigo descreve como usar hiperlinks de páginas hospedadas em docs.microsoft.com. É fácil adicionar links em markdown com poucas variações de convenções. Os links direcionam os usuários para o conteúdo na mesma página, apontam para outras páginas vizinhas ou para sites e URLs externos.
 
-O back-end do site docs.microsoft.com usa o OPS (Open Publishing System) que implementa o DFM (DocFX Flavored Markdown). O DFM é altamente compatível com GFM (GitHub Flavored Markdown), e o DFM adiciona uma funcionalidade adicional por meio de extensões de Markdown.
+O back-end do site docs.microsoft.com usa o OPS (Open Publishing System) que oferece suporte ao markdown [CommonMark](https://commonmark.org/) analisado pelo [Markdig](https://github.com/lunet-io/markdig) e também oferece suporte ao [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/). Esses tipos de markdown são compatíveis principalmente com o [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), já que a maioria dos documentos são armazenados no GitHub e podem ser editados lá. Mais funcionalidades são adicionadas pelas extensões de Markdown.
 
 > [!IMPORTANT]
 > Todos os links devem ser protegidos (`https` e não `http`) quando o destino tiver suporte para eles (a grande maioria tem).
@@ -137,12 +137,12 @@ Para vincular a uma página em outra propriedade da Microsoft (como uma página 
 
 A melhor experiência de usuário reduz ao máximo o envio do usuário para outro site. Portanto, os links para sites de terceiros, dos quais precisamos às vezes, devem ser baseados nestas informações:
 
-- **Responsabilidade:** vincule ao conteúdo de terceiros quando as informações que você deseja compartilhar forem de terceiros. Por exemplo, não é papel da Microsoft informar às pessoas como usar as ferramentas para desenvolvedores do Android. Isso é responsabilidade do Google. Se precisarmos, podemos explicar como usar as ferramentas de desenvolvedor do Android *com* o Azure, mas o Google deve instruir como usar suas ferramentas.
+- **Responsabilidade**: vincule ao conteúdo de terceiros quando as informações que você deseja compartilhar forem de terceiros. Por exemplo, não é papel da Microsoft informar às pessoas como usar as ferramentas para desenvolvedores do Android. Isso é responsabilidade do Google. Se precisarmos, podemos explicar como usar as ferramentas de desenvolvedor do Android *com* o Azure, mas o Google deve instruir como usar suas ferramentas.
 - **Aprovação do PM**: solicite que a Microsoft aprove o conteúdo de terceiros. Ao vincular, estamos afirmando nossa confiança nesse conteúdo e nossas obrigações caso a pessoa siga as instruções.
-- **Análises de atualização:** verifique se as informações de terceiros ainda estão atualizadas e corretas, se são relevantes e se o link não mudou.
-- **Externo:** informe aos usuários que eles vão acessar outro site. Se o contexto não deixar isso claro, adicione uma frase de esclarecimento. Por exemplo: “Os pré-requisitos incluem as Ferramentas para Desenvolvedores do Android, que podem ser baixadas no site do Android Studio”.
-- **Próximas etapas:** você pode adicionar um link para, por exemplo, um blog de MVP em uma seção de “Próximas etapas”. Mas, novamente, tenha certeza de que os usuários entenderão que estão saindo do site.
-- **Jurídico:** estamos cobertos juridicamente em **Links para sites de terceiros** no rodapé dos **Termos de Uso** em todas as páginas do ms.com.
+- **Análises de atualização**: verifique se as informações de terceiros ainda estão atualizadas e corretas, se são relevantes e se o link não mudou.
+- **Externo**: informe aos usuários que eles acessarão outro site. Se o contexto não deixar isso claro, adicione uma frase de esclarecimento. Por exemplo: “Os pré-requisitos incluem as Ferramentas para Desenvolvedores do Android, que podem ser baixadas no site do Android Studio”.
+- **Próximas etapas**: você pode adicionar um link para, por exemplo, um blog de MVP em uma seção de “Próximas etapas”. Mas, novamente, tenha certeza de que os usuários entenderão que estão saindo do site.
+- **Jurídico**: estamos cobertos juridicamente em **Links para sites de terceiros** no rodapé **Termos de Uso** de todas as páginas do ms.com.
 
 ## <a name="links-to-msdn-or-technet"></a>Link para o MSDN ou o TechNet
 
