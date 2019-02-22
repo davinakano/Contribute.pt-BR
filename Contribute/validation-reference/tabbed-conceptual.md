@@ -17,7 +17,7 @@ Guia dependente opcional:
 
 Exemplo de uma seção de guias de nível único com duas guias e o terminador do grupo de guias (---):
 
-```
+```markdown
 # [Linux](#tab/linux)
 
 Content for Linux...
