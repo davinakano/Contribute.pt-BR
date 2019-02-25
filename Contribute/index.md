@@ -3,20 +3,14 @@ title: Visão geral do guia do colaborador do Microsoft Docs
 description: O guia descreve como é possível contribuir com a documentação da Microsoft do site docs.microsoft.com.
 author: billwagner
 ms.author: wiwagn
-manager: wpickett
-ms.date: 04/17/2018
-ms.openlocfilehash: 4a9a7573a62cfc7d5187b90de7e1fe147825273e
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712845"
+ms.date: 02/19/2019
 ---
+
 # <a name="microsoft-docs-contributor-guide-overview"></a>Visão geral do guia do colaborador do Microsoft Docs
 
 Bem-vindo ao Guia do Colaborador do [docs.microsoft.com](https://docs.microsoft.com) (Docs)!
 
-Diversos de nossos conjuntos de documentação são de software livre, hospedados no GitHub. Mais e mais equipes na Microsoft estão adotando este modelo, a todo momento. Até mesmo conjuntos de documentos que não são totalmente de software livre têm repositórios voltados para o público em que você é convidado a realizar solicitações de pull. Ele simplifica e aprimora a comunicação entre os engenheiros de produto, as equipes de conteúdo e nossos clientes. Trabalhar com software livre tem diversas vantagens:
+Vários dos conjuntos de documentação da Microsoft são de software livre e estão hospedados no GitHub. Alguns conjuntos de documentos não são totalmente de software livre, porém muitos têm repositórios voltados para o público em que você é convidado a realizar solicitações de pull. Ele simplifica e aprimora a comunicação entre os engenheiros de produto, as equipes de conteúdo e nossos clientes. Trabalhar com software livre tem diversas vantagens:
 
 - O planejamento de repositórios em software livre permite obter comentários sobre quais documentos são mais necessários.
 - A análise de repositórios em software livre permite publicar o conteúdo mais útil em nossa primeira versão.
@@ -31,34 +25,34 @@ A experiência do usuário em [docs.microsoft.com](https://docs.microsoft.com) i
 
 ## <a name="quick-edits-to-existing-documents"></a>Edições rápidas a documentos existentes
 
-As edições rápidas simplificam o processo de relatar e corrigir pequenos erros e omissões em documentos. Apesar de todos os esforços, pequenos erros gramaticais e ortográficos aparecem em nossos documentos publicados. Embora você possa criar registros de problemas para relatar erros, é mais rápido e mais fácil criar uma PR (solicitação de pull) para corrigir o problema propriamente dito. Praticamente todos os artigos exibem um botão de edição, conforme mostrado na figura a seguir. Clicar no botão **Editar** (ou localizado equivalente) leva você ao arquivo de origem no GitHub.
+As edições rápidas simplificam o processo de relatar e corrigir pequenos erros e omissões em documentos. Apesar de todos os esforços, pequenos erros gramaticais e ortográficos aparecem em nossos documentos publicados. Embora você possa criar registros de problemas para relatar erros, é mais fácil e rápido criar uma solicitação de pull para corrigir o problema, quando a opção estiver disponível.
 
-![Localização do link de edição](./media/index/edit-article.png)
+1. Algumas páginas de documentos permitem a edição do conteúdo diretamente no navegador. Se esse for o caso, um botão **Editar** como o mostrado abaixo ficará visível na página. Clicar no botão **Editar** (ou localizado equivalente) leva você ao arquivo de origem no GitHub. Caso o botão **Editar** (ícone do lápis) não apareça, isso significa que a página da documentação não aceita alterações.
 
-Em seguida, clique no ícone de lápis mostrado na figura a seguir para editar o artigo.
+   ![Localização do link de edição](./media/index/edit-article.png)
 
-![Localização do ícone de lápis](./media/index/edit-icon.png)
+2. Em seguida, clique no ícone do lápis para editar o artigo conforme mostrado. Se o ícone de lápis está esmaecido, você precisa fazer logon na sua conta do GitHub ou criar uma conta. 
 
-> [!NOTE]
-> Se o ícone de lápis está esmaecido, você precisa fazer logon na sua conta do GitHub ou criar uma conta.
+   ![Localização do ícone de lápis](./media/index/edit-icon.png)
 
-Faça suas alterações no editor da Web. Você pode clicar na guia **Visualizar alterações** para verificar a formatação da sua alteração.
 
-Após ter feito suas alterações, role até a parte inferior da página. Insira um título e uma descrição para sua solicitação de pull e clique em **Propor alteração de arquivo** conforme mostrado na figura a seguir:
+3. Faça suas alterações no editor da Web. Clique na guia **Visualizar alterações** para verificar a formatação da alteração.
 
-![propondo a sua alteração](./media/index/submit-pull-request.png)
+4. Após ter feito suas alterações, role até a parte inferior da página. Insira um título e uma descrição para suas alterações e clique em **Propor alteração de arquivo** conforme mostrado na figura a seguir:
 
-Agora que você propôs sua alteração, você precisa pedir aos proprietários do repositório para "efetuar pull" de suas alterações para o repositório. Isso é feito usando algo chamado "solicitação de pull". Quando você clicou em **Propor alteração do arquivo** na figura acima, deveria ir para uma nova página semelhante à figura a seguir:
+   ![Propor alteração de arquivo](./media/index/submit-pull-request.png)
 
-![criar solicitação de pull](media/index/create-pull-request.png)
+5. Agora que você propôs sua alteração, você precisa pedir aos proprietários do repositório para "efetuar pull" de suas alterações para o repositório. Isso é feito usando algo chamado "solicitação de pull". Quando você clicou em **Propor alteração do arquivo** na figura acima, deveria ir para uma nova página semelhante à figura a seguir:
 
-Clique em **Criar Solicitação Pull**, insira um título (e, opcionalmente, uma descrição) para a solicitação pull e clique em **Criar Solicitação Pull** novamente.
+   ![criar solicitação de pull](media/index/create-pull-request.png)
 
-É isso! Membros de equipes de conteúdo examinarão e mesclarão sua solicitação de pull. Você poderá obter alguns comentários solicitando alterações caso você tenha feito alterações mais significativas.
+   Clique em **Criar Solicitação Pull**, insira um título (e, opcionalmente, uma descrição) para a solicitação pull e clique em **Criar Solicitação Pull** novamente.
+
+6. É isso! Membros de equipes de conteúdo examinarão e mesclarão sua solicitação de pull. Você poderá obter alguns comentários solicitando alterações caso você tenha feito alterações mais significativas.
 
 A interface do usuário de edição do GitHub responde às suas permissões no repositório. As imagens anteriores são precisas para colaboradores que não têm permissões de gravação para o repositório de destino. O GitHub cria automaticamente um fork para o repositório de destino em sua conta. Se você tem acesso de gravação para o repositório de destino, o GitHub cria nele um novo branch. O nome do branch tem o formato **\<GitHubId\>-patch-n** usando sua ID do GitHub e um identificador numérico para o branch do patch.
 
-Usamos solicitações de pull para todas as alterações, até mesmo para colaboradores que têm acesso de gravação. A maioria dos repositórios têm o branch `master` protegido, de modo que as atualizações precisam ser emitidas como solicitações de pull.
+Usamos solicitações de pull para todas as alterações, até mesmo para os colaboradores que têm acesso de gravação. A maioria dos repositórios tem o branch `master` protegido, de modo que as atualizações precisam ser emitidas como solicitações de pull.
 
 A experiência de edição no navegador é a melhor para alterações secundárias ou esporádicas. Se você fizer colaborações grandes ou usar recursos avançados do Git (como gerenciamento de branch, resolução avançada de conflitos de mesclagem), precisará [criar um fork do repositório e trabalhar localmente](how-to-write-workflows-major.md).
 
@@ -75,6 +69,8 @@ Você pode ler novos tópicos antes de eles serem publicados, verificando as sol
 ## <a name="create-quality-issues"></a>Criar registros de problemas de qualidade
 
 Nossos documentos são um trabalho contínuo em andamento. Bons registros de problemas nos ajudam a concentrar nossos esforços nas maiores prioridades para a comunidade. Quanto mais detalhes você fornecer, mais útil será o registro do problema. Diga-nos quais informações você buscou. Diga-nos quais termos de pesquisa você usou. Se você não souber como começar, diga-nos como você deseja explorar tecnologia com a qual não está familiarizado.
+
+Muitas das páginas de documentação da Microsoft têm uma seção de **Comentários** na parte inferior onde se pode clicar para enviar **Comentários sobre o produto** ou **Comentários sobre o conteúdo** para rastrear problemas específicos daquele artigo.
 
 Os registros de problemas iniciam a conversa sobre o que é necessário. A equipe de conteúdo responderá a esses registros de problemas com ideias sobre o que podemos adicionar e pedirá suas opiniões. Quando criarmos um rascunho, pediremos a você que [revise a solicitação de pull](#review-open-prs).
 

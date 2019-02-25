@@ -1,17 +1,17 @@
 ---
 title: ms-date-missing
-description: Explicação e resolução para o problema de compilação ms-date-missing de Docs
+description: Explicação e resolução para o problema de build do Docs ms-date-missing
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
 ms.date: 1/15/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: f5603dee7efe5c7ce3eaa4fa944031d94a9283d8
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: d7697c8449e451879c137d9d6cdf42327e597be6
+ms.sourcegitcommit: f374ad2607360f46d88982b4b7ecc63d3ab08235
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713236"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56431451"
 ---
 # <a name="ms-date-missing"></a>ms-date-missing
 
@@ -27,7 +27,13 @@ Essa data é usada para indicar "atualização", ou seja, quando o artigo foi re
 
 ## <a name="resolution"></a>Resolução
 
-Confirme se o artigo está atualizado sem conteúdo corrompido e adicione uma data válida no formato MM/DD/AAAA.
+Confirme se o artigo está atualizado e sem conteúdo corrompido e adicione uma data válida no formato MM/DD/AAAA:
+
+```yml
+---
+ms.date: 02/19/2019
+---
+```
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
